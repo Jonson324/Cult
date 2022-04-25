@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class mouse_look : MonoBehaviour
 {
-    public float mouseSens = 1000f;//скорость мыши
+    public float mouseSens = 800f;//скорость мыши
     public Transform playerBody;//для персонажа
     float xRotation = 0f;//по оси х
 
     void Start()
     {
-       // Cursor.lockState = CursorLockMode.Locked;
+       Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
