@@ -12,6 +12,8 @@ TagManager:
   - fireboll
   - Fire
   - jump
+  - Teleport
+  - shop_item
   layers:
   - Default
   - TransparentFX
