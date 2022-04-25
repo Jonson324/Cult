@@ -21,7 +21,7 @@ public class enemy_hp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "fireboll")
+        if (collision.gameObject.tag == "bullet")
         {
             Health -= 50;
             Debug.Log(Health);
