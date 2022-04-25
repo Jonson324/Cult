@@ -20,7 +20,9 @@ public class player_move : MonoBehaviour
 
     public float jumpHieght = 6f;
 
-    
+   
+
+
     void Update()
     {
         float x = Input.GetAxis("Horizontal");// переменная для передвижения по оси х
@@ -46,4 +48,6 @@ public class player_move : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHieght * -2f * gravity);
         }
     }
+
+
 }
