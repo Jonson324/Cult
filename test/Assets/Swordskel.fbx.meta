@@ -5,13 +5,13 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -7936710091205914208
-    second: rig|attack_s
+    second: attack_s
   - first:
       74: -512320013847864616
-    second: rig|Jump
+    second: Jump
   - first:
       74: 1023992570608409904
-    second: rig|Walk
+    second: Walk
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -71,7 +71,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: rig|attack_s
+      name: attack_s
       takeName: rig|attack_s
       internalID: 0
       firstFrame: 0
@@ -100,7 +100,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: rig|Jump
+      name: Jump
       takeName: rig|Jump
       internalID: 0
       firstFrame: 0
@@ -129,7 +129,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: rig|Walk
+      name: Walk
       takeName: rig|Walk
       internalID: 0
       firstFrame: 0
@@ -140,7 +140,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
