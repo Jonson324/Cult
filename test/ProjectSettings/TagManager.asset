@@ -12,6 +12,7 @@ TagManager:
   - fireboll
   - Fire
   - jump
+  - NPC
   layers:
   - Default
   - TransparentFX
