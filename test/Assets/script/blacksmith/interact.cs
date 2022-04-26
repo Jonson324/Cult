@@ -1,25 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class interact : MonoBehaviour {
     public GameObject first_dialog;
-    bool first_end;
-    bool inDialog;
+    [HideInInspector] public bool start = true;
+    [HideInInspector] public bool inDialog;
     public GameObject welcome_dialog;
-    bool welcome;
+    [HideInInspector] public bool welcome;
     public GameObject forge;
     public GameObject hint;
+    [HideInInspector] public bool reply_No;
+    public GameObject buttons;
+    public GameObject bye_dialog;
+    [HideInInspector] public bool bye;
+    int i = 0;
+
+    public List<GameObject> first_phrases = new List<GameObject>();
+    public List<GameObject> welcome_phrases = new List<GameObject>();
 
     void Update() {
-        
+        if (inDialog == true) {
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+        } else {
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        if (start == false) { first_dialog.SetActive(false); }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialog == true) && (start == true)) {
+            if (i != first_phrases.Count - 1) {
+                first_phrases[i].SetActive(false);
+                first_phrases[i + 1].SetActive(true);
+                i += 1;
+            } else { start = false; inDialog = false; }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (reply_No == true)) {
+            welcome_dialog.SetActive(false);
+            inDialog = false;
+            welcome_phrases[0].SetActive(true);
+            buttons.SetActive(true);
+            welcome_phrases[1].SetActive(false);
+            reply_No = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (bye == true))
+        {
+            bye_dialog.SetActive(false);
+            inDialog = false;
+            bye = false;
+        }
     }
 
     void OnTriggerStay(Collider collider) {
         if (Input.GetKey(KeyCode.E)) {
             hint.SetActive(false);
-            Time.timeScale = 0;
-            if (first_end == false) {
+            inDialog = true;
+            if (start == true) {
                 first_dialog.SetActive(true);
             } else {
                 welcome_dialog.SetActive(true);
@@ -39,18 +80,21 @@ public class interact : MonoBehaviour {
         }
     }
 
-    public void openForge() { 
-        Time.timeScale = 0;
+    public void OpenForge() {
+        welcome_dialog.SetActive(false);
         forge.SetActive(true);
     }
 
-    public void closeForge() {
-        Time.timeScale = 1;
+    public void CloseForge() {
         forge.SetActive(false);
+        bye_dialog.SetActive(true);
+        bye = true;
     }
 
-    public void nextPhrase (GameObject phrase1, GameObject phrase2) {
-        phrase1.SetActive(false);
-        phrase2.SetActive(true);
+    public void No() {
+        welcome_phrases[0].SetActive(false);
+        buttons.SetActive(false);
+        welcome_phrases[1].SetActive(true);
+        reply_No = true;
     }
 }

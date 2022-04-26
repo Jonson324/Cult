@@ -63,7 +63,7 @@ public class shop : MonoBehaviour
 
     public void closeShop() {
         Shop.SetActive(false);
-        Time.timeScale = 1; //pause 
+        Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
     }
 }
