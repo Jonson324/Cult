@@ -9,7 +9,7 @@ public class HpObject : MonoBehaviour
     {
         if (collision.gameObject.tag == "fireboll")
         {
-            HealthObj -= 50;
+            HealthObj -= 100;
             Debug.Log(HealthObj);
             if (HealthObj <= 0)
             {
