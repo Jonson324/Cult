@@ -20,6 +20,7 @@ EditorBuildSettings:
 =======
     path: Assets/levels/Tutorial.unity
     guid: e915057aa86d7b5468335311b3d7788f
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/levels/fight wiht skel.unity
     guid: 33cb88c16b4e44642b5fb4f65f7abc09
@@ -36,4 +37,6 @@ EditorBuildSettings:
     path: Assets/levels/Boss.unity
     guid: c6f29d7a1430c6b409bb89d505d7fa50
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
   m_configObjects: {}

@@ -126,6 +126,7 @@ NavMeshSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1 &24457579
@@ -201,6 +202,8 @@ Transform:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1001 &56802439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,6 +310,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b99a0a5998b2736429fd2a2fd1d01c5e, type: 3}
   m_PrefabInstance: {fileID: 56802439}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -420,6 +424,8 @@ PrefabInstance:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &60165563
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +741,7 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1001 &260952164
@@ -849,6 +856,8 @@ PrefabInstance:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &275497189
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +951,7 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1063,6 +1073,8 @@ Transform:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &282089366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2379,7 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1001 &660435573
@@ -2441,6 +2454,8 @@ PrefabInstance:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1001 &669583277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2930,6 +2945,7 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1001 &786865268
@@ -2996,6 +3012,8 @@ PrefabInstance:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &812961435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,6 +3884,7 @@ MeshFilter:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1001 &1189641920
@@ -3932,6 +3951,8 @@ PrefabInstance:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &1207993826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,6 +5634,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1 &1831081020
@@ -5731,6 +5753,8 @@ MonoBehaviour:
 >>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 8e5ba21 (замена)
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1001 &1851301745
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12918,6 +12918,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8e5ba21 (замена)
 --- !u!1001 &1362840142
@@ -12977,6 +12978,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f96e0761983594aa089471bcb770f0, type: 3}
+=======
+>>>>>>> parent of 18370b7 (tp)
 =======
 >>>>>>> parent of 18370b7 (tp)
 --- !u!1 &1369225267
