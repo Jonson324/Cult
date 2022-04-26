@@ -124,6 +124,7 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &24457579
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +193,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1001 &56802439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,6 +302,7 @@ Transform:
   m_PrefabInstance: {fileID: 56802439}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &59455003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,6 +406,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &60165563
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +807,7 @@ MeshFilter:
   m_GameObject: {fileID: 183076151}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &260952164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +915,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &275497189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1010,7 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &276949000
 GameObject:
@@ -1113,6 +1123,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &282089366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,7 +1976,7 @@ Transform:
   - {fileID: 1809885307}
   - {fileID: 60165564}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565894019
 GameObject:
@@ -2419,6 +2431,7 @@ MeshFilter:
   m_GameObject: {fileID: 659327146}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &660435573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2486,6 +2499,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1001 &669583277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2973,6 +2988,7 @@ MeshFilter:
   m_GameObject: {fileID: 744784720}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &786865268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3032,6 +3048,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 71f96e0761983594aa089471bcb770f0, type: 3}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &812961435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,6 +3918,7 @@ MeshFilter:
   m_GameObject: {fileID: 1156398758}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1189641920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3959,6 +3978,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 963ddd91339e54542a5da2c6b3614b03, type: 3}
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1 &1207993826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,6 +5659,7 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1831081020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5749,6 +5771,8 @@ MonoBehaviour:
   sceneId: 6
 =======
 >>>>>>> main
+=======
+>>>>>>> parent of 18370b7 (tp)
 --- !u!1001 &1851301745
 PrefabInstance:
   m_ObjectHideFlags: 0
