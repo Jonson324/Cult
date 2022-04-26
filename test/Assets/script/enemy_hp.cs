@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemy_hp : MonoBehaviour
 {
 
-    public int Health = 100;
+    public double Health = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class enemy_hp : MonoBehaviour
     {
         if (collision.gameObject.tag == "fireboll")
         {
-            Health -= 50;
+            Health -= 20.5;
             Debug.Log(Health);
             if (Health <= 0)
             {
