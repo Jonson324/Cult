@@ -57,10 +57,6 @@ public class LevelHealth : MonoBehaviour
             levelHealth += 20;
             Destroy(GameObject.FindGameObjectWithTag("Health"));
         }
-        if (other.tag == "sword")
-        {
-            levelHealth -= 20;
-        }
     }
 
     private void OnTriggerStay(Collider other)
