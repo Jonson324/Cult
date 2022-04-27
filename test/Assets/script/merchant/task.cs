@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class task : MonoBehaviour
 {
-    [HideInInspector] public bool EndDialog1; //окончание первого монолога
-    [HideInInspector] public bool EndDialog2; //окончание второго монолога
+    public bool EndDialog1; //окончание первого монолога
+    public bool EndDialog2; //окончание второго монолога
     public GameObject dialog1; //первый монолог
     public GameObject dialog1_end; //второй монолог
     public GameObject LevelHealth; //шкала здоровья
     public quest_event quest_event; //ссылка на скрипт с заданием
     public GameObject Hint; //подсказка вверху экрана
     public GameObject shop; //магазин
-    [HideInInspector] public bool dialog1_end_disable; //отключение диалогов
-    [HideInInspector] public bool ring_obtained; //флаг выполнения задания
+    public bool dialog1_end_disable; //отключение диалогов
+    public bool ring_obtained; //флаг выполнения задания
 
     // Update is called once per frame
     void Update()
