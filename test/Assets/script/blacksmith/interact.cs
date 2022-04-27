@@ -15,6 +15,7 @@ public class interact : MonoBehaviour {
     public GameObject buttons;
     public GameObject bye_dialog;
     [HideInInspector] public bool bye;
+    public GameObject health;
     int i = 0;
 
     public List<GameObject> first_phrases = new List<GameObject>();
@@ -24,9 +25,11 @@ public class interact : MonoBehaviour {
         if (inDialog == true) {
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
+            health.SetActive(false);
         } else {
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.Locked;
+            health.SetActive(true);
         }
 
         if (start == false) { first_dialog.SetActive(false); }

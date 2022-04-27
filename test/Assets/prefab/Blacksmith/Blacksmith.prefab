@@ -7493,6 +7493,7 @@ MonoBehaviour:
   buttons: {fileID: 0}
   bye_dialog: {fileID: 0}
   bye: 0
+  health: {fileID: 0}
   first_phrases:
   - {fileID: 0}
   - {fileID: 0}
