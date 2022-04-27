@@ -8,7 +8,7 @@ public class dialog_next : MonoBehaviour
     public GameObject Text2; //вторая реплика
     public GameObject dialog1_end; //финальная реплика
 	public GameObject Ring; //объект задания
-    private bool next; //переключатель
+    bool next; //переключатель
     public task taskScript; //ссылка на скрипт взаимодействия с npc
 
     // Update is called once per frame
