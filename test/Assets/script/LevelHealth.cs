@@ -59,7 +59,7 @@ public class LevelHealth : MonoBehaviour
         }
         if (other.tag == "sword")
         {
-            levelHealth -= 20;
+            levelHealth -= 25;
         }
     }
 

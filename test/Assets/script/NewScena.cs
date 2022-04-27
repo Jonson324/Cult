@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class NewScena : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class NewScena : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            EditorSceneManager.LoadScene(sceneIndex);
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 }
