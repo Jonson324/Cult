@@ -7,10 +7,8 @@ public class shop : MonoBehaviour
 {
     private shop.DataPlayer dataPlayer = new shop.DataPlayer();
 
-    [HideInInspector]
-    public string nameItem; //имя товара
-    [HideInInspector]
-    public int priceItem; //цена товара
+    [HideInInspector] public string nameItem; //имя товара
+    [HideInInspector] public int priceItem; //цена товара
     public GameObject Shop; //магазин
     public Text monk; //отображение денег
     public GameObject[] allItem;  //массив товаров
@@ -63,7 +61,7 @@ public class shop : MonoBehaviour
 
     public void closeShop() {
         Shop.SetActive(false);
-        Time.timeScale = 1; //pause 
+        Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
     }
 }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class quest_event : MonoBehaviour
 {
-    public bool quest_ring; //состояние задания
+    [HideInInspector] public bool quest_ring; //состояние задания
     public GameObject Current_Task; //суть задания вверху экрана
-    public bool quest_ring_end; //окончание задания
+    [HideInInspector] public bool quest_ring_end; //окончание задания
 
     // Update is called once per frame
     void Update()
