@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class enemy_hp : MonoBehaviour
 {
-
+    [SerializeField] public List<Items> Rareitems;
+    [SerializeField] public List<Items> items;
     public double Health = 100;
-    // Start is called before the first frame update
+   
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+        
         
     }
 
@@ -27,6 +29,7 @@ public class enemy_hp : MonoBehaviour
             Debug.Log(Health);
             if (Health <= 0)
             {
+                Instantiate(items[Random.Range(0, items.Count)], transform.position, Quaternion.identity); //Берётся рандомный предмет через рандомное взятое число от 0 до количества предметов
                 Destroy(gameObject);
             }
             

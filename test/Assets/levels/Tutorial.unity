@@ -7279,6 +7279,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d2c1db95e1a95c74d9defdb34de63a8c, type: 3}
+    - target: {fileID: 796974427613142639, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1843988979}
+    - target: {fileID: 796974427613142639, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
 --- !u!1001 &1520234940
@@ -9130,6 +9138,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819485282}
   m_Mesh: {fileID: 5016330269351386949, guid: 2b1af7b25f9fae246b924c082225d2a7, type: 3}
+--- !u!1 &1843988979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 796974426680212534, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
+  m_PrefabInstance: {fileID: 1512789558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1861998902
 GameObject:
   m_ObjectHideFlags: 0
