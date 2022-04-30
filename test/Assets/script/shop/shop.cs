@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class shop : MonoBehaviour
 {
     private shop.DataPlayer dataPlayer = new shop.DataPlayer();
-
+    public inDialog inDialog;
+    public task taskScript;
     [HideInInspector] public string nameItem; //имя товара
     [HideInInspector] public int priceItem; //цена товара
     public GameObject Shop; //магазин
@@ -61,7 +62,6 @@ public class shop : MonoBehaviour
 
     public void closeShop() {
         Shop.SetActive(false);
-        Time.timeScale = 1;
-        Cursor.lockState = CursorLockMode.Locked;
+        taskScript.bye = true;
     }
 }
