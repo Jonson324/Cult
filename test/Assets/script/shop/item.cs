@@ -13,7 +13,6 @@ public class item : MonoBehaviour
     public void buyItem () {
         scriptShop.nameItem = nameItem;
         scriptShop.priceItem = priceItem;
-
         scriptShop.buyItem();
     }
 }
