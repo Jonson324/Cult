@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class shop : MonoBehaviour
-{
+public class shop : MonoBehaviour {
     private shop.DataPlayer dataPlayer = new shop.DataPlayer();
     public inDialog inDialog;
     public task taskScript;
@@ -16,7 +15,6 @@ public class shop : MonoBehaviour
 
     public class DataPlayer {
         public int money;
-
         public List<string> buyItem = new List<string>();
     }
 
@@ -54,7 +52,6 @@ public class shop : MonoBehaviour
         if (dataPlayer.money >= priceItem) {
             dataPlayer.buyItem.Add(nameItem);
             dataPlayer.money -= priceItem;
-
             saveGame();
             loadGame();
         }
