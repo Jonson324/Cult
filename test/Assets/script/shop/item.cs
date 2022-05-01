@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class item : MonoBehaviour
 {
     public shop scriptShop; //ссылка на скрипт магазина
-    public string nameItem; //имя товара
-    public int priceItem; //цена товара
-    public Text textItem; //ценник товара
+    public Text nameItem; //имя товара
+    public Text priceItem; //цена товара
+    int price;
      
     public void buyItem () {
-        scriptShop.nameItem = nameItem;
-        scriptShop.priceItem = priceItem;
+        scriptShop.nameItem = nameItem.text;
+        int.TryParse(priceItem.text, out price);
+        scriptShop.priceItem = price;
         scriptShop.buyItem();
     }
 }

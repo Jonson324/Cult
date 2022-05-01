@@ -22,7 +22,7 @@ public class shop : MonoBehaviour {
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
-            dataPlayer.money = 2000;
+            dataPlayer.money = 5000;
             saveGame();
             loadGame();
         }
@@ -41,8 +41,8 @@ public class shop : MonoBehaviour {
 
         for (int i = 0; i < dataPlayer.buyItem.Count; i++) {
             for (int j = 0; j < allItem.Length; j++) {
-                if (allItem[j].GetComponent<item>().nameItem == dataPlayer.buyItem[i]) {
-                    allItem[j].GetComponent<item>().textItem.text = "Куплено";
+                if (allItem[j].GetComponent<item>().nameItem.text.ToString() == dataPlayer.buyItem[i]) {
+                    allItem[j].GetComponent<item>().priceItem.text = "Куплено";
                 }
             }
         }

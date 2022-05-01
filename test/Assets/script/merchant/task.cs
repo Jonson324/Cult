@@ -52,7 +52,7 @@ public class task : MonoBehaviour {
             inDialogScript.in_dialog = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (quest_completed == true) && (thx1 == true)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (thx1 == true)) {
             thx.SetActive(false);
             inDialogScript.in_dialog = false;
             thx1 = false;
