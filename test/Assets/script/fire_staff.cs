@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class fire_staff : MonoBehaviour
 {
-
-
     public GameObject fireboll;
     public float fbspeed = 200f;
     public float fbdist = 100f;
