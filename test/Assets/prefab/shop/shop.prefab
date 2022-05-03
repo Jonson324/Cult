@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1800
+  m_Text: 3000
 --- !u!1 &1651751208460003607
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,9 +136,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9818032d935266c488a07838d006d87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopScript: {fileID: 2163176567025567411}
   prevPage: {fileID: 1651751209260264797}
   currentPage: {fileID: 1651751208460003607}
   nextPage: {fileID: 1651751210005877310}
+  allItem:
+  - {fileID: 1651751209203042339}
+  - {fileID: 1651751210164383383}
+  - {fileID: 1651751208761295044}
+  - {fileID: 1651751210369984639}
+  - {fileID: 1651751210364385031}
+  - {fileID: 1651751210187485309}
 --- !u!1 &1651751208527620645
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1800
+  m_Text: 3000
 --- !u!1 &1651751208611232300
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +516,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 5"
 --- !u!1 &1651751208642680946
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +595,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 17"
 --- !u!1 &1651751208663951762
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +674,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1800
+  m_Text: 2400
 --- !u!1 &1651751208732948009
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,9 +823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751208413362993}
+  nameItem: {fileID: 1651751208950745920}
+  priceItem: {fileID: 1651751208413362993}
 --- !u!1 &1651751208737237562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,9 +1052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0411\u0440\u0438"
-  priceItem: 2000
-  textItem: {fileID: 1651751209653351539}
+  nameItem: {fileID: 1651751209703178841}
+  priceItem: {fileID: 1651751209653351539}
 --- !u!1 &1651751208768844331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1800
+  m_Text: 3000
 --- !u!1 &1651751208833389241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 15"
 --- !u!1 &1651751208899627385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,9 +1360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0411\u0440\u0438"
-  priceItem: 2000
-  textItem: {fileID: 1651751209974129513}
+  nameItem: {fileID: 1651751208833389243}
+  priceItem: {fileID: 1651751209974129513}
 --- !u!1 &1651751208920892503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,9 +1510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751208663951756}
+  nameItem: {fileID: 1651751208611232302}
+  priceItem: {fileID: 1651751208663951756}
 --- !u!1 &1651751208950745926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1590,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 6"
 --- !u!1 &1651751209075258204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,7 +1827,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1800
+  m_Text: 2400
 --- !u!1 &1651751209199783210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,9 +2055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0411\u0440\u0438\u0442\u0432\u0430 \u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1600
-  textItem: {fileID: 1651751208527620647}
+  nameItem: {fileID: 1651751210041369934}
+  priceItem: {fileID: 1651751208527620647}
 --- !u!1 &1651751209260264797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,9 +2113,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9818032d935266c488a07838d006d87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopScript: {fileID: 2163176567025567411}
   prevPage: {fileID: 0}
   currentPage: {fileID: 1651751209260264797}
   nextPage: {fileID: 1651751208460003607}
+  allItem:
+  - {fileID: 2163176566989819949}
+  - {fileID: 2163176565203779225}
+  - {fileID: 2163176565503891083}
+  - {fileID: 2163176566123570468}
+  - {fileID: 1651751208920892503}
+  - {fileID: 1651751208732948009}
 --- !u!1 &1651751209287117255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 8"
 --- !u!1 &1651751209382188678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,7 +2281,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 16"
 --- !u!1 &1651751209481795855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,7 +2360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 12"
 --- !u!1 &1651751209508647350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,7 +2518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 10"
 --- !u!1 &1651751209540080351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2597,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 18"
 --- !u!1 &1651751209584832962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,7 +2676,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 14"
 --- !u!1 &1651751209624111934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,9 +3062,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0442\u0432\u0430"
-  priceItem: 2200
-  textItem: {fileID: 1651751209853137075}
+  nameItem: {fileID: 1651751209382188672}
+  priceItem: {fileID: 1651751209853137075}
 --- !u!1 &1651751209703178847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,7 +3142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 9"
 --- !u!1 &1651751209719203685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,9 +3449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0411\u0440\u0438\u0442\u0432\u0430 \u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1600
-  textItem: {fileID: 1651751209075258206}
+  nameItem: {fileID: 1651751209892009943}
+  priceItem: {fileID: 1651751209075258206}
 --- !u!1 &1651751209853137073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,9 +3678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751208590561362}
+  nameItem: {fileID: 1651751209540080345}
+  priceItem: {fileID: 1651751208590561362}
 --- !u!1 &1651751209892009941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,7 +3758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430 \u044F\u0440\u043E\u0441\u0442\u0438"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 13"
 --- !u!1 &1651751209974129519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3978,9 +3986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751209746375293}
+  nameItem: {fileID: 1651751209584833084}
+  priceItem: {fileID: 1651751209746375293}
 --- !u!1 &1651751209979668738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,9 +4269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751209167065765}
+  nameItem: {fileID: 1651751208642680940}
+  priceItem: {fileID: 1651751209167065765}
 --- !u!1 &1651751210005877310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,9 +4328,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9818032d935266c488a07838d006d87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopScript: {fileID: 2163176567025567411}
   prevPage: {fileID: 1651751208460003607}
   currentPage: {fileID: 1651751210005877310}
   nextPage: {fileID: 0}
+  allItem:
+  - {fileID: 1651751209760320405}
+  - {fileID: 1651751209975266326}
+  - {fileID: 1651751208899627385}
+  - {fileID: 1651751209658817371}
+  - {fileID: 1651751210002558003}
+  - {fileID: 1651751209854859530}
 --- !u!1 &1651751210041369932
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,7 +4417,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430 \u044F\u0440\u043E\u0441\u0442\u0438"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 7"
 --- !u!1 &1651751210041545677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4482,7 +4496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 11"
 --- !u!1 &1651751210050679426
 GameObject:
   m_ObjectHideFlags: 0
@@ -4789,9 +4803,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751208737237556}
+  nameItem: {fileID: 1651751209287117249}
+  priceItem: {fileID: 1651751208737237556}
 --- !u!1 &1651751210164882938
 GameObject:
   m_ObjectHideFlags: 0
@@ -5019,9 +5032,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751208768844325}
+  nameItem: {fileID: 1651751209481795849}
+  priceItem: {fileID: 1651751208768844325}
 --- !u!1 &1651751210206704399
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,7 +5378,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1800
+  m_Text: 2400
 --- !u!1 &1651751210364385031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5515,9 +5527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 1651751210337032646}
+  nameItem: {fileID: 1651751210041545679}
+  priceItem: {fileID: 1651751210337032646}
 --- !u!1 &1651751210369984639
 GameObject:
   m_ObjectHideFlags: 0
@@ -5666,9 +5677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0442\u0432\u0430"
-  priceItem: 2200
-  textItem: {fileID: 1651751210050679548}
+  nameItem: {fileID: 1651751209533478323}
+  priceItem: {fileID: 1651751210050679548}
 --- !u!1 &1651751210474492784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,9 +5960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1800
-  textItem: {fileID: 2163176566988411802}
+  nameItem: {fileID: 2163176565235560164}
+  priceItem: {fileID: 2163176566988411802}
 --- !u!1 &2163176565235559962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6031,7 +6040,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 2"
 --- !u!1 &2163176565503891083
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,9 +6189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0411\u0440\u0438"
-  priceItem: 2000
-  textItem: {fileID: 2163176566673246325}
+  nameItem: {fileID: 2163176566496538922}
+  priceItem: {fileID: 2163176566673246325}
 --- !u!1 &2163176565561577875
 GameObject:
   m_ObjectHideFlags: 0
@@ -6489,9 +6497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0442\u0432\u0430"
-  priceItem: 2200
-  textItem: {fileID: 2163176566885264300}
+  nameItem: {fileID: 2163176567018052046}
+  priceItem: {fileID: 2163176566885264300}
 --- !u!1 &2163176566234412161
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,7 +6731,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438\u0442\u0432\u0430 \u044F\u0440\u043E\u0441\u0442\u0438"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 1"
 --- !u!1 &2163176566496538920
 GameObject:
   m_ObjectHideFlags: 0
@@ -6803,7 +6810,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0411\u0440\u0438"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 3"
 --- !u!1 &2163176566553806655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7476,9 +7483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptShop: {fileID: 2163176567025567411}
-  nameItem: "\u0411\u0440\u0438\u0442\u0432\u0430 \u044F\u0440\u043E\u0441\u0442\u0438"
-  priceItem: 1600
-  textItem: {fileID: 2163176565829949866}
+  nameItem: {fileID: 2163176566415939624}
+  priceItem: {fileID: 2163176565829949866}
 --- !u!1 &2163176567018052044
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,7 +7563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0442\u0432\u0430"
+  m_Text: "\u0422\u043E\u0432\u0430\u0440 4"
 --- !u!1 &2163176567025567412
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,7 +7583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2163176567025567408
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7685,11 +7691,7 @@ MonoBehaviour:
   priceItem: 0
   Shop: {fileID: 2163176567025567412}
   monk: {fileID: 2163176566553806649}
-  allItem:
-  - {fileID: 2163176566989819949}
-  - {fileID: 2163176565203779225}
-  - {fileID: 2163176565503891083}
-  - {fileID: 2163176566123570468}
+  allItem: []
 --- !u!1 &2163176567062086461
 GameObject:
   m_ObjectHideFlags: 0

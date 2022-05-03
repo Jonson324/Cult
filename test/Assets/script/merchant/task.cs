@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class task : MonoBehaviour {
     public inDialog inDialogScript;
+    [HideInInspector] public bool quest;
     public GameObject quest_dialog;
     [HideInInspector] public bool quest_started;
     public GameObject ring;
@@ -26,7 +27,7 @@ public class task : MonoBehaviour {
     public List<GameObject> shop_phrases = new List<GameObject>();
     
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (quest_started == false) && (quest_completed == false)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (quest == true) && (quest_started == false) && (quest_completed == false)) {
             if (i != quest_phrases.Count - 1) {
                 quest_phrases[i].SetActive(false);
                 quest_phrases[i + 1].SetActive(true);
@@ -78,19 +79,22 @@ public class task : MonoBehaviour {
     }
 
     void OnTriggerStay (Collider col) {
-        if (Input.GetKey(KeyCode.E)) {
-            hint.SetActive(false);
-            inDialogScript.in_dialog = true;
-            if (thx1 == true) {
-                thx.SetActive(true);
-            } else if ((quest_started == true) && (quest_completed == false)) {
-                keep_search.SetActive(true);
-                searching = true;
-            } else { 
-                if (quest_completed == false) {
-                    quest_dialog.SetActive(true);
-                } else {
-                    shop_doalog.SetActive(true);
+        if (col.tag == "Player") {
+            if (Input.GetKey(KeyCode.E)) {
+                hint.SetActive(false);
+                inDialogScript.in_dialog = true;
+                if (thx1 == true) {
+                    thx.SetActive(true);
+                } else if ((quest_started == true) && (quest_completed == false)) {
+                    keep_search.SetActive(true);
+                    searching = true;
+                } else { 
+                    if (quest_completed == false) {
+                        quest = true;
+                        quest_dialog.SetActive(true);
+                    } else {
+                        shop_doalog.SetActive(true);
+                    }
                 }
             }
         }

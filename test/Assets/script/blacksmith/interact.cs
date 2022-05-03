@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class interact : MonoBehaviour {
     public inDialog inDialogScript;
+    [HideInInspector] public bool first;
     public GameObject first_dialog;
     [HideInInspector] public bool start = true;
     public GameObject welcome_dialog;
@@ -20,7 +21,7 @@ public class interact : MonoBehaviour {
     public List<GameObject> welcome_phrases = new List<GameObject>();
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (start == true)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (start == true) && (first == true)) {
             if (i != first_phrases.Count - 1) {
                 first_phrases[i].SetActive(false);
                 first_phrases[i + 1].SetActive(true);
@@ -51,6 +52,7 @@ public class interact : MonoBehaviour {
             hint.SetActive(false);
             inDialogScript.in_dialog = true;
             if (start == true) {
+                first = true;
                 first_dialog.SetActive(true);
             } else {
                 welcome_dialog.SetActive(true);

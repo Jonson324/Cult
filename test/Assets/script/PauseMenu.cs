@@ -6,8 +6,9 @@ using UnityEditor.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameISPause = false;
+    public bool GameISPause = false;
     public GameObject pauseMenuUI;
+    public inDialog inDialogScript;
 
     private void Start()
     {
@@ -31,26 +32,28 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        inDialogScript.in_dialog = false;
+        //Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         GameISPause = false;
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
     public void Pause()
     {
-        Cursor.lockState = CursorLockMode.None;
+        inDialogScript.in_dialog = true;
+        //Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         GameISPause = true;
-        Cursor.visible = true;
+        //Cursor.visible = true;
     }
     public void LoadMenu()
     {
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(false);
         GameISPause = false;
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         SceneManager.LoadScene(0);
         
     } 

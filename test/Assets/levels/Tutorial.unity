@@ -7000,6 +7000,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 796974426680212528, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
+      propertyPath: inDialogScript
+      value: 
+      objectReference: {fileID: 1421449759}
     - target: {fileID: 796974427613142638, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
       propertyPath: m_Sprite
       value: 
