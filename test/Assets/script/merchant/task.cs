@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class task : MonoBehaviour {
     public inDialog inDialogScript;
+    public dialog DialogScript;
     [HideInInspector] public bool quest;
     public GameObject quest_dialog;
     [HideInInspector] public bool quest_started;
@@ -127,7 +128,9 @@ public class task : MonoBehaviour {
 
     public void Talk() {
         shop_doalog.SetActive(false);
+        DialogScript.first[0].SetActive(true);
         talk.SetActive(true);
         talkin = true;
+        DialogScript.one = true;
     }
 }

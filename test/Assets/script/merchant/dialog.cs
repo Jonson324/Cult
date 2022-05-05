@@ -9,8 +9,8 @@ public class dialog : MonoBehaviour {
     public List<GameObject> first = new List<GameObject>();
     [HideInInspector] public bool two;
     public List<GameObject> second = new List<GameObject>();
-
-    void Start() { first[0].SetActive(true); one = true; }
+    public GameObject bye;
+    [HideInInspector] public bool end;
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Mouse0) && (taskScript.talkin == true)) {
@@ -20,6 +20,14 @@ public class dialog : MonoBehaviour {
 
             if (two == true) {
                 Continue(second);
+            }
+
+            if (end == true) {
+                taskScript.talkin = false;
+                taskScript.talk.SetActive(false);
+                bye.SetActive(false);
+                end = false;
+                taskScript.shop_doalog.SetActive(true);
             }
         }
     }
@@ -40,20 +48,16 @@ public class dialog : MonoBehaviour {
 
     public void YesNo() {
         i = 0;
+        one = false; two = true;
         Next(first, second);
-        one = false;
-        two = true;
     }
 
     public void Bye() {
         i = 0;
-        taskScript.talkin = false;
-        taskScript.talk.SetActive(false);
+        two = false;
         second[second.Count - 2].SetActive(false);
         second[second.Count - 1].SetActive(false);
-        first[0].SetActive(true);
-        one = true;
-        two = false;
-        taskScript.shop_doalog.SetActive(true);
+        bye.SetActive(true);
+        end = true;
     }
 }
