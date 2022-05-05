@@ -10,7 +10,7 @@ public class task : MonoBehaviour {
     public GameObject ring;
     public GameObject thx;
     [HideInInspector] public bool thx1;
-    [HideInInspector] public bool quest_completed;
+    public bool quest_completed;
     public GameObject current_task;
     public GameObject keep_search;
     [HideInInspector] public bool searching = false;
@@ -21,20 +21,14 @@ public class task : MonoBehaviour {
     [HideInInspector] public bool bye;
     [HideInInspector] public bool reply_No;
     public GameObject buttons;
+    public GameObject talk;
+    [HideInInspector] public bool talkin;
     int i = 0;
 
     public List<GameObject> quest_phrases = new List<GameObject>();
     public List<GameObject> shop_phrases = new List<GameObject>();
     
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (quest == true) && (quest_started == false) && (quest_completed == false)) {
-            if (i != quest_phrases.Count - 1) {
-                quest_phrases[i].SetActive(false);
-                quest_phrases[i + 1].SetActive(true);
-                i += 1;
-            } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); }
-        }
-
         if (quest_started == true) {
             current_task.SetActive(true);
         } else {
@@ -45,6 +39,14 @@ public class task : MonoBehaviour {
             bye_dialog.SetActive(true);
         } else {
             bye_dialog.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (quest == true) && (quest_started == false) && (quest_completed == false)) {
+            if (i != quest_phrases.Count - 1) {
+                quest_phrases[i].SetActive(false);
+                quest_phrases[i + 1].SetActive(true);
+                i += 1;
+            } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); }
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && (searching == true)) {
@@ -121,5 +123,11 @@ public class task : MonoBehaviour {
         buttons.SetActive(false);
         shop_phrases[1].SetActive(true);
         reply_No = true;
+    }
+
+    public void Talk() {
+        shop_doalog.SetActive(false);
+        talk.SetActive(true);
+        talkin = true;
     }
 }
