@@ -5,6 +5,7 @@ using UnityEngine;
 public class task : MonoBehaviour {
     public inDialog inDialogScript;
     public dialog DialogScript;
+    public GameObject name;
     [HideInInspector] public bool quest;
     public GameObject quest_dialog;
     [HideInInspector] public bool quest_started;
@@ -47,12 +48,13 @@ public class task : MonoBehaviour {
                 quest_phrases[i].SetActive(false);
                 quest_phrases[i + 1].SetActive(true);
                 i += 1;
-            } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); }
+            } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); name.SetActive(false); }
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && (searching == true)) {
             keep_search.SetActive(false);
             searching = false;
+            name.SetActive(false);
             inDialogScript.in_dialog = false;
         }
 
@@ -60,6 +62,7 @@ public class task : MonoBehaviour {
             thx.SetActive(false);
             inDialogScript.in_dialog = false;
             thx1 = false;
+            name.SetActive(false);
             hint.SetActive(true);
         }
 
@@ -67,6 +70,7 @@ public class task : MonoBehaviour {
             bye_dialog.SetActive(false);
             inDialogScript.in_dialog = false;
             bye = false;
+            name.SetActive(false);
             hint.SetActive(true);
         }
 
@@ -77,6 +81,7 @@ public class task : MonoBehaviour {
             buttons.SetActive(true);
             shop_phrases[1].SetActive(false);
             reply_No = false;
+            name.SetActive(false);
             hint.SetActive(true);
         }
     }
@@ -85,6 +90,7 @@ public class task : MonoBehaviour {
         if (col.tag == "Player") {
             if (Input.GetKey(KeyCode.E)) {
                 hint.SetActive(false);
+                name.SetActive(true);
                 inDialogScript.in_dialog = true;
                 if (thx1 == true) {
                     thx.SetActive(true);
@@ -115,6 +121,7 @@ public class task : MonoBehaviour {
     }
 
     public void OpenShop() {
+        name.SetActive(false);
         shop_doalog.SetActive(false);
         shop.SetActive(true);
     }
