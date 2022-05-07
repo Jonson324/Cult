@@ -28,7 +28,7 @@ public class enemy : MonoBehaviour
         {
           myAgent.enabled = true;
           myAgent.SetDestination(Player.transform.position);
-         // gameObject.GetComponent<Animator>().Play("Walks");
+          gameObject.GetComponent<Animator>().Play("Walks");
         } 
         if (dist < 1.5f)
         {
