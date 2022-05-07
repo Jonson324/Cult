@@ -52,7 +52,7 @@ public class settings : MonoBehaviour
 
     public void ExitSettings()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void SaveSettings()
