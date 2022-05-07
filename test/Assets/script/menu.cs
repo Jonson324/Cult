@@ -10,6 +10,12 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+
+    public void Settings()
+    {
+        SceneManager.LoadScene(7);
+    }
+
     public void Exit()
     {
         Application.Quit();

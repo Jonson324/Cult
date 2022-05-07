@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Boss.unity
     guid: c6f29d7a1430c6b409bb89d505d7fa50
+  - enabled: 1
+    path: Assets/levels/menu/menu/setting.unity
+    guid: 6df0095c2c6a34c4b9e90c5cb7bb8807
   m_configObjects: {}
