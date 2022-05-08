@@ -9,7 +9,7 @@ public class LevelHealth : MonoBehaviour
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
-    public float levelHealth = 100;
+    public static float levelHealth = 100;
     public Text txt;
     public float maxhealth = 100;
     
