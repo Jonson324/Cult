@@ -46,4 +46,3 @@ public class player_move : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHieght * -2f * gravity);
         }
     }
-}
