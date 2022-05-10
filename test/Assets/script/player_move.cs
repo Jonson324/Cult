@@ -6,8 +6,8 @@ public class player_move : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float SPEED = 15f;// скорость перемещения
-
+    public static float SPEED;
+    public static float start_speed = 15.0f;
     public float gravity = -9.8f;// сила гравитации
 
     Vector3 velocity;// переменная для расчета
@@ -20,7 +20,12 @@ public class player_move : MonoBehaviour
 
     public float jumpHieght = 6f;
 
-    
+
+    private void Start()
+    {
+        SPEED = start_speed;
+    }
+
     void Update()
     {
         float x = Input.GetAxis("Horizontal");// переменная для передвижения по оси х
@@ -45,5 +50,20 @@ public class player_move : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHieght * -2f * gravity);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "speedup")
+        {
+            SPEED *= 2f;
+            StartCoroutine(ResetSpeed(10f));
+        }
+    }
+
+    private IEnumerator ResetSpeed(float time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+        SPEED = start_speed;
     }
 }

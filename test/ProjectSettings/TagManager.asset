@@ -13,6 +13,7 @@ TagManager:
   - Fire
   - jump
   - NPC
+  - speedup
   layers:
   - Default
   - TransparentFX
