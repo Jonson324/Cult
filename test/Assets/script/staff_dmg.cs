@@ -9,6 +9,7 @@ public class staff_dmg : MonoBehaviour
     public Transform bullet;
     public float bulletSpeed = 10;
     public AudioClip Fire;
+    public enemy_hp enemy_Hp;
 
 
     // Start is called before the first frame update
@@ -27,5 +28,20 @@ public class staff_dmg : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(Fire);
             
         } 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "fireboll")
+        {
+            enemy_hp.enemy_Hp -= 5;
+            Debug.Log(enemy_Hp);
+            if (enemy_Hp <= 0)
+            {
+                Destroy(gameObject);
+            }
+
+        }
+
     }
 }

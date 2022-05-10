@@ -56,14 +56,14 @@ public class player_move : MonoBehaviour
     {
         if(other.tag == "speedup")
         {
-            SPEED *= 2f;
-            StartCoroutine(ResetSpeed(10f));
+            SPEED *= 1.2f;
+            StartCoroutine(ResetSpeed(30));
         }
     }
 
     private IEnumerator ResetSpeed(float time)
     {
-        yield return new WaitForSecondsRealtime(time);
+        yield return new WaitForSeconds(time);
         SPEED = start_speed;
     }
 }
