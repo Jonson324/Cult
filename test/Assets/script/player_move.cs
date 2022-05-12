@@ -15,10 +15,9 @@ public class player_move : MonoBehaviour
     public Transform grountCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
+    public float jumpHieght = 6f;
     bool isGrounded;
 
-    public float jumpHieght = 6f;
 
 
     private void Start()
@@ -56,8 +55,9 @@ public class player_move : MonoBehaviour
     {
         if(other.tag == "speedup")
         {
-            SPEED *= 1.2f;
-            StartCoroutine(ResetSpeed(30));
+            SPEED *= 1.5f;
+            StartCoroutine(ResetSpeed(10));
+            Destroy(GameObject.FindGameObjectWithTag("speedup"));
         }
     }
 
@@ -66,4 +66,5 @@ public class player_move : MonoBehaviour
         yield return new WaitForSeconds(time);
         SPEED = start_speed;
     }
+
 }

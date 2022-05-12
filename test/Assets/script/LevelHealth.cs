@@ -30,7 +30,7 @@ public class LevelHealth : MonoBehaviour
             levelHealth = maxhealth;
         }
 
-        txt.text = "+" + Mathf.Floor(levelHealth);
+        txt.text = "HP " + Mathf.Floor(levelHealth);
 
         if (levelHealth <= 0)
         {
