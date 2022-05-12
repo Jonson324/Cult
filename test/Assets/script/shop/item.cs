@@ -5,15 +5,21 @@ using UnityEngine.UI;
 
 public class item : MonoBehaviour
 {
-    public shop scriptShop; //ссылка на скрипт магазина
+    public shop shopScript; //ссылка на скрипт магазина
     public Text nameItem; //имя товара
     public Text priceItem; //цена товара
     int price;
      
     public void buyItem () {
-        scriptShop.nameItem = nameItem.text;
+        shopScript.nameItem = nameItem.text;
         int.TryParse(priceItem.text, out price);
-        scriptShop.priceItem = price;
-        scriptShop.buyItem();
+        shopScript.priceItem = price;
+        shopScript.buyItem();
+    }
+
+    void Update() {
+        if ((shopScript.secretScroll == true) && (nameItem.text == "Странный свиток")) {
+            gameObject.SetActive(true);
+        }
     }
 }
