@@ -15,6 +15,7 @@ public class interact : MonoBehaviour {
     public GameObject buttons;
     public GameObject bye_dialog;
     [HideInInspector] public bool bye;
+    public GameObject talk;
     int i = 0;
 
     public List<GameObject> first_phrases = new List<GameObject>();
@@ -88,5 +89,9 @@ public class interact : MonoBehaviour {
         buttons.SetActive(false);
         welcome_phrases[1].SetActive(true);
         reply_No = true;
+    }
+
+    public void Talk() { 
+        
     }
 }
