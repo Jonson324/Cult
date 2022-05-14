@@ -55,8 +55,8 @@ public class player_move : MonoBehaviour
     {
         if(other.tag == "speedup")
         {
-            SPEED *= 1.5f;
-            StartCoroutine(ResetSpeed(10));
+            SPEED *= 1.8f;
+            StartCoroutine(ResetSpeed(7));
             Destroy(GameObject.FindGameObjectWithTag("speedup"));
         }
     }
