@@ -9,9 +9,11 @@ public class LevelHealth : MonoBehaviour
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
-    public float levelHealth = 100;
+    public static float levelHealth; 
     public Text txt;
     public float maxhealth = 100;
+    public bool start;
+    
     
 
     private bool isOnDeadZone = false;
@@ -25,8 +27,11 @@ public class LevelHealth : MonoBehaviour
 
     void Update()
     {
-        if(levelHealth > maxhealth)
+
+        
+        if ((levelHealth > maxhealth) || (start == true))
         {
+            start = false;
             levelHealth = maxhealth;
         }
 
@@ -41,6 +46,7 @@ public class LevelHealth : MonoBehaviour
             DeadCamera.transform.parent = Parent.transform;
             Destroy(gameObject);
         }
+        
 
     }
 

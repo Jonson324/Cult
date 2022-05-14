@@ -12,6 +12,7 @@ public class shop : MonoBehaviour {
     public GameObject Shop; //магазин
     public Text monk; //отображение денег
     public GameObject[] allItem;  //массив товаров
+    [HideInInspector] public bool secretScroll; //заклинание победы
 
     public class DataPlayer {
         public int money;
