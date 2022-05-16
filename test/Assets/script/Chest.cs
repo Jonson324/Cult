@@ -5,18 +5,30 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-    [SerializeField] private List<Items> items;
+    [SerializeField] public List<Items> items;
+    
 
-
-    public void Useble()
+    public void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        Vector3 a = transform.position;
+        
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Instantiate(items[Random.Range(0, items.Count)], transform.position, Quaternion.identity); //Берётся рандомный предмет через рандомное взятое число от 0 до количества предметов
+            gameObject.GetComponent<Animator>().Play("Opening");
+            
         }
     }
-
-    
+   /* public GameObject prefab;
+    public GameObject loot;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Instantiate(loot, prefab.transform);
+        }
+    }
+   */
 
 
 

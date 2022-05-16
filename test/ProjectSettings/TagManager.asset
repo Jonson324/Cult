@@ -13,8 +13,9 @@ TagManager:
   - Fire
   - jump
   - NPC
-  - speedup
-  - slowmo
+  - Ground
+  - Cultist
+  - CultistAttack
   layers:
   - Default
   - TransparentFX
