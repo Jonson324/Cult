@@ -5,7 +5,8 @@ using UnityEngine;
 public class cultistshoot : MonoBehaviour
 {
     [SerializeField] GameObject projectile;
-    Transform target;
+    [SerializeField] Transform target;
+    
     [SerializeField] Transform shootPoint;
     [SerializeField] float turnSpeed = 5;
     [SerializeField] Transform Player;
@@ -21,9 +22,10 @@ public class cultistshoot : MonoBehaviour
         firerate -= Time.deltaTime;
         Vector3 direction =  transform.position - target.position;
         
+       
         if (firerate <= 0)
         {
-            firerate = 2.3f;
+            firerate = 2.30f;
             Shoot();
         }
     }

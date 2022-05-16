@@ -16,5 +16,10 @@ public class cultistprojectile : MonoBehaviour
         rb.AddForce(diractionn * speed * Time.deltaTime );
     }
 
+    private void OnCollisionStay(Collision collision)
+    {
 
+        Destroy(GameObject.FindGameObjectWithTag("CultistAttack"),10f);
+
+    }
 }

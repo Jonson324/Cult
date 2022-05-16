@@ -15,6 +15,7 @@ TagManager:
   - NPC
   - Ground
   - Cultist
+  - CultistAttack
   layers:
   - Default
   - TransparentFX

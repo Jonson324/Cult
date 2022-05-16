@@ -6,7 +6,7 @@ public class staff_dmg : MonoBehaviour
 {
 
     public Transform bullet;
-    public float bulletSpeed = 10;
+    public float bulletSpeed = 800;
     public AudioClip Fire;
 
 

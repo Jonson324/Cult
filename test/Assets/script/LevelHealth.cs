@@ -61,6 +61,10 @@ public class LevelHealth : MonoBehaviour
         {
             levelHealth -= 25;
         }
+        if(other.tag == "CultistAttack")
+        {
+            levelHealth -= 15;
+        }
     }
 
     private void OnTriggerStay(Collider other)
