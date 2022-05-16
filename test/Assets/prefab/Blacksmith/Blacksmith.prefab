@@ -7482,9 +7482,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c8732563e48d6418f999fab061c7bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inDialogScript: {fileID: 0}
   first_dialog: {fileID: 0}
   start: 1
-  inDialog: 0
   welcome_dialog: {fileID: 0}
   welcome: 0
   forge: {fileID: 0}

@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class fire_staff : MonoBehaviour
 {
-
-
     public GameObject fireboll;
     public float fbspeed = 200f;
     public float fbdist = 100f;
     public bool fire;
-    public bool automatic;
+    
 
 
     // Start is called before the first frame update
@@ -40,12 +38,6 @@ public class fire_staff : MonoBehaviour
             fireboll.transform.localPosition = new Vector3(9.52f, 3.505f, 10.42f);
         }
 
-        if (automatic == true)
-        {
-            this.GetComponent<fire_staff>().fire = true;
-        } else
-        {
-            this.GetComponent<fire_staff>().fire = false;
-        }
+        
     }
 }

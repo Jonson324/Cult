@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/menu/menu/menu.unity
     guid: 05a53eb8b32de4d49bf03e4f564a81c1
-  - enabled: 0
-    path: Assets/levels/test.unity
-    guid: f05516aa4928d0a4aa626a95db74daf6
   - enabled: 1
     path: Assets/levels/Tutorial.unity
     guid: e915057aa86d7b5468335311b3d7788f
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Boss.unity
     guid: c6f29d7a1430c6b409bb89d505d7fa50
+  - enabled: 1
+    path: Assets/levels/menu/menu/setting.unity
+    guid: 6df0095c2c6a34c4b9e90c5cb7bb8807
   m_configObjects: {}
