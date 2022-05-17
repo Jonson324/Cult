@@ -6,7 +6,7 @@ public class staff_dmg : MonoBehaviour
 {
 
     public Transform bullet;
-    public float bulletSpeed = 800;
+    public float bulletSpeed = 10000;
     public AudioClip Fire;
 
 
@@ -19,7 +19,7 @@ public class staff_dmg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             Transform bulletInstance = (Transform)Instantiate(bullet, GameObject.Find("spawn").transform.position, Quaternion.identity);
             bulletInstance.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
