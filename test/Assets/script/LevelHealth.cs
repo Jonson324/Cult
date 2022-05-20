@@ -9,26 +9,24 @@ public class LevelHealth : MonoBehaviour
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
-    public static float levelHealth; 
+    public static float levelHealth;
+    
     public Text txt;
     public float maxhealth = 100;
     public bool start;
     
-    
-
     private bool isOnDeadZone = false;
 
    
     void Start()
     {
+        //levelHealth = 100; //Убирай коммент, если нужно протестить конкретную сцену
         Player = gameObject;
     }
 
 
     void Update()
     {
-
-        
         if ((levelHealth > maxhealth) || (start == true))
         {
             start = false;
