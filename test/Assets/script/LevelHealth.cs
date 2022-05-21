@@ -20,7 +20,7 @@ public class LevelHealth : MonoBehaviour
    
     void Start()
     {
-        //levelHealth = 100; //Убирай коммент, если нужно протестить конкретную сцену
+        levelHealth = 100; //Комментируй строку, если тестишь с главного меню
         Player = gameObject;
     }
 
