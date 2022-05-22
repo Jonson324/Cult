@@ -14,21 +14,12 @@ public class Chest : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(items[Random.Range(0, items.Count)], transform.position, Quaternion.identity); //Берётся рандомный предмет через рандомное взятое число от 0 до количества предметов
+            Instantiate(items[Random.Range(0, items.Count)], transform.position, Quaternion.identity); //Берётся предмет через рандомное взятое число от 0 до количества предметов
             gameObject.GetComponent<Animator>().Play("Opening");
             
         }
     }
-   /* public GameObject prefab;
-    public GameObject loot;
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Instantiate(loot, prefab.transform);
-        }
-    }
-   */
+   
 
 
 

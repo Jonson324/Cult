@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/menu/menu/setting.unity
     guid: 6df0095c2c6a34c4b9e90c5cb7bb8807
+  - enabled: 1
+    path: Assets/levels/Klodovaya.unity
+    guid: c3989ad81f19f76409af400be15ac94c
+  - enabled: 1
+    path: Assets/levels/Treasury2.unity
+    guid: e835bff488fdc294e914b8fbe9961633
+  - enabled: 1
+    path: Assets/levels/Fithscene3.unity
+    guid: 9b161e31a8e638345bb0450d6b7e4aab
   m_configObjects: {}
