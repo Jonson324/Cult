@@ -101,7 +101,7 @@ public class dialog : MonoBehaviour {
                 taskScript.talk.SetActive(false);
                 bye.SetActive(false);
                 end = false;
-                taskScript.shop_doalog.SetActive(true);
+                taskScript.shop_dialog.SetActive(true);
             }
         }
     }
@@ -157,10 +157,8 @@ public class dialog : MonoBehaviour {
     }
 
     public void IWill() {
-        Next(third, null);
-        three = false;
         three_end = true;
-        third_end[0].SetActive(true);
+        Next(third, third_end);
     }
 
     public void Questions() {
@@ -169,7 +167,6 @@ public class dialog : MonoBehaviour {
     }
 
     public void About() {
-        four = false;
         four_about = true;
         Next(fourth, fourth_about);
         ButtonOff(buttonsInteract, 0);
@@ -177,7 +174,6 @@ public class dialog : MonoBehaviour {
     }
 
     public void RUSure() {
-        four = false;
         four_rusure = true;
         Next(fourth, fourth_rusure);
         ButtonOff(buttonsInteract, 1);
@@ -185,7 +181,6 @@ public class dialog : MonoBehaviour {
     }
 
     public void OnlyOne() {
-        four = false;
         four_onlyone = true;
         Next(fourth, fourth_onlyone);
         ButtonOff(buttonsInteract, 2);
@@ -194,7 +189,6 @@ public class dialog : MonoBehaviour {
 
     public void How() {
         shopScript.secretScroll = true;
-        four = false;
         four_how = true;
         Next(fourth, fourth_how);
         ButtonOff(buttonsInteract, 3);
@@ -202,7 +196,6 @@ public class dialog : MonoBehaviour {
     }
 
     public void NoQ() {
-        four = false;
         four_noq = true;
         Next(fourth, fourth_noq);
     }
