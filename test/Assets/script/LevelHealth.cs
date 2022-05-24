@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+
+[System.Serializable]
+
 
 public class LevelHealth : MonoBehaviour
 {
@@ -13,8 +18,9 @@ public class LevelHealth : MonoBehaviour
     public Text txt;
     public float maxhealth = 100;
     public bool start;
-    
-    
+
+    public GameObject tp;
+    public enamyCount enamyCount;
 
     private bool isOnDeadZone = false;
 
@@ -27,15 +33,21 @@ public class LevelHealth : MonoBehaviour
 
     void Update()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (enamyCount.count == 1)
+            {
+                tp.SetActive(true);
+            }
+        }
 
-        
         if ((levelHealth > maxhealth) || (start == true))
         {
             start = false;
             levelHealth = maxhealth;
         }
 
-        txt.text = "HP " + Mathf.Floor(levelHealth);
+        txt.text = "" + Mathf.Floor(levelHealth);
 
         if (levelHealth <= 0)
         {
