@@ -16,7 +16,7 @@ public class task : MonoBehaviour {
     public GameObject current_task;
     public GameObject keep_search;
     [HideInInspector] public bool searching = false;
-    public GameObject shop_doalog;
+    public GameObject shop_dialog;
     public GameObject hint;
     public GameObject shop;
     public GameObject bye_dialog;
@@ -75,7 +75,7 @@ public class task : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && (reply_No == true)) {
-            shop_doalog.SetActive(false);
+            shop_dialog.SetActive(false);
             inDialogScript.in_dialog = false;
             shop_phrases[0].SetActive(true);
             buttons.SetActive(true);
@@ -102,7 +102,7 @@ public class task : MonoBehaviour {
                         quest = true;
                         quest_dialog.SetActive(true);
                     } else {
-                        shop_doalog.SetActive(true);
+                        shop_dialog.SetActive(true);
                     }
                 }
             }
@@ -122,7 +122,7 @@ public class task : MonoBehaviour {
 
     public void OpenShop() {
         merch_name.SetActive(false);
-        shop_doalog.SetActive(false);
+        shop_dialog.SetActive(false);
         shop.SetActive(true);
     }
 
@@ -134,7 +134,7 @@ public class task : MonoBehaviour {
     }
 
     public void Talk() {
-        shop_doalog.SetActive(false);
+        shop_dialog.SetActive(false);
         DialogScript.first[0].SetActive(true);
         talk.SetActive(true);
         talkin = true;
