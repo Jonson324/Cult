@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class NewScena : MonoBehaviour
 {
     public int sceneIndex;
-
+    
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,4 +16,5 @@ public class NewScena : MonoBehaviour
             SceneManager.LoadScene(sceneIndex);
         }
     }
+
 }

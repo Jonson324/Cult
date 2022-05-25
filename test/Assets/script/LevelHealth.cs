@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+
+[System.Serializable]
+
 
 public class LevelHealth : MonoBehaviour
 {
@@ -9,31 +14,40 @@ public class LevelHealth : MonoBehaviour
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
-    public static float levelHealth;
-    
+    public static float levelHealth; 
     public Text txt;
     public float maxhealth = 100;
     public bool start;
-    
+
+    public GameObject tp;
+    public enamyCount enamyCount;
+
     private bool isOnDeadZone = false;
 
    
     void Start()
     {
-        levelHealth = 100; //Комментируй строку, если тестишь с главного меню
         Player = gameObject;
     }
 
 
     void Update()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (enamyCount.count == 1)
+            {
+                tp.SetActive(true);
+            }
+        }
+
         if ((levelHealth > maxhealth) || (start == true))
         {
             start = false;
             levelHealth = maxhealth;
         }
 
-        txt.text = "HP " + Mathf.Floor(levelHealth);
+        txt.text = "" + Mathf.Floor(levelHealth);
 
         if (levelHealth <= 0)
         {
