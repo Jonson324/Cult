@@ -38,4 +38,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Fithscene3.unity
     guid: 9b161e31a8e638345bb0450d6b7e4aab
+  - enabled: 1
+    path: Assets/levels/Copy/Fithscene3 1.unity
+    guid: 4a8c41cb8cd1a31449c8a43ba92da581
+  - enabled: 1
+    path: Assets/levels/Copy/Stairs 1.unity
+    guid: 5f7b1d18f1455554daf4aa9551ccae40
+  - enabled: 1
+    path: Assets/levels/Copy/fight wiht skel 1.unity
+    guid: d6c3bf7fc3ca55a4c9a4b406417f0f66
+  - enabled: 1
+    path: Assets/levels/Copy/Tutorial 1.unity
+    guid: a739b660d22757645935765c16c2d925
+  - enabled: 1
+    path: Assets/levels/Copy/treasury 1.unity
+    guid: 6d49db483b285d34694fea2633d95dac
   m_configObjects: {}

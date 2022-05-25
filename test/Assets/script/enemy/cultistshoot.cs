@@ -25,7 +25,7 @@ public class cultistshoot : MonoBehaviour
        
         if (firerate <= 0)
         {
-            firerate = 2.30f;
+            firerate = 1.8f;
             Shoot();
         }
     }
