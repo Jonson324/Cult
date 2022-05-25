@@ -16,6 +16,7 @@ TagManager:
   - Ground
   - Cultist
   - CultistAttack
+  - tp1
   layers:
   - Default
   - TransparentFX
