@@ -34,7 +34,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AtackCult
-  m_Speed: 1
+  m_Speed: 1.2
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -66,7 +66,7 @@ AnimatorStateMachine:
     m_Position: {x: 374.97583, y: 235.96481, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5052715683672409366}
-    m_Position: {x: 420, y: 400, z: 0}
+    m_Position: {x: 430, y: 400, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
