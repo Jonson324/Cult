@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class enemy_hp : MonoBehaviour
 {
+    public amulet amuletScript;
     [SerializeField] public List<Items> Rareitems;
     [SerializeField] public List<Items> items;
     public double Health;
-    
 
     private void Start()
     {
@@ -23,12 +23,10 @@ public class enemy_hp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
-
         if (collision.gameObject.tag == "fireboll")
         {
-            Health -= 10;
-            
+            Health -= amuletScript.nonstatic_dmg;
+
             if (Health <= 0)
             {
 

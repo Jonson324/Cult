@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class shop : MonoBehaviour {
-    private shop.DataPlayer dataPlayer = new shop.DataPlayer();
+    private DataPlayer dataPlayer = new DataPlayer();
     public inDialog inDialog;
     public task taskScript;
     [HideInInspector] public string nameItem; //имя товара
@@ -12,14 +12,18 @@ public class shop : MonoBehaviour {
     public GameObject Shop; //магазин
     public Text monk; //отображение денег
     public GameObject[] allItem;  //массив товаров
-    [HideInInspector] public bool secretScroll; //заклинание победы
+
+    public List<Button> pageButtons = new List<Button>();
+    public List<GameObject> pageList = new List<GameObject>();
+    public int current_page;
+    public int next_page;
 
     public class DataPlayer {
         public int money;
         public List<string> buyItem = new List<string>();
     }
 
-    private void Start() {
+    public void Start() {
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
@@ -27,6 +31,7 @@ public class shop : MonoBehaviour {
             saveGame();
             loadGame();
         }
+        pageButtons[current_page].interactable = false;
     }
 
     private void Update() {
@@ -44,6 +49,10 @@ public class shop : MonoBehaviour {
             for (int j = 0; j < allItem.Length; j++) {
                 if (allItem[j].GetComponent<item>().nameItem.text.ToString() == dataPlayer.buyItem[i]) {
                     allItem[j].GetComponent<item>().priceItem.text = "Куплено";
+                    allItem[j].GetComponent<item>().priceObj[0].SetActive(false);
+                    allItem[j].GetComponent<item>().priceObj[1].SetActive(false);
+                    allItem[j].GetComponent<item>().buyed.SetActive(true);
+                    allItem[j].GetComponent<item>().isBuy = true;
                 }
             }
         }
@@ -61,5 +70,48 @@ public class shop : MonoBehaviour {
     public void closeShop() {
         Shop.SetActive(false);
         taskScript.bye = true;
+        pageList[current_page].SetActive(false);
+        pageList[0].SetActive(true);
+        pageButtons[current_page].interactable = true;
+        pageButtons[0].interactable = false;
+        current_page = 0;
+    }
+
+    public void Robe() {
+        next_page = 0;
+        nextPage();
+    }
+
+    public void Arm() {
+        next_page = 1;
+        nextPage();
+    }
+
+    public void Pants() {
+        next_page = 2;
+        nextPage();
+    }
+
+    public void Bracelet() {
+        next_page = 3;
+        nextPage();
+    }
+
+    public void Ring() {
+        next_page = 4;
+        nextPage();
+    }
+
+    public void Crystall() {
+        next_page = 5;
+        nextPage();
+    }
+
+    private void nextPage() {
+        pageList[current_page].SetActive(false);
+        pageList[next_page].SetActive(true);
+        pageButtons[current_page].interactable = true;
+        pageButtons[next_page].interactable = false;
+        current_page = next_page;
     }
 }

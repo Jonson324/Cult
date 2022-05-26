@@ -230,6 +230,7 @@ MonoBehaviour:
   - {fileID: 7415248711997468796}
   bye: {fileID: 8632949132523946925}
   end: 0
+  material: 0
   score: 0
 --- !u!1 &3410909669064982598
 GameObject:

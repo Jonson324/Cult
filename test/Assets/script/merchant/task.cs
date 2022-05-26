@@ -5,17 +5,21 @@ using UnityEngine;
 public class task : MonoBehaviour {
     public inDialog inDialogScript;
     public dialog DialogScript;
+    public PauseMenu pauseMenuScript;
+    public amulet amuletScript;
+
     public GameObject merch_name;
     [HideInInspector] public bool quest;
     public GameObject quest_dialog;
-    [HideInInspector] public bool quest_started;
+    [HideInInspector] public static bool quest_started;
     public GameObject ring;
     public GameObject thx;
     [HideInInspector] public bool thx1;
-    public bool quest_completed;
+    public static bool quest_completed;
     public GameObject current_task;
     public GameObject keep_search;
     [HideInInspector] public bool searching = false;
+
     public GameObject shop_dialog;
     public GameObject hint;
     public GameObject shop;
@@ -25,6 +29,8 @@ public class task : MonoBehaviour {
     public GameObject buttons;
     public GameObject talk;
     [HideInInspector] public bool talkin;
+    [HideInInspector] public bool secretScroll;
+    public GameObject scrollButton;
     int i = 0;
 
     public List<GameObject> quest_phrases = new List<GameObject>();
@@ -43,46 +49,48 @@ public class task : MonoBehaviour {
             bye_dialog.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (inDialogScript.in_dialog == true) && (quest == true) && (quest_started == false) && (quest_completed == false)) {
-            if (i != quest_phrases.Count - 1) {
-                quest_phrases[i].SetActive(false);
-                quest_phrases[i + 1].SetActive(true);
-                i += 1;
-            } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); merch_name.SetActive(false); }
-        }
+        if ((inDialogScript.in_dialog == true) && (pauseMenuScript.GameISPause == false)) {
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (quest == true) && (quest_started == false) && (quest_completed == false)) {
+                if (i != quest_phrases.Count - 1) {
+                    quest_phrases[i].SetActive(false);
+                    quest_phrases[i + 1].SetActive(true);
+                    i += 1;
+                } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); merch_name.SetActive(false); }
+            }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (searching == true)) {
-            keep_search.SetActive(false);
-            searching = false;
-            merch_name.SetActive(false);
-            inDialogScript.in_dialog = false;
-        }
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (searching == true)) {
+                keep_search.SetActive(false);
+                searching = false;
+                merch_name.SetActive(false);
+                inDialogScript.in_dialog = false;
+            }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (thx1 == true)) {
-            thx.SetActive(false);
-            inDialogScript.in_dialog = false;
-            thx1 = false;
-            merch_name.SetActive(false);
-            hint.SetActive(true);
-        }
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (thx1 == true)) {
+                thx.SetActive(false);
+                inDialogScript.in_dialog = false;
+                thx1 = false;
+                merch_name.SetActive(false);
+                hint.SetActive(true);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (bye == true)) {
-            bye_dialog.SetActive(false);
-            inDialogScript.in_dialog = false;
-            bye = false;
-            merch_name.SetActive(false);
-            hint.SetActive(true);
-        }
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (bye == true)) {
+                bye_dialog.SetActive(false);
+                inDialogScript.in_dialog = false;
+                bye = false;
+                merch_name.SetActive(false);
+                hint.SetActive(true);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (reply_No == true)) {
-            shop_dialog.SetActive(false);
-            inDialogScript.in_dialog = false;
-            shop_phrases[0].SetActive(true);
-            buttons.SetActive(true);
-            shop_phrases[1].SetActive(false);
-            reply_No = false;
-            merch_name.SetActive(false);
-            hint.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (reply_No == true)) {
+                shop_dialog.SetActive(false);
+                inDialogScript.in_dialog = false;
+                shop_phrases[0].SetActive(true);
+                buttons.SetActive(true);
+                shop_phrases[1].SetActive(false);
+                reply_No = false;
+                merch_name.SetActive(false);
+                hint.SetActive(true);
+            }
         }
     }
 
@@ -103,6 +111,9 @@ public class task : MonoBehaviour {
                         quest_dialog.SetActive(true);
                     } else {
                         shop_dialog.SetActive(true);
+                        if (secretScroll) {
+                            scrollButton.SetActive(true);
+                        }
                     }
                 }
             }
@@ -139,5 +150,27 @@ public class task : MonoBehaviour {
         talk.SetActive(true);
         talkin = true;
         DialogScript.one = true;
+    }
+
+    public void objectFound() {
+        quest_started = false;
+        quest_completed = true;
+    }
+
+    public void Scroll() {
+        secretScroll = true;
+    }
+
+    public void ScrollBuy() {
+        scrollButton.SetActive(false);
+        amuletScript.ScrollActivate();
+    }
+
+    public void ScrollDeny() {
+        
+    }
+
+    public void ScrollNoMoney() {
+
     }
 }
