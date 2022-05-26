@@ -3541,12 +3541,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &226654747
 Animator:
   serializedVersion: 3
@@ -5703,12 +5705,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &421939413
 Animator:
   serializedVersion: 3
@@ -6161,9 +6165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!114 &452707885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6965,12 +6971,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &506985498
 Animator:
   serializedVersion: 3
@@ -9674,12 +9682,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &656170951
 Animator:
   serializedVersion: 3
@@ -10662,9 +10672,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!114 &704009532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11449,9 +11461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!65 &737060939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11921,12 +11935,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &774893895
 Animator:
   serializedVersion: 3
@@ -12434,6 +12450,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4732258041065059873, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
   m_PrefabInstance: {fileID: 804249209}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &804249211 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3278661221601681649, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 804249209}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &811892421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13132,9 +13159,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!65 &835596023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13472,12 +13501,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &862133032
 Animator:
   serializedVersion: 3
@@ -13757,12 +13788,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &869886679
 Animator:
   serializedVersion: 3
@@ -14848,9 +14881,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!65 &947948844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15240,9 +15275,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!114 &980773917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16428,12 +16465,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &1043684826
 Animator:
   serializedVersion: 3
@@ -17890,9 +17929,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!65 &1160968814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20718,12 +20759,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &1355857554
 Animator:
   serializedVersion: 3
@@ -25931,12 +25974,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &1799558625
 Animator:
   serializedVersion: 3
@@ -26378,12 +26423,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &1840382607
 Animator:
   serializedVersion: 3
@@ -26947,7 +26994,7 @@ Transform:
   - {fileID: 1250771742}
   - {fileID: 1383570233}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1862511981
 PrefabInstance:
@@ -28294,12 +28341,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 0}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
+  enamyCount: {fileID: 0}
 --- !u!95 &1936569530
 Animator:
   serializedVersion: 3

@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class staff_dmg : MonoBehaviour
 {
-
+    public inDialog inDialogScript;
+    public PauseMenu pauseMenuScript;
     public Transform bullet;
     public float bulletSpeed = 10000;
     public AudioClip Fire;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && (pauseMenuScript.GameISPause == false) && (inDialogScript.in_dialog == false))
         {
             Transform bulletInstance = (Transform)Instantiate(bullet, GameObject.Find("spawn").transform.position, Quaternion.identity);
             bulletInstance.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
