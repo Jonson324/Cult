@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class enamyCount : MonoBehaviour
 {
     Text text;
-    public int count;
+    public static int count;
 
     void Start()
     {
@@ -16,6 +16,6 @@ public class enamyCount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = count.ToString();
+        //text.text = count.ToString();
     }
 }

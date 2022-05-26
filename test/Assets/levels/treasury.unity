@@ -539,6 +539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 1490814247}
+  lighth: {fileID: 0}
 --- !u!65 &71471598
 BoxCollider:
   m_ObjectHideFlags: 0
