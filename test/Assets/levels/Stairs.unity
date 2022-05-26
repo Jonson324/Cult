@@ -647,14 +647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &44737529
 Animator:
   serializedVersion: 3
@@ -5293,7 +5292,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -7215,7 +7214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -8367,7 +8366,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -9033,7 +9032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 28.149, y: 90, z: 90}
 --- !u!1001 &382372392
 PrefabInstance:
@@ -11328,7 +11327,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11634,14 +11633,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &482593167
 Animator:
   serializedVersion: 3
@@ -12020,6 +12018,26 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: tp
+      value: 
+      objectReference: {fileID: 1432920095}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: tp1
+      value: 
+      objectReference: {fileID: 1529818712}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: tp2
+      value: 
+      objectReference: {fileID: 618944717}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: tp3
+      value: 
+      objectReference: {fileID: 1127846330}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: tp4
+      value: 
+      objectReference: {fileID: 969557688}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: txt
       value: 
       objectReference: {fileID: 1616181944}
@@ -12031,10 +12049,6 @@ PrefabInstance:
       propertyPath: PanelDead
       value: 
       objectReference: {fileID: 1631268877}
-    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
-      propertyPath: enamyCount
-      value: 
-      objectReference: {fileID: 1616181946}
     - target: {fileID: 4732258041065059885, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -12053,17 +12067,6 @@ PrefabInstance:
       objectReference: {fileID: 415043323}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
---- !u!114 &489918972 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3278661221601681649, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
-  m_PrefabInstance: {fileID: 489918971}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &490909225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14892,6 +14895,115 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617025759}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &618944717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 618944718}
+  - component: {fileID: 618944722}
+  - component: {fileID: 618944721}
+  - component: {fileID: 618944720}
+  - component: {fileID: 618944719}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &618944718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618944717}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.45970085, y: 10.499692, z: -3.8956416}
+  m_LocalScale: {x: 1.1434163, y: 1.1434159, z: 1.1434163}
+  m_Children: []
+  m_Father: {fileID: 382372393}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &618944719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618944717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef96a1e76e6b6024cb9c9f05faa50ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndex: 5
+--- !u!65 &618944720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618944717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6696496, y: 8.764025, z: 7.263952}
+  m_Center: {x: -2.7894027, y: -3.8820093, z: -0.16543785}
+--- !u!23 &618944721
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618944717}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &618944722
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618944717}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &622692891
 GameObject:
@@ -22802,7 +22914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &969557689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22827,8 +22939,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.1889443, y: 8.764021, z: 7.263952}
-  m_Center: {x: -0.52975696, y: -3.882009, z: -0.16543797}
+  m_Size: {x: 7.188944, y: 8.764021, z: 2.9268267}
+  m_Center: {x: -0.5297569, y: -3.882009, z: 2.0031245}
 --- !u!23 &969557691
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22885,12 +22997,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969557688}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -113.357, y: 13.18, z: 6.85}
-  m_LocalScale: {x: 0.23957999, y: 0.23957999, z: 0.23957999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7, y: 9.92, z: -2.6}
+  m_LocalScale: {x: 1.1434163, y: 1.1434159, z: 1.1434163}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1042688291}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974147072
 GameObject:
@@ -24833,14 +24945,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &1048652353
 Animator:
   serializedVersion: 3
@@ -26830,7 +26941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1127846331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26855,8 +26966,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.1889443, y: 8.764021, z: 7.263952}
-  m_Center: {x: -0.52975696, y: -3.882009, z: -0.16543797}
+  m_Size: {x: 7.188944, y: 8.764025, z: 3.5680785}
+  m_Center: {x: -0.52975684, y: -3.8820093, z: 1.6824986}
 --- !u!23 &1127846333
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26913,12 +27024,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127846330}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -113.357, y: 13.18, z: -9.48}
-  m_LocalScale: {x: 0.23957999, y: 0.23957999, z: 0.23957999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.036891982, y: 10.845464, z: -3.0910618}
+  m_LocalScale: {x: 1.1346537, y: 1.1346533, z: 1.1346537}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1352786310}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1132363804
 GameObject:
@@ -28332,7 +28443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -29606,7 +29717,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 28.149, y: 90, z: 90}
 --- !u!1 &1214389632
 GameObject:
@@ -31952,14 +32063,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &1317200600
 Animator:
   serializedVersion: 3
@@ -32665,7 +32775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -41.173, y: -40.968, z: 22.023}
 --- !u!1 &1336749411
 GameObject:
@@ -33613,7 +33723,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -33974,7 +34084,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -34507,14 +34617,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &1398452009
 Animator:
   serializedVersion: 3
@@ -35431,7 +35540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1432920096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35522,11 +35631,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432920095}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -108.407, y: 13.18, z: 13.437}
-  m_LocalScale: {x: 0.23957999, y: 0.23957999, z: 0.23957999}
+  m_LocalPosition: {x: -0.27203366, y: 10.733547, z: -1.2074611}
+  m_LocalScale: {x: 1.1434163, y: 1.1434159, z: 1.1434163}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 392875040}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1433844327 stripped
 Transform:
@@ -38453,13 +38562,14 @@ GameObject:
   - component: {fileID: 1529818717}
   - component: {fileID: 1529818716}
   - component: {fileID: 1529818715}
+  - component: {fileID: 1529818714}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1529818713
 Transform:
   m_ObjectHideFlags: 0
@@ -38474,6 +38584,19 @@ Transform:
   m_Father: {fileID: 1907570669}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1529818714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529818712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef96a1e76e6b6024cb9c9f05faa50ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndex: 15
 --- !u!65 &1529818715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38759,7 +38882,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 67.138, y: 90, z: 90}
 --- !u!1 &1534361915
 GameObject:
@@ -39459,7 +39582,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562477309}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -40763,17 +40886,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 258251983799440632, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
   m_PrefabInstance: {fileID: 1616181943}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1616181946 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 687524406881233755, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
-  m_PrefabInstance: {fileID: 1616181943}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac90d059fd0daf8488094b74ed99e881, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1617836566
 GameObject:
   m_ObjectHideFlags: 0
@@ -44239,14 +44351,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &1736336237
 Animator:
   serializedVersion: 3
@@ -45388,14 +45499,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &1776310434
 Animator:
   serializedVersion: 3
@@ -49818,7 +49928,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -50566,7 +50676,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3e900baf8a673343874703cfdd21d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -52465,14 +52575,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amuletScript: {fileID: 489918972}
   Rareitems:
   - {fileID: 0}
   items:
   - {fileID: 0}
   - {fileID: 0}
   Health: 100
-  enamyCount: {fileID: 1616181946}
+  enamyCount: {fileID: 0}
 --- !u!95 &2106580863
 Animator:
   serializedVersion: 3

@@ -14,33 +14,61 @@ public class LevelHealth : MonoBehaviour
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
-    public static float levelHealth = 100; 
+    public static float levelHealth;
+    public static Items mon;
+   [SerializeField] public static int coin;
     public Text txt;
-    public static float maxhealth = 100;
+    public float maxhealth = 100;
     public bool start;
-
     public GameObject tp;
+    public GameObject tp1;
+    public GameObject tp2;
+    public GameObject tp3;
+    public GameObject tp4;
     public enamyCount enamyCount;
-
+    
     private bool isOnDeadZone = false;
-
+    
    
     void Start()
     {
+        
         Player = gameObject;
     }
 
-
+    
     void Update()
     {
+       
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            if (enamyCount.count == 1)
+           
+            if (enamyCount.count == 2)
             {
                 tp.SetActive(true);
+                tp1.SetActive(true);
+
             }
         }
-
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            if (enamyCount.count == 8)
+            {
+                tp.SetActive(true);
+                tp1.SetActive(true);
+                tp2.SetActive(true);
+                tp3.SetActive(true);
+                tp4.SetActive(true);
+            }
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 10)
+        {
+            if (enamyCount.count == 19)
+            {
+                tp.SetActive(true);
+                tp1.SetActive(true);
+            }
+        }
         if ((levelHealth > maxhealth) || (start == true))
         {
             start = false;
@@ -49,16 +77,16 @@ public class LevelHealth : MonoBehaviour
 
         txt.text = "" + Mathf.Floor(levelHealth);
 
-        if (levelHealth <= 0)
-        {
-            PanelDead.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            DeadCamera.SetActive(true);
-            DeadCamera.transform.parent = Parent.transform;
-            Destroy(gameObject);
-        }
-        
+        //if (levelHealth <= 0)
+        //{
+        //    PanelDead.SetActive(true);
+        //    Cursor.lockState = CursorLockMode.None;
+        //    Cursor.visible = true;
+        //    DeadCamera.SetActive(true);
+        //    DeadCamera.transform.parent = Parent.transform;
+        //    Destroy(gameObject);
+        //}
+
 
     }
 
@@ -83,6 +111,20 @@ public class LevelHealth : MonoBehaviour
         {
             levelHealth -= 15;
         }
+        if (other.tag == "heal")
+        {
+            levelHealth = maxhealth;
+        }
+        if (other.tag == "money")
+        {
+            coin += mon.money;
+            Destroy(GameObject.FindGameObjectWithTag("money"));
+        }
+        if (other.tag == "HealPotion")
+        {
+            levelHealth += 25;
+            Destroy(GameObject.FindGameObjectWithTag("HealPotion"));
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -99,9 +141,5 @@ public class LevelHealth : MonoBehaviour
         {
             isOnDeadZone = false;
         }
-    }
-
-    public void HealthUpgrade(int x) {
-        maxhealth += x;
     }
 }

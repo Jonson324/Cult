@@ -37,7 +37,8 @@ public class enemy_hp : MonoBehaviour
                 else if (Random.Range(0, 100) <= 15)
                 {
                     Instantiate(Rareitems[Random.Range(0, items.Count)], transform.position, Quaternion.identity);
-                } 
+                }
+                
                 Destroy(gameObject);
                 enamyCount.count += 1;
             }
