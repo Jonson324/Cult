@@ -17,6 +17,12 @@ TagManager:
   - Cultist
   - CultistAttack
   - tp1
+  - telopartaion
+  - openchest
+  - shop_item
+  - heal
+  - money
+  - HealPotion
   layers:
   - Default
   - TransparentFX
