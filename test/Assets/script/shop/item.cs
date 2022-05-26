@@ -8,18 +8,17 @@ public class item : MonoBehaviour
     public shop shopScript; //ссылка на скрипт магазина
     public Text nameItem; //имя товара
     public Text priceItem; //цена товара
+    public GameObject buyed;
+    public List<GameObject> priceObj = new List<GameObject>();
     int price;
+    public bool isBuy;
      
     public void buyItem () {
-        shopScript.nameItem = nameItem.text;
-        int.TryParse(priceItem.text, out price);
-        shopScript.priceItem = price;
-        shopScript.buyItem();
-    }
-
-    void Update() {
-        if ((shopScript.secretScroll == true) && (nameItem.text == "Странный свиток")) {
-            gameObject.SetActive(true);
+        if (isBuy == false) {
+            shopScript.nameItem = nameItem.text;
+            int.TryParse(priceItem.text, out price);
+            shopScript.priceItem = price;
+            shopScript.buyItem();
         }
     }
 }

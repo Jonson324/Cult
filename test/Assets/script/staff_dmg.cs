@@ -23,8 +23,7 @@ public class staff_dmg : MonoBehaviour
         {
             Transform bulletInstance = (Transform)Instantiate(bullet, GameObject.Find("spawn").transform.position, Quaternion.identity);
             bulletInstance.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
-            GetComponent<AudioSource>().PlayOneShot(Fire);
-            
+            GetComponent<AudioSource>().PlayOneShot(Fire);            
         } 
     }
 }
