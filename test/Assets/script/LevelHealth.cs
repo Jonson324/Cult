@@ -14,9 +14,9 @@ public class LevelHealth : MonoBehaviour
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
-    public static float levelHealth; 
+    public static float levelHealth = 100; 
     public Text txt;
-    public float maxhealth = 100;
+    public static float maxhealth = 100;
     public bool start;
 
     public GameObject tp;
@@ -99,5 +99,9 @@ public class LevelHealth : MonoBehaviour
         {
             isOnDeadZone = false;
         }
+    }
+
+    public void HealthUpgrade(int x) {
+        maxhealth += x;
     }
 }
