@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class enemy_hp : MonoBehaviour
 {
+    public amulet amuletScript;
     [SerializeField] public List<Items> Rareitems;
     [SerializeField] public List<Items> items;
     public double Health;
@@ -21,19 +22,14 @@ public class enemy_hp : MonoBehaviour
         }
     }
 
-  
-
     private void OnCollisionEnter(Collision collision)
     {
-
-
         if (collision.gameObject.tag == "fireboll")
         {
-            Health -= 10;
+            Health -= amuletScript.nonstatic_dmg;
             
             if (Health <= 0)
-            {
-                
+            {                
                 if (Random.Range(0, 100) > 15)
                 {
                     Instantiate(items[Random.Range(0, items.Count)], transform.position, Quaternion.identity);
@@ -46,9 +42,6 @@ public class enemy_hp : MonoBehaviour
                 Destroy(gameObject);
                 enamyCount.count += 1;
             }
-            
         }
-        
     }
-
 }
