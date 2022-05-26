@@ -9704,22 +9704,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inDialogScript: {fileID: 0}
+  DialogScript: {fileID: 0}
+  pauseMenuScript: {fileID: 0}
+  amuletScript: {fileID: 0}
+  merch_name: {fileID: 0}
+  quest: 0
   quest_dialog: {fileID: 0}
-  quest_started: 0
   ring: {fileID: 0}
   thx: {fileID: 0}
   thx1: 0
-  quest_completed: 0
   current_task: {fileID: 0}
   keep_search: {fileID: 0}
   searching: 0
-  shop_doalog: {fileID: 0}
+  shop_dialog: {fileID: 0}
   hint: {fileID: 0}
   shop: {fileID: 0}
   bye_dialog: {fileID: 0}
   bye: 0
   reply_No: 0
   buttons: {fileID: 0}
+  talk: {fileID: 0}
+  talkin: 0
+  secretScroll: 0
+  scrollButton: {fileID: 0}
   quest_phrases:
   - {fileID: 0}
   - {fileID: 0}

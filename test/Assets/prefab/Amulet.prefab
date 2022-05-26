@@ -43,7 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  mana: 0
-  max_mana: 0
-  mana_hit: 0
+  nonstatic_pts: 0
+  nonstatic_dmg: 0
