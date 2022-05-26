@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class dialog : MonoBehaviour {
     public task taskScript;
-    public shop shopScript;
     
     [HideInInspector] public bool one;
     public List<GameObject> first = new List<GameObject>();
@@ -93,6 +92,7 @@ public class dialog : MonoBehaviour {
                     foreach (var button in buttonsActive) { button.SetActive(true); }
                     buttonsActive[4].SetActive(false);
                     end = true;
+                    taskScript.scrollButton.SetActive(true);
                 }
             }
 
@@ -188,7 +188,7 @@ public class dialog : MonoBehaviour {
     }
 
     public void How() {
-        shopScript.secretScroll = true;
+        taskScript.secretScroll = true;
         four_how = true;
         Next(fourth, fourth_how);
         ButtonOff(buttonsInteract, 3);

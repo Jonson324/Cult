@@ -15,7 +15,7 @@ public class interact : MonoBehaviour {
     [HideInInspector] public bool thx1;
     [HideInInspector] public bool quest_completed;
     [HideInInspector] public bool still;
-    [HideInInspector] public bool start = true;
+    public bool start;
     public GameObject welcome_dialog;
     [HideInInspector] public bool welcome;
     public GameObject forge;
