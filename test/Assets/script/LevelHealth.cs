@@ -4,13 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-[System.Serializable]
-
-
 public class LevelHealth : MonoBehaviour
 {
     public GameObject Player;
+    public roomsch roomsch;
     public GameObject DeadCamera;
     public GameObject Parent;
     public GameObject PanelDead;
@@ -18,7 +15,7 @@ public class LevelHealth : MonoBehaviour
     public static Items mon;
    [SerializeField] public static int coin;
     public Text txt;
-    public float maxhealth = 100;
+    public static float maxhealth = 100;
     public bool start;
     public GameObject tp;
     public GameObject tp1;
@@ -141,5 +138,10 @@ public class LevelHealth : MonoBehaviour
         {
             isOnDeadZone = false;
         }
+    }
+
+    public void HealthUpgrade(int x)
+    {
+        maxhealth += x;
     }
 }

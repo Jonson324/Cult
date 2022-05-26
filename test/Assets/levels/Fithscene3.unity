@@ -2106,6 +2106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 17
+  roomsch: {fileID: 0}
 --- !u!65 &170147578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3610,6 +3611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -4613,6 +4615,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2198561727333378718, guid: 9e3065b0875564c478ef9ce77c3ea811, type: 3}
   m_PrefabInstance: {fileID: 311260065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &314924831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 258251983799440632, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
+  m_PrefabInstance: {fileID: 1144990016}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &319197218
 PrefabInstance:
@@ -5681,6 +5688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -6140,6 +6148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -6157,10 +6166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 1938173680}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!195 &452707886
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6945,6 +6954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -9747,6 +9757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -10736,6 +10747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -10753,10 +10765,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 1938173680}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!195 &704009533
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11508,10 +11520,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 1938173680}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!114 &737060938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11524,6 +11536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -11997,6 +12010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -12512,6 +12526,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4732258042086984327, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: inDialogScript
+      value: 
+      objectReference: {fileID: 1156878417}
+    - target: {fileID: 4732258042086984327, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: pauseMenuScript
+      value: 
+      objectReference: {fileID: 1392026498}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
 --- !u!4 &804249210 stripped
@@ -12519,6 +12541,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4732258041065059873, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
   m_PrefabInstance: {fileID: 804249209}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &804249211 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3278661221601681649, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 804249209}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &811892421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13201,10 +13234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 872630978}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!114 &835596022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13217,6 +13250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -13558,6 +13592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -13844,6 +13879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -14267,6 +14303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 9
+  roomsch: {fileID: 0}
 --- !u!65 &908291339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14920,10 +14957,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 581210574}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!114 &947948843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14936,6 +14973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -15329,6 +15367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -15346,10 +15385,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 1938173680}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!195 &980773918
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16518,6 +16557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -17596,6 +17636,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2198561727333378718, guid: 9e3065b0875564c478ef9ce77c3ea811, type: 3}
   m_PrefabInstance: {fileID: 1134123828}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1139741040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.269707
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.449321
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.163277
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722343, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 314924831}
+    - target: {fileID: 7778404138177722345, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: m_Name
+      value: inDialog
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84039677334c68248840b99f94a35255, type: 3}
 --- !u!1001 &1144990016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17895,6 +17996,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -6927426503620455990, guid: 18511982b2590e84fb0caa09ccbba0a0, type: 3}
   m_PrefabInstance: {fileID: 1149571279}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1156878417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
+  m_PrefabInstance: {fileID: 1139741040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387623d629a270442a31dd3a3593f415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1160968807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18070,10 +18182,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 804249210}
   shootPoint: {fileID: 1938173680}
   turnSpeed: 2
-  Player: {fileID: 0}
+  Player: {fileID: 804249210}
 --- !u!114 &1160968813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18086,6 +18198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems: []
   items: []
   Health: 100
@@ -20911,6 +21024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -21404,6 +21518,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2198561727333378718, guid: 9e3065b0875564c478ef9ce77c3ea811, type: 3}
   m_PrefabInstance: {fileID: 1389324216}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1392026498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 796974426680212528, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
+  m_PrefabInstance: {fileID: 207143699}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a015573ec0bcce34eae455c69bba60b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1394040445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26326,6 +26451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -26774,6 +26900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:
@@ -28599,6 +28726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 804249211}
   Rareitems:
   - {fileID: 0}
   items:

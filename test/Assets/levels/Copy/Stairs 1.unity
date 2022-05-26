@@ -20224,7 +20224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef96a1e76e6b6024cb9c9f05faa50ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 15
+  sceneIndex: 18
 --- !u!65 &882778202
 BoxCollider:
   m_ObjectHideFlags: 0

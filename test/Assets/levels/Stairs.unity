@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.0040702783, g: 0.00022256654, b: 0.000000056362918, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -647,6 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -11633,6 +11634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -14909,6 +14911,7 @@ GameObject:
   - component: {fileID: 618944721}
   - component: {fileID: 618944720}
   - component: {fileID: 618944719}
+  - component: {fileID: 618944723}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -14943,6 +14946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 5
+  roomsch: {fileID: 0}
 --- !u!65 &618944720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15005,6 +15009,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618944717}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &618944723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618944717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bf239fc4770414c82dffd3a1d407d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enamyCount: {fileID: 0}
+  chk: 0
 --- !u!1 &622692891
 GameObject:
   m_ObjectHideFlags: 0
@@ -18732,6 +18750,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783293473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &785394340 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3278661221601681649, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 489918971}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &787137811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22928,6 +22957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 6
+  roomsch: {fileID: 0}
 --- !u!65 &969557690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24945,6 +24975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -26955,6 +26986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 5
+  roomsch: {fileID: 0}
 --- !u!65 &1127846332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32063,6 +32095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -34617,6 +34650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -35554,6 +35588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 6
+  roomsch: {fileID: 0}
 --- !u!65 &1432920097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38597,6 +38632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 15
+  roomsch: {fileID: 0}
 --- !u!65 &1529818715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44351,6 +44387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -45499,6 +45536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
@@ -52575,6 +52613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72380964de31d9d4e8caa1e71a5b3f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 785394340}
   Rareitems:
   - {fileID: 0}
   items:
