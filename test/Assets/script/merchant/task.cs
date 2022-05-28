@@ -46,6 +46,8 @@ public class task : MonoBehaviour {
     public List<GameObject> scroll_phrases = new List<GameObject>();
     public List<GameObject> scrollButtons = new List<GameObject>();
 
+    public AudioSource shop_open;
+
     public class DataPlayer {
         public int money;
         public List<string> buyItem = new List<string>();
@@ -176,6 +178,7 @@ public class task : MonoBehaviour {
         merch_name.SetActive(false);
         shop_dialog.SetActive(false);
         shop.SetActive(true);
+        shop_open.Play();
     }
 
     public void No() {
