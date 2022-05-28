@@ -17,7 +17,7 @@ public class task : MonoBehaviour {
     public GameObject ring;
     public GameObject thx;
     [HideInInspector] public bool thx1;
-    public static bool quest_completed = true;
+    public static bool quest_completed;
     public GameObject current_task;
     public GameObject keep_search;
     [HideInInspector] public bool searching = false;
