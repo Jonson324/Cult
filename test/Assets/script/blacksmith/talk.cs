@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class talk : MonoBehaviour {
     public interact interactScript;
+    public amulet amuletScript;
+    private DataPlayer dataPlayer = new DataPlayer();
 
     [HideInInspector] public bool topic;
     public List<GameObject> topic_phrases = new List<GameObject>();
@@ -36,10 +38,15 @@ public class talk : MonoBehaviour {
 
     public GameObject bye;
     [HideInInspector] public bool end;
-    [HideInInspector] public bool material;
+    public static bool good_pts;
+    public static bool jade_only;
     int i = 0;
     public int score = 0;
 
+    public class DataPlayer {
+        public int jade_active = 0;
+        public int jade_earned = 0;
+    }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Mouse0) && (interactScript.talkin == true)) {
@@ -142,6 +149,8 @@ public class talk : MonoBehaviour {
         if ((question == 4) && (score == 3)) {
             Next(q3_phrases, good_result_phrases);
             smith_good_result = true;
+            if (good_pts == false) { amuletScript.PointsUpgrade(1); good_pts = true; }
+            
         }
         if ((question == 4) && (score < 3)) {
             Next(q3_phrases, bad_result_phrases);
@@ -176,7 +185,11 @@ public class talk : MonoBehaviour {
     public void Deal() {
         cult_deal = true;
         Next(details_phrases, deal_phrases);
-        material = true;
+        if (jade_only == false) {
+            jade_only = true;
+            dataPlayer.jade_active = 1;
+            PlayerPrefs.SetString("jade", JsonUtility.ToJson(dataPlayer));
+        }
     }
 
 
