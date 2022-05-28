@@ -27,7 +27,6 @@ public class shop : MonoBehaviour {
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
-            dataPlayer.money = 5000;
             saveGame();
             loadGame();
         }

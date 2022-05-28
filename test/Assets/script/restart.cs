@@ -9,7 +9,6 @@ public class restart : MonoBehaviour
     public void restartlevel()
     {
         health.start = true;
-        
         SceneManager.LoadScene(1);
     }
 }

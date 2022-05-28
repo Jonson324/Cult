@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class task : MonoBehaviour {
+    private DataPlayer dataPlayer = new DataPlayer();
     public inDialog inDialogScript;
     public dialog DialogScript;
     public PauseMenu pauseMenuScript;
@@ -15,7 +17,7 @@ public class task : MonoBehaviour {
     public GameObject ring;
     public GameObject thx;
     [HideInInspector] public bool thx1;
-    public static bool quest_completed;
+    public static bool quest_completed = true;
     public GameObject current_task;
     public GameObject keep_search;
     [HideInInspector] public bool searching = false;
@@ -30,12 +32,25 @@ public class task : MonoBehaviour {
     public GameObject talk;
     [HideInInspector] public bool talkin;
     [HideInInspector] public bool secretScroll;
-    public GameObject scrollButton;
+    [HideInInspector] public bool secretScrollNo;
+    [HideInInspector] public bool secretScrollYes;
+    public GameObject scroll_dialog;
+    public GameObject scrollBtn;
+    public Text money_txt;
+    public GameObject money_obj;
+    public GameObject message;
     int i = 0;
 
     public List<GameObject> quest_phrases = new List<GameObject>();
     public List<GameObject> shop_phrases = new List<GameObject>();
-    
+    public List<GameObject> scroll_phrases = new List<GameObject>();
+    public List<GameObject> scrollButtons = new List<GameObject>();
+
+    public class DataPlayer {
+        public int money;
+        public List<string> buyItem = new List<string>();
+    }
+
     void Update() {
         if (quest_started == true) {
             current_task.SetActive(true);
@@ -55,7 +70,7 @@ public class task : MonoBehaviour {
                     quest_phrases[i].SetActive(false);
                     quest_phrases[i + 1].SetActive(true);
                     i += 1;
-                } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); merch_name.SetActive(false); }
+                } else { quest_started = true; inDialogScript.in_dialog = false; quest_dialog.SetActive(false); ring.SetActive(true); merch_name.SetActive(false); i = 0; }
             }
 
             if (Input.GetKeyDown(KeyCode.Mouse0) && (searching == true)) {
@@ -91,6 +106,34 @@ public class task : MonoBehaviour {
                 merch_name.SetActive(false);
                 hint.SetActive(true);
             }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (secretScroll == true)) {
+                money_obj.SetActive(true);
+                if (dataPlayer.money > 5000) {
+                    scrollButtons[0].SetActive(true);
+                    scrollButtons[1].SetActive(true);
+                }
+                if (dataPlayer.money < 5000) {
+                    scrollButtons[2].SetActive(true);
+                }
+                secretScroll = false;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (secretScrollNo == true)) {
+                ScrollHide();
+                message.SetActive(false);
+                merch_name.SetActive(true);
+                shop_dialog.SetActive(true);
+                secretScrollNo = false;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (secretScrollYes == true)) {
+                ScrollHide();
+                merch_name.SetActive(false);
+                message.SetActive(true);
+                secretScrollYes = false;
+                secretScrollNo = true;
+            }
         }
     }
 
@@ -111,9 +154,6 @@ public class task : MonoBehaviour {
                         quest_dialog.SetActive(true);
                     } else {
                         shop_dialog.SetActive(true);
-                        if (secretScroll) {
-                            scrollButton.SetActive(true);
-                        }
                     }
                 }
             }
@@ -125,6 +165,7 @@ public class task : MonoBehaviour {
             hint.SetActive(true);
         }
     }
+
     void OnTriggerExit (Collider col) {
         if (col.tag == "Player") {
             hint.SetActive(false);
@@ -158,19 +199,44 @@ public class task : MonoBehaviour {
     }
 
     public void Scroll() {
+        shop_dialog.SetActive(false);
+        scroll_dialog.SetActive(true);
         secretScroll = true;
+        dataPlayer = JsonUtility.FromJson<DataPlayer>(PlayerPrefs.GetString("saveGame"));
+        money_txt.text = "На счету: " + dataPlayer.money;
     }
 
     public void ScrollBuy() {
-        scrollButton.SetActive(false);
+        dataPlayer.money -= 5000;
+        PlayerPrefs.SetString("saveGame", JsonUtility.ToJson(dataPlayer));
+        scrollBtn.SetActive(false);
         amuletScript.ScrollActivate();
+        ScrollEnd();
+        scroll_phrases[1].SetActive(true);
+        secretScrollYes = true;
     }
 
     public void ScrollDeny() {
-        
+        ScrollEnd();
+        scroll_phrases[2].SetActive(true);
+        secretScrollNo = true;
     }
 
     public void ScrollNoMoney() {
+        ScrollEnd();
+        scroll_phrases[3].SetActive(true);
+        secretScrollNo = true;
+    }
 
+    void ScrollEnd() {
+        foreach (var btn in scrollButtons) { btn.SetActive(false); }
+        money_obj.SetActive(false);
+        scroll_phrases[0].SetActive(false);
+    }
+
+    void ScrollHide() {
+        foreach (var phr in scroll_phrases) { phr.SetActive(false); }
+        scroll_dialog.SetActive(false);
+        scroll_phrases[0].SetActive(true);
     }
 }

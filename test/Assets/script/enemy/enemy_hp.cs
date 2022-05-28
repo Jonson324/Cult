@@ -12,11 +12,11 @@ public class enemy_hp : MonoBehaviour
 
     private void Start()
     {
-        if(gameObject.tag == "Cultist")
+        if (gameObject.tag == "Cultist")
         {
             Health = 15;
         }
-        if(gameObject.tag == "skelet")
+        if (gameObject.tag == "skelet")
         {
             Health = 25;
         }

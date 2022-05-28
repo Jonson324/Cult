@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class amulet : MonoBehaviour {
     public static int damage = 10;
-    public static int free_points;
+    public static int free_points = 2;
     public int nonstatic_pts;
     public int nonstatic_dmg;
     public static bool boss_weakened;
