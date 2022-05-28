@@ -9726,11 +9726,26 @@ MonoBehaviour:
   talk: {fileID: 0}
   talkin: 0
   secretScroll: 0
-  scrollButton: {fileID: 0}
+  secretScrollNo: 0
+  secretScrollYes: 0
+  scroll_dialog: {fileID: 0}
+  scrollBtn: {fileID: 0}
+  money_txt: {fileID: 0}
+  money_obj: {fileID: 0}
+  message: {fileID: 0}
   quest_phrases:
   - {fileID: 0}
   - {fileID: 0}
   shop_phrases:
+  - {fileID: 0}
+  - {fileID: 0}
+  scroll_phrases:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  scrollButtons:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!1 &9050785711609914668

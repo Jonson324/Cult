@@ -6,15 +6,34 @@ using UnityEngine.SceneManagement;
 public class NewScena : MonoBehaviour
 {
     public int sceneIndex;
-    
-    
+    public GameObject hint;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
-            SceneManager.LoadScene(sceneIndex);
+            if (Input.GetKey(KeyCode.E)) 
+            {
+                hint.SetActive(false);
+                SceneManager.LoadScene(sceneIndex);
+            }
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            hint.SetActive(true);
+        }
+    }
+
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            hint.SetActive(false);
+        }
+    }
 }
