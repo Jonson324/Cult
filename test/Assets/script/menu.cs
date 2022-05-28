@@ -11,6 +11,8 @@ public class menu : MonoBehaviour
     {
         lvlHealth.start = true;
         SceneManager.LoadScene(1);
+        PlayerPrefs.DeleteKey("saveGame");
+        PlayerPrefs.DeleteKey("jade");
     }
 
 

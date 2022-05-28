@@ -50,7 +50,7 @@ public class forge : MonoBehaviour {
 
     public void HealthUp() {
         if ((hp_level < 3) && (amuletScript.nonstatic_pts > 0)) {
-            levelHealtScript.HealthUpgrade(10);
+            levelHealtScript.HealthUpgrade(5);
             hp_level += 1;
             Upgrade(0, hp_level);
         }

@@ -538,6 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54407d6d50523c344b206a90b711639f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amuletScript: {fileID: 1820142498}
   items:
   - {fileID: 1490814247}
 --- !u!65 &71471598
@@ -4647,7 +4648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747319a37732804e87e1910b04f361b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  value: 0
 --- !u!65 &1490814248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5836,6 +5837,17 @@ PrefabInstance:
       objectReference: {fileID: 2070637757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+--- !u!114 &1820142498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3278661221601681649, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1820142497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1833202198
 GameObject:
   m_ObjectHideFlags: 0
