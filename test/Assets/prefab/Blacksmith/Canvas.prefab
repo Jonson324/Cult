@@ -751,7 +751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactScript: {fileID: 0}
-  amuletScript: {fileID: 0}
   topic: 0
   topic_phrases:
   - {fileID: 5913232332812600160}

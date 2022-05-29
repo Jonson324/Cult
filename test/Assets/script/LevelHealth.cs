@@ -129,8 +129,4 @@ public class LevelHealth : MonoBehaviour
             isOnDeadZone = false;
         }
     }
-
-    public void HealthUpgrade(int x) {
-        maxhealth += x;
-    }
 }

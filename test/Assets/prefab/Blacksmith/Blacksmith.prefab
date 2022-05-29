@@ -18027,7 +18027,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inDialogScript: {fileID: 0}
   talkScript: {fileID: 0}
-  healthScript: {fileID: 0}
   hammer_down: {fileID: 1933631127}
   smith_name: {fileID: 0}
   first_dialog: {fileID: 0}

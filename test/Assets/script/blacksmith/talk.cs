@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class talk : MonoBehaviour {
     public interact interactScript;
-    public amulet amuletScript;
     private DataPlayer dataPlayer = new DataPlayer();
 
     [HideInInspector] public bool topic;
@@ -149,7 +148,7 @@ public class talk : MonoBehaviour {
         if ((question == 4) && (score == 3)) {
             Next(q3_phrases, good_result_phrases);
             smith_good_result = true;
-            if (good_pts == false) { amuletScript.PointsUpgrade(1); good_pts = true; }
+            if (good_pts == false) { amulet.free_points += 1; good_pts = true; }
             
         }
         if ((question == 4) && (score < 3)) {
