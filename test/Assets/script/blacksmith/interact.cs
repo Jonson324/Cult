@@ -5,13 +5,12 @@ using UnityEngine;
 public class interact : MonoBehaviour {
     public inDialog inDialogScript;
     public talk talkScript;
-    public LevelHealth healthScript;
     private DataPlayer dataPlayer = new DataPlayer();
 
     public AudioSource hammer_down;
 
     public GameObject smith_name;
-    public static bool start = true;
+    public static bool start/* = true*/;
     public static bool first;
     public static bool quest_completed;
 
@@ -107,7 +106,7 @@ public class interact : MonoBehaviour {
                 foreach (var phr in jade_phrases2) { phr.SetActive(false); }
                 dataPlayer.jade_earned = 0;
                 PlayerPrefs.SetString("jade", JsonUtility.ToJson(dataPlayer));
-                healthScript.HealthUpgrade(10);
+                LevelHealth.maxhealth += 10;
             }
         }
     }

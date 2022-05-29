@@ -8,16 +8,17 @@ public class task : MonoBehaviour {
     public inDialog inDialogScript;
     public dialog DialogScript;
     public PauseMenu pauseMenuScript;
-    public amulet amuletScript;
+
+    public static bool quest_started;
+    public static bool quest_completed = true;
 
     public GameObject merch_name;
     [HideInInspector] public bool quest;
     public GameObject quest_dialog;
-    [HideInInspector] public static bool quest_started;
     public GameObject ring;
     public GameObject thx;
     [HideInInspector] public bool thx1;
-    public static bool quest_completed;
+    
     public GameObject current_task;
     public GameObject keep_search;
     [HideInInspector] public bool searching = false;
@@ -213,7 +214,7 @@ public class task : MonoBehaviour {
         dataPlayer.money -= 5000;
         PlayerPrefs.SetString("saveGame", JsonUtility.ToJson(dataPlayer));
         scrollBtn.SetActive(false);
-        amuletScript.ScrollActivate();
+        amulet.boss_weakened = true;
         ScrollEnd();
         scroll_phrases[1].SetActive(true);
         secretScrollYes = true;

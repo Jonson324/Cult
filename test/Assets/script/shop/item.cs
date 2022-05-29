@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class item : MonoBehaviour
-{
+public class item : MonoBehaviour {
     public shop shopScript; //ссылка на скрипт магазина
     public Text nameItem; //имя товара
     public Text priceItem; //цена товара

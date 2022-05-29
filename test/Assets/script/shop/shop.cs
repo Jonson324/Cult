@@ -17,6 +17,9 @@ public class shop : MonoBehaviour {
     public List<GameObject> pageList = new List<GameObject>();
     public int current_page;
     public int next_page;
+    public GameObject about_message;
+    public bool about;
+    public AudioSource buy;
 
     public class DataPlayer {
         public int money;
@@ -35,6 +38,10 @@ public class shop : MonoBehaviour {
 
     private void Update() {
         monk.text = "Деньги: " + dataPlayer.money;
+        if ((about) && (Input.GetKeyDown(KeyCode.Mouse0))) {
+            about_message.SetActive(false);
+            about = false;
+        }
     }
 
     private void saveGame() {
@@ -61,6 +68,7 @@ public class shop : MonoBehaviour {
         if (dataPlayer.money >= priceItem) {
             dataPlayer.buyItem.Add(nameItem);
             dataPlayer.money -= priceItem;
+            buy.Play();
             saveGame();
             loadGame();
         }
@@ -86,23 +94,13 @@ public class shop : MonoBehaviour {
         nextPage();
     }
 
-    public void Pants() {
+    public void Ring() {
         next_page = 2;
         nextPage();
     }
 
-    public void Bracelet() {
-        next_page = 3;
-        nextPage();
-    }
-
-    public void Ring() {
-        next_page = 4;
-        nextPage();
-    }
-
     public void Crystall() {
-        next_page = 5;
+        next_page = 3;
         nextPage();
     }
 
@@ -112,5 +110,10 @@ public class shop : MonoBehaviour {
         pageButtons[current_page].interactable = true;
         pageButtons[next_page].interactable = false;
         current_page = next_page;
+    }
+
+    public void aboutShow() {
+        about_message.SetActive(true);
+        about = true;
     }
 }

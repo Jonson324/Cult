@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-    public amulet amuletScript;
-
     [SerializeField] public List<Items> items;
     public static bool opened;
     //public GameObject lighth;
@@ -20,7 +18,7 @@ public class Chest : MonoBehaviour
                 Instantiate(items[Random.Range(0, items.Count)], transform.position, Quaternion.identity); //Берётся предмет через рандомное взятое число от 0 до количества предметов
                 gameObject.GetComponent<Animator>().Play("Opening");
                 opened = true;
-                amuletScript.PointsUpgrade(2);
+                amulet.free_points += 2;
                 //lighth.SetActive(true);
             }
         }
