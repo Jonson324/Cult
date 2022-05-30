@@ -9,6 +9,13 @@ public class shop : MonoBehaviour {
     public task taskScript;
     [HideInInspector] public string nameItem; //имя товара
     [HideInInspector] public int priceItem; //цена товара
+    public string category;
+    public string stat;
+    public int value;
+    static bool robe;
+    static bool arm;
+    static int robe_current_stat;
+    static int arm_current_stat;
     public GameObject Shop; //магазин
     public Text monk; //отображение денег
     public GameObject[] allItem;  //массив товаров
@@ -42,6 +49,7 @@ public class shop : MonoBehaviour {
             about_message.SetActive(false);
             about = false;
         }
+        loadGame();
     }
 
     private void saveGame() {
@@ -68,6 +76,7 @@ public class shop : MonoBehaviour {
         if (dataPlayer.money >= priceItem) {
             dataPlayer.buyItem.Add(nameItem);
             dataPlayer.money -= priceItem;
+            buyArtifact();
             buy.Play();
             saveGame();
             loadGame();
@@ -115,5 +124,38 @@ public class shop : MonoBehaviour {
     public void aboutShow() {
         about_message.SetActive(true);
         about = true;
+    }
+
+    void buyArtifact() {
+        if (category == "Роба") {
+            if ((robe == true) && (value > robe_current_stat)) {
+                LevelHealth.maxhealth += value - robe_current_stat;
+                robe_current_stat = value;
+            }
+            if (robe == false) {
+                robe = true;
+                LevelHealth.maxhealth += value;
+                robe_current_stat = value;
+            }
+        }
+        if (category == "Наруч") {
+            if ((arm == true) && (value > arm_current_stat)) {
+                amulet.damage += value - arm_current_stat;
+                arm_current_stat = value;
+            }
+            if (arm == false) {
+                arm = true;
+                amulet.damage += value;
+                arm_current_stat = value;
+            }
+        }
+        if (category == "Кольцо") {
+            if (stat == "ОЗ") {
+                LevelHealth.maxhealth += value;
+            }
+            if (stat == "Урон") {
+                amulet.damage += value;
+            }
+        }
     }
 }
