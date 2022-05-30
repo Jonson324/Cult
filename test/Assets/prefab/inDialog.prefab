@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   in_dialog: 0
   health: {fileID: 0}
+  levelHealthScript: {fileID: 0}

@@ -5,10 +5,13 @@ using UnityEngine;
 public class inDialog : MonoBehaviour {
     public bool in_dialog;
     public GameObject health;
+    public LevelHealth levelHealthScript;
 
     void Update() {
         if (in_dialog == true) {
-            Time.timeScale = 0;
+            if (levelHealthScript.dead == false) {
+                Time.timeScale = 0;
+            }
             Cursor.lockState = CursorLockMode.None;
             health.SetActive(false);
         } else {

@@ -34,6 +34,7 @@ public class amulet : MonoBehaviour {
 
     public void Clean() {
         damage = 10;
+        LevelHealth.maxhealth = 100;
         free_points = 0;
         currentCrystall = "Флейм кристалл";
         previousCrystall = "";
