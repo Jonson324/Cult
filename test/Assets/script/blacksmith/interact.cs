@@ -10,7 +10,7 @@ public class interact : MonoBehaviour {
     public AudioSource hammer_down;
 
     public GameObject smith_name;
-    public static bool start/* = true*/;
+    public static bool start= true;
     public static bool first;
     public static bool quest_completed;
 

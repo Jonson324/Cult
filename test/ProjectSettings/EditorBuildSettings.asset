@@ -50,9 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Copy/Tutorial 1.unity
     guid: a739b660d22757645935765c16c2d925
-  - enabled: 1
-    path: Assets/levels/Copy/treasury 1.unity
-    guid: 6d49db483b285d34694fea2633d95dac
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/levels/Copy/Treasury2 1.unity
     guid: d28cfe5ff31bb5e4fa125ee1faa1d8cf
@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Copy/Stairs 3.unity
     guid: dc4f64d9f740c964c865bce122ce3c2b
+  - enabled: 1
+    path: Assets/levels/Copy/treasury 1.unity
+    guid: d30473062713ae24995eb4874f9c77f4
+  - enabled: 1
+    path: Assets/levels/Copy/Stairs 4.unity
+    guid: 3c2e50104d76e534092322b51fad8e69
   m_configObjects: {}
