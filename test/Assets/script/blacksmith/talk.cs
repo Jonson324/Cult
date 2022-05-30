@@ -37,7 +37,7 @@ public class talk : MonoBehaviour {
 
     public GameObject bye;
     [HideInInspector] public bool end;
-    public static bool good_pts;
+    public static bool good;
     public static bool jade_only;
     int i = 0;
     public int score = 0;
@@ -148,7 +148,7 @@ public class talk : MonoBehaviour {
         if ((question == 4) && (score == 3)) {
             Next(q3_phrases, good_result_phrases);
             smith_good_result = true;
-            if (good_pts == false) { amulet.free_points += 1; good_pts = true; }
+            if (good == false) { amulet.free_points += 1; forge.price -= 100; good = true; }
             
         }
         if ((question == 4) && (score < 3)) {

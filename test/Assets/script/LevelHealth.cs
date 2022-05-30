@@ -15,7 +15,6 @@ public class LevelHealth : MonoBehaviour
     [SerializeField] public static int coin;
     public Text txt;
     public static float maxhealth = 100;
-    public bool start;
     public GameObject tp;
     public GameObject tp1;
     public GameObject tp2;
@@ -37,7 +36,6 @@ public class LevelHealth : MonoBehaviour
        
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-           
             if (enamyCount.count == 2)
             {
                 tp.SetActive(true);
@@ -63,9 +61,8 @@ public class LevelHealth : MonoBehaviour
                 tp1.SetActive(true);
             }
         }
-        if ((levelHealth > maxhealth) || (start == true))
+        if (levelHealth > maxhealth)
         {
-            start = false;
             levelHealth = maxhealth;
         }
 

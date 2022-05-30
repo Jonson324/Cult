@@ -17,6 +17,7 @@ public class forge : MonoBehaviour {
     public static int dmg_level;
     public Text skill_points;
     public Text money;
+    public static int price = 500;
 
     public GameObject[] allCrystalls;
     [HideInInspector] public string crystall_name; //имя товара
@@ -122,11 +123,11 @@ public class forge : MonoBehaviour {
     }
 
     public void CrystallChange() {
-        if ((dataPlayer.money >= 500) && (crystall_status == "В наличии")) {
+        if ((dataPlayer.money >= price) && (crystall_status == "В наличии")) {
             crystallSound.Play();
             amulet.previousCrystall = amulet.currentCrystall;
             amulet.currentCrystall = crystall_name;
-            dataPlayer.money -= 500;
+            dataPlayer.money -= price;
             saveGame();
             loadGame();
         }
