@@ -9,7 +9,7 @@ public class enemy_hp : MonoBehaviour
     [SerializeField] public List<Items> items;
     public double Health;
     public enamyCount enamyCount;
-
+    public AudioSource auddeath;
     private void Start()
     {
         if(gameObject.tag == "Cultist")
@@ -19,6 +19,10 @@ public class enemy_hp : MonoBehaviour
         if(gameObject.tag == "skelet")
         {
             Health = 25;
+        }
+        if(gameObject.tag == "Boss")
+        {
+            Health = 250;
         }
     }
 
@@ -38,7 +42,7 @@ public class enemy_hp : MonoBehaviour
                 {
                     Instantiate(Rareitems[Random.Range(0, items.Count)], transform.position, Quaternion.identity);
                 }
-                
+                auddeath.Play();
                 Destroy(gameObject);
                 enamyCount.count += 1;
             }

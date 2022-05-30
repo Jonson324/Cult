@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelHealth : MonoBehaviour
 {
+    public static bool isclear;
+    public bool s;
     public GameObject Player;
     public roomsch roomsch;
     public GameObject DeadCamera;
@@ -53,15 +55,16 @@ public class LevelHealth : MonoBehaviour
             {
                 tp.SetActive(true);
                 tp1.SetActive(true);
-                tp2.SetActive(true);
-                tp3.SetActive(true);
-                tp4.SetActive(true);
+                
             }
         }
         if (SceneManager.GetActiveScene().buildIndex == 10)
         {
             if (enamyCount.count == 19)
             {
+
+                isclear = true;
+                s = isclear;
                 tp.SetActive(true);
                 tp1.SetActive(true);
             }

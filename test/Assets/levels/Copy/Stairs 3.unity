@@ -11312,6 +11312,10 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: s
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: txt
       value: 
       objectReference: {fileID: 1616181944}
@@ -11319,6 +11323,10 @@ PrefabInstance:
       propertyPath: Parent
       value: 
       objectReference: {fileID: 1820622718}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: isclear
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: PanelDead
       value: 
@@ -15017,6 +15025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 6
+  roomsch: {fileID: 0}
 --- !u!65 &659031351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16768,6 +16777,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710434792}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &711144703 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 489918971}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e8b392321d32d48996bc677823fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &721794019
 GameObject:
   m_ObjectHideFlags: 0
@@ -20225,6 +20245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 18
+  roomsch: {fileID: 0}
 --- !u!65 &882778202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22044,6 +22065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 6
+  roomsch: {fileID: 0}
 --- !u!65 &969557690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23923,7 +23945,7 @@ GameObject:
   - component: {fileID: 1046933148}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23940,7 +23962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef96a1e76e6b6024cb9c9f05faa50ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 5
+  sceneIndex: 10
+  roomsch: {fileID: 711144703}
 --- !u!65 &1046933149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25987,6 +26010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 5
+  roomsch: {fileID: 0}
 --- !u!65 &1127846332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32572,6 +32596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 8
+  roomsch: {fileID: 0}
 --- !u!65 &1378152979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46230,6 +46255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 5
+  roomsch: {fileID: 0}
 --- !u!65 &1905302370
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -6,10 +6,10 @@ public class roomsch : MonoBehaviour
 {
 
     public enamyCount enamyCount;
-    public bool chk;
+    public static bool chk;
     private void Update()
     {
-        if (enamyCount.count == 20)
+        if (enamyCount.count == 19)
         {
             chk = true;
         }
