@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class enamyCount : MonoBehaviour
 {
     Text text;
-    public static int count;
+    public int count;
 
     void Start()
     {

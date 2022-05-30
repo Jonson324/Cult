@@ -35,6 +35,7 @@ public class dialog : MonoBehaviour {
 
     public GameObject bye;
     [HideInInspector] public bool end;
+    public static bool scrolled;
     int i = 0;
     int j = 0;
 
@@ -92,7 +93,7 @@ public class dialog : MonoBehaviour {
                     foreach (var button in buttonsActive) { button.SetActive(true); }
                     buttonsActive[4].SetActive(false);
                     end = true;
-                    taskScript.scrollButton.SetActive(true);
+                    if (scrolled == false) { taskScript.scrollBtn.SetActive(true); scrolled = true; }
                 }
             }
 

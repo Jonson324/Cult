@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public bool GameISPause = false;
     public GameObject pauseMenuUI;
     public inDialog inDialogScript;
+    public LevelHealth levelHealthScript;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class PauseMenu : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && (levelHealthScript.dead == false))
         {
             if (GameISPause)
             {

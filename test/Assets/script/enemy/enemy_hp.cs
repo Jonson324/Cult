@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class enemy_hp : MonoBehaviour
 {
-    public amulet amuletScript;
     [SerializeField] public List<Items> Rareitems;
     [SerializeField] public List<Items> items;
     public double Health;
@@ -12,11 +11,11 @@ public class enemy_hp : MonoBehaviour
     public AudioSource auddeath;
     private void Start()
     {
-        if(gameObject.tag == "Cultist")
+        if (gameObject.tag == "Cultist")
         {
             Health = 15;
         }
-        if(gameObject.tag == "skelet")
+        if (gameObject.tag == "skelet")
         {
             Health = 25;
         }
@@ -30,7 +29,7 @@ public class enemy_hp : MonoBehaviour
     {
         if (collision.gameObject.tag == "fireboll")
         {
-            Health -= amuletScript.nonstatic_dmg;
+            Health -= amulet.damage;
             
             if (Health <= 0)
             {                
