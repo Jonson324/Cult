@@ -29,7 +29,7 @@ public class enemy_hp : MonoBehaviour
     {
         if (collision.gameObject.tag == "fireboll")
         {
-            Health -= amulet.damage;
+            Health -= (amulet.damage * amulet.dmg_multiplier);
             
             if (Health <= 0)
             {                

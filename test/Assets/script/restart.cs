@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class restart : MonoBehaviour
 {
-    public LevelHealth health;
+    public amulet amuletScript;
+
     public void restartlevel()
     {
-        health.start = true;
+        amuletScript.Clean();
+        LevelHealth.levelHealth = 100;
         SceneManager.LoadScene(1);
     }
 }

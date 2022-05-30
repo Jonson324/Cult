@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-
-
     private void OnCollisionStay(Collision collision)
     {
-
         Destroy(GameObject.FindGameObjectWithTag("fireboll"));
-
     }
-
-
 }
