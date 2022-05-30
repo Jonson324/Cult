@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
-    
-    public LevelHealth lvlHealth;
+    public amulet amuletScript;
+
     public void Play()
     {
-        lvlHealth.start = true;
+        amuletScript.Clean();
+        LevelHealth.levelHealth = 100;
         SceneManager.LoadScene(1);
         PlayerPrefs.DeleteKey("saveGame");
         PlayerPrefs.DeleteKey("jade");

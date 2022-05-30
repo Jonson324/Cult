@@ -8,16 +8,7 @@ public class fire_staff : MonoBehaviour
     public float fbspeed = 200f;
     public float fbdist = 100f;
     public bool fire;
-    
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -31,13 +22,11 @@ public class fire_staff : MonoBehaviour
             
             if ((this.transform.position - fireboll.transform.position).sqrMagnitude > fbdist)
             {
-                this.GetComponent <fire_staff>().fire = false;  
+                this.GetComponent <fire_staff>().fire = false;
             }
         } else
         {
             fireboll.transform.localPosition = new Vector3(9.52f, 3.505f, 10.42f);
         }
-
-        
     }
 }
