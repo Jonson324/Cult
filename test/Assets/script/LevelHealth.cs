@@ -105,7 +105,7 @@ public class LevelHealth : MonoBehaviour
         }
         if(other.tag == "CultistAttack")
         {
-            levelHealth -= 15;
+            levelHealth -= 10;
         }
         if (other.tag == "heal")
         {
