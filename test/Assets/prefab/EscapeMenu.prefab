@@ -392,6 +392,7 @@ MonoBehaviour:
   GameISPause: 0
   pauseMenuUI: {fileID: 796974426227626633}
   inDialogScript: {fileID: 0}
+  levelHealthScript: {fileID: 0}
 --- !u!1 &796974427613142627
 GameObject:
   m_ObjectHideFlags: 0

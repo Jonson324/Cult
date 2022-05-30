@@ -10,7 +10,7 @@ public class task : MonoBehaviour {
     public PauseMenu pauseMenuScript;
 
     public static bool quest_started;
-    public static bool quest_completed = true;
+    public static bool quest_completed;
 
     public GameObject merch_name;
     [HideInInspector] public bool quest;

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class amulet : MonoBehaviour {
     public static int damage = 10;
-    public int nonstatic_dmg;
     public static float dmg_multiplier;
     public static int free_points;
 
@@ -15,7 +14,6 @@ public class amulet : MonoBehaviour {
     public static bool boss_weakened;
 
     private void Update() {
-        nonstatic_dmg = damage;
         if (currentCrystall == "Флейм кристалл") {
             dmg_multiplier = 1f;
             cooldown = 0.4f;
@@ -36,6 +34,7 @@ public class amulet : MonoBehaviour {
 
     public void Clean() {
         damage = 10;
+        LevelHealth.maxhealth = 100;
         free_points = 0;
         currentCrystall = "Флейм кристалл";
         previousCrystall = "";
