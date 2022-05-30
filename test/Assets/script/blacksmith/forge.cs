@@ -13,9 +13,8 @@ public class forge : MonoBehaviour {
     public GameObject back_button;
     public Text topic;
     public List<Text> level = new List<Text>();
-    [HideInInspector] public int hp_level;
-    [HideInInspector] public int dmg_level;
-    [HideInInspector] public int mp_level;
+    public static int hp_level;
+    public static int dmg_level;
     public Text skill_points;
     public Text money;
 
@@ -23,6 +22,7 @@ public class forge : MonoBehaviour {
     [HideInInspector] public string crystall_name; //имя товара
     [HideInInspector] public string crystall_status; //цена товара
     public AudioSource crystallSound;
+    public AudioSource amuletSound;
 
     public class DataPlayer {
         public int money;
@@ -113,6 +113,7 @@ public class forge : MonoBehaviour {
     void Upgrade(int count, int stat) {
         level[count].text = stat + "/3";
         amulet.free_points -= 1;
+        amuletSound.Play();
     }
 
     public void CloseForge() {
