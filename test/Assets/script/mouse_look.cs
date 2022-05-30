@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mouse_look : MonoBehaviour
 {
-    public float mouseSens = 800f;//скорость мыши
+    public float mouseSens = 300f;//скорость мыши
     public Transform playerBody;//для персонажа
     float xRotation = 0f;//по оси х
 

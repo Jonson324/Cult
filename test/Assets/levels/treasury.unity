@@ -1285,21 +1285,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4011608637661952324, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 4011608637390756968, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
+      propertyPath: amuletScript
       value: 
-      objectReference: {fileID: 21300000, guid: e86b86a5aa88c3a4aa903fc9662d44c4, type: 3}
-    - target: {fileID: 4011608637997680698, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
-      propertyPath: m_Sprite
+      objectReference: {fileID: 1820142501}
+    - target: {fileID: 4011608637390756968, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
+      propertyPath: inDialogScript
       value: 
-      objectReference: {fileID: 21300000, guid: 73175eb8922d997459e83c9375049898, type: 3}
+      objectReference: {fileID: 2003667484}
     - target: {fileID: 4011608638716860793, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
       propertyPath: m_Name
       value: dead_panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4011608638716860793, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4011608638716860797, guid: 93bca517a68f20c4ca22a2ac79a2efec, type: 3}
       propertyPath: m_Pivot.x
@@ -5795,6 +5791,10 @@ PrefabInstance:
       propertyPath: PanelDead
       value: 
       objectReference: {fileID: 613887441}
+    - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: inDialogScript
+      value: 
+      objectReference: {fileID: 2003667484}
     - target: {fileID: 4732258041065059885, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -5918,6 +5918,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1820142500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1820142497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e8b392321d32d48996bc677823fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1820142501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3278661221601681649, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1820142497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1833202198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6572,6 +6594,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 826445617}
+    - target: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
+      propertyPath: levelHealthScript
+      value: 
+      objectReference: {fileID: 1820142500}
     - target: {fileID: 7778404138177722345, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: m_Name
       value: inDialog
@@ -6825,18 +6851,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapeMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 796974426523807986, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 90ac8523ea3cadd47a69083658515e9d, type: 3}
     - target: {fileID: 796974426680212528, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
       propertyPath: inDialogScript
       value: 
       objectReference: {fileID: 2003667484}
-    - target: {fileID: 796974427613142638, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 796974426680212528, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
+      propertyPath: levelHealthScript
       value: 
-      objectReference: {fileID: 21300000, guid: d2c1db95e1a95c74d9defdb34de63a8c, type: 3}
+      objectReference: {fileID: 1820142500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e90762e0cfb40429fb63e929103c11, type: 3}
 --- !u!114 &2070637757 stripped

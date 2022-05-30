@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelHealth : MonoBehaviour
 {
+    public inDialog inDialogScript;    
+
     public static bool isclear;
     public bool s;
     public GameObject Player;
@@ -36,7 +38,7 @@ public class LevelHealth : MonoBehaviour
     
     void Update()
     {
-        if (levelHealth < maxhealth) {
+        if (levelHealth > maxhealth) {
             levelHealth = maxhealth;
         }
 
@@ -46,9 +48,10 @@ public class LevelHealth : MonoBehaviour
             PanelDead.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            dead = true;
+            inDialogScript.in_dialog = true;
             DeadCamera.SetActive(true);
             DeadCamera.transform.parent = Parent.transform;
-            dead = true;
             Destroy(gameObject);
         }
 

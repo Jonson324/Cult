@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class hammer : MonoBehaviour {
     public interact interactScript;
+    // осярэ онъбкъеряъ мю мюйюбюкэме б люцюгхме, еякх йбеяр бшонкмем
 
     void OnTriggerEnter(Collider col) {
         if (col.tag == "Player") {
