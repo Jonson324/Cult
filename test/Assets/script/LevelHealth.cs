@@ -36,7 +36,22 @@ public class LevelHealth : MonoBehaviour
     
     void Update()
     {
-       
+        if (levelHealth < maxhealth) {
+            levelHealth = maxhealth;
+        }
+
+        txt.text = "" + Mathf.Floor(levelHealth);
+
+        if (levelHealth <= 0) {
+            PanelDead.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            DeadCamera.SetActive(true);
+            DeadCamera.transform.parent = Parent.transform;
+            dead = true;
+            Destroy(gameObject);
+        }
+
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             if (enamyCount.count == 2)
@@ -64,22 +79,6 @@ public class LevelHealth : MonoBehaviour
                 tp.SetActive(true);
                 tp1.SetActive(true);
             }
-        }
-        if (levelHealth > maxhealth)
-        {
-            levelHealth = maxhealth;
-        }
-
-        txt.text = "" + Mathf.Floor(levelHealth);
-
-        if (levelHealth <= 0) {
-            PanelDead.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            DeadCamera.SetActive(true);
-            DeadCamera.transform.parent = Parent.transform;
-            dead = true;
-            Destroy(gameObject);
         }
     }
 
