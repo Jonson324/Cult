@@ -10,6 +10,7 @@ public class amulet : MonoBehaviour {
     public static string currentCrystall = "Флейм кристалл";
     public static string previousCrystall;
     public static float cooldown;
+    public static int k;
 
     public static bool boss_weakened;
 
@@ -17,18 +18,22 @@ public class amulet : MonoBehaviour {
         if (currentCrystall == "Флейм кристалл") {
             dmg_multiplier = 1f;
             cooldown = 0.4f;
+            k = 0;
         }
         if (currentCrystall == "Аква кристалл") {
             dmg_multiplier = 0.25f;
             cooldown = 0.05f;
+            k = 1;
         }
         if (currentCrystall == "Терра кристалл") {
             dmg_multiplier = 2.5f;
             cooldown = 1f;
+            k = 2;
         }
         if (currentCrystall == "Аеро кристалл") {
             dmg_multiplier = 0.5f;
             cooldown = 0.1f;
+            k = 3;
         }
     }
 
