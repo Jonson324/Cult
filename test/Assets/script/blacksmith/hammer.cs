@@ -8,7 +8,8 @@ public class hammer : MonoBehaviour {
 
     void OnTriggerEnter(Collider col) {
         if (col.tag == "Player") {
-            interactScript.endQuest();
+            interact.first = false;
+            interact.quest_completed = true;
             interactScript.quest_task.SetActive(false);
             gameObject.SetActive(false);
         }

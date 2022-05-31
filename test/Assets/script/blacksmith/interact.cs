@@ -10,7 +10,7 @@ public class interact : MonoBehaviour {
     public AudioSource hammer_down;
 
     public GameObject smith_name;
-    public static bool start= true;
+    public static bool start = true;
     public static bool first;
     public static bool quest_completed;
 
@@ -112,7 +112,7 @@ public class interact : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider collider) {
-        if (collider.tag == "Player") {
+        if ((collider.tag == "Player") && (task.quest_started == false)) {
             if (Input.GetKey(KeyCode.E)) {
                 JadeCheck();
                 hint.SetActive(false);
@@ -139,7 +139,7 @@ public class interact : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider collider) {
-        if (collider.tag == "Player") {
+        if ((collider.tag == "Player") && (task.quest_started == false)) {
             hint.SetActive(true);
         }
     }
@@ -148,11 +148,6 @@ public class interact : MonoBehaviour {
         if (collider.tag == "Player") {
             hint.SetActive(false);
         }
-    }
-
-    public void endQuest() {
-        first = false;
-        quest_completed = true;
     }
 
     public void OpenForge() {

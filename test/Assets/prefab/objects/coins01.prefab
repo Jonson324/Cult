@@ -657,11 +657,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4601699348739164490}
-  - component: {fileID: 4059498428623684922}
   - component: {fileID: 2029696655883638594}
+  - component: {fileID: 4059498428623684922}
   m_Layer: 0
   m_Name: coins01
-  m_TagString: money
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -674,7 +674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789591627720217584}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3490197933776932040}
@@ -695,6 +695,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2029696655883638594
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789591627720217584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2945043, y: 1.1747967, z: 1}
+  m_Center: {x: 0.14725226, y: 0.5548113, z: 0}
 --- !u!114 &4059498428623684922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,20 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747319a37732804e87e1910b04f361b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
---- !u!65 &2029696655883638594
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3789591627720217584}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.29728377, y: 0.093008354, z: 0.24047661}
-  m_Center: {x: -0.024121229, y: 0.02543354, z: 0.0027339011}
+  value: 0
 --- !u!1 &4199612763457513444
 GameObject:
   m_ObjectHideFlags: 0

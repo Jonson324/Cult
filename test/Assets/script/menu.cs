@@ -12,10 +12,7 @@ public class menu : MonoBehaviour
         amuletScript.Clean();
         LevelHealth.levelHealth = 100;
         SceneManager.LoadScene(1);
-        PlayerPrefs.DeleteKey("saveGame");
-        PlayerPrefs.DeleteKey("jade");
     }
-
 
     public void Settings()
     {

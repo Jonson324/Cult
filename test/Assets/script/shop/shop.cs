@@ -29,7 +29,7 @@ public class shop : MonoBehaviour {
     public AudioSource buy;
 
     public class DataPlayer {
-        public int money;
+        public int money = 0;
         public List<string> buyItem = new List<string>();
     }
 
