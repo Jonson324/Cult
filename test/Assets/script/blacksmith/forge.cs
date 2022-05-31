@@ -26,19 +26,23 @@ public class forge : MonoBehaviour {
     public AudioSource amuletSound;
 
     public class DataPlayer {
-        public int money;
+        public int money = 0;
         public List<string> buyItem = new List<string>();
     }
 
     private void Start() {
         skill_points.text = "Кол-во очков: " + amulet.free_points;
+        if (PlayerPrefs.HasKey("saveGame")) {
+            loadGame();
+        } else {
+            saveGame();
+            loadGame();
+        }
     }
 
     private void Update() {
         skill_points.text = "Кол-во очков: " + amulet.free_points;
         money.text = "Деньги: " + dataPlayer.money.ToString();
-        loadGame();
-        
     }
 
     private void saveGame() {

@@ -12,7 +12,7 @@ public class NewScena : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E)) 
+            if ((Input.GetKey(KeyCode.E) && (task.quest_started == false) && (interact.first == false))) 
             {
                 hint.SetActive(false);
                 SceneManager.LoadScene(sceneIndex);
@@ -22,7 +22,7 @@ public class NewScena : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if ((other.tag == "Player") && (task.quest_started == false) && (interact.first == false))
         {
             hint.SetActive(true);
         }
