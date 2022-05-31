@@ -74,12 +74,9 @@ public class LevelHealth : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().buildIndex == 10)
         {
-            if (enamyCount.count == 19)
+            if (enamyCount.count == 15)
             {
 
-                isclear = true;
-                s = isclear;
-                tp.SetActive(true);
                 tp1.SetActive(true);
             }
         }

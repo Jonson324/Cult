@@ -25,6 +25,8 @@ TagManager:
   - HealPotion
   - door
   - Boss
+  - SpeedUp
+  - moneyChest
   layers:
   - Default
   - TransparentFX
