@@ -124,4 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747319a37732804e87e1910b04f361b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  value: 0
