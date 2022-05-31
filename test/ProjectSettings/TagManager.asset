@@ -27,6 +27,7 @@ TagManager:
   - Boss
   - SpeedUp
   - moneyChest
+  - HLCHEST
   layers:
   - Default
   - TransparentFX

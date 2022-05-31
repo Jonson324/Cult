@@ -22,7 +22,7 @@ public class Items : MonoBehaviour
     }
     private void Update()
     {
-        if(gameObject.tag == "moneyChest")
+        if(gameObject.tag == "moneyChest" || gameObject.tag == "HLCHEST")
         transform.Translate(0, speed * Time.deltaTime, 0);
         if (transform.position.y > 63.501)
         {
