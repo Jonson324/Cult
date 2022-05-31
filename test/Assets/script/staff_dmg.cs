@@ -6,9 +6,9 @@ public class staff_dmg : MonoBehaviour
 {
     public inDialog inDialogScript;
     public PauseMenu pauseMenuScript;
-    public Transform bullet;
+    public List<Transform> bullets = new List<Transform>();
     public float bulletSpeed = 10000;
-    public AudioClip Fire;
+    public List<AudioClip> sounds = new List<AudioClip>();
     public static float time_left;
 
     void Update()
@@ -32,9 +32,9 @@ public class staff_dmg : MonoBehaviour
     }
 
     void Shot() {
-        Transform bulletInstance = (Transform)Instantiate(bullet, GameObject.Find("spawn").transform.position, Quaternion.identity);
+        Transform bulletInstance = (Transform)Instantiate(bullets[amulet.k], GameObject.Find("spawn").transform.position, Quaternion.identity);
         bulletInstance.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
-        GetComponent<AudioSource>().PlayOneShot(Fire);
+        GetComponent<AudioSource>().PlayOneShot(sounds[amulet.k]);
         time_left = amulet.cooldown;
     }
 }
