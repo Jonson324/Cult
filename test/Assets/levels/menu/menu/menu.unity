@@ -701,6 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2e8b392321d32d48996bc677823fb42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inDialogScript: {fileID: 0}
   s: 0
   Player: {fileID: 0}
   roomsch: {fileID: 0}
@@ -1203,7 +1204,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4274e8935c68bd44969cff65859115b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.043
+  m_Volume: 0.462
   m_Pitch: 1
   Loop: 1
   Mute: 0
