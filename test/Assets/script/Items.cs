@@ -8,14 +8,17 @@ public class Items : MonoBehaviour
     public int value;
 
     public class DataPlayer {
-        public int money;
+        public int money = 0;
         public List<string> buyItem = new List<string>();
     }
 
     float speed = 2;
     private void Start()
     {
-        value = Random.Range(750, 1500);
+        if (Chest.chest == true) {
+            value = Random.Range(750, 1500);
+            Chest.chest = false;
+        } else { value = Random.Range(75, 150); }
     }
     private void Update()
     {
@@ -26,7 +29,7 @@ public class Items : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {

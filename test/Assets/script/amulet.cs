@@ -39,5 +39,18 @@ public class amulet : MonoBehaviour {
         currentCrystall = "Флейм кристалл";
         previousCrystall = "";
         boss_weakened = false;
+
+        task.quest_started = false;
+        task.quest_completed = false;
+        dialog.scrolled = false;
+
+        interact.start = true;
+        interact.first = false;
+        interact.quest_completed = false;
+        talk.good = false;
+        talk.jade_only = false;
+
+        PlayerPrefs.DeleteKey("saveGame");
+        PlayerPrefs.DeleteKey("jade");
     }
 }
