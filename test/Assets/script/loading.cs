@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class loading : MonoBehaviour
 {
     public int sceneID;
-
+    public GameObject loadingScreen;
     public Slider loadSlider;
 
     private void Start()
     {
+        loadingScreen.SetActive(true);
+
         StartCoroutine(LoadNextScene());
     }
 
@@ -20,8 +22,13 @@ public class loading : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
         while (!operation.isDone)
         {
-            float progress = operation.progress / 0.9f;
-            loadSlider.value = progress;
+            loadSlider.value = operation.progress;
+
+            if(operation.progress >= .9f && !operation.allowSceneActivation)
+            {
+                yield return new WaitForSeconds(2.2f);
+                operation.allowSceneActivation = true;
+            }
             yield return null;
         }
     }

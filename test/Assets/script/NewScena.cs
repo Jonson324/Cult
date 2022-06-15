@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class NewScena : MonoBehaviour
 {
-    public int sceneIndex;
+    //public int sceneIndex;
     public GameObject hint;
+    public GameObject load;
 
     private void OnTriggerStay(Collider other)
     {
@@ -15,7 +16,8 @@ public class NewScena : MonoBehaviour
             if ((Input.GetKey(KeyCode.E) && (task.quest_started == false) && (interact.first == false))) 
             {
                 hint.SetActive(false);
-                SceneManager.LoadScene(sceneIndex);
+                load.SetActive(true);
+                LoadScene.SwitchToScene("Shop");
             }
         }
     }
