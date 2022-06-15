@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Copy/Stairs 4.unity
     guid: 3c2e50104d76e534092322b51fad8e69
+  - enabled: 1
+    path: Assets/levels/menu/menu/Loading.unity
+    guid: 9095ba479faecb548993bf59708fbd0b
   m_configObjects: {}

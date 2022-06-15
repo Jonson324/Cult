@@ -11,7 +11,7 @@ public class menu : MonoBehaviour
     {
         amuletScript.Clean();
         LevelHealth.levelHealth = 100;
-        SceneManager.LoadScene(20);
+        SceneManager.LoadScene(1);
     }
 
     public void Settings()
