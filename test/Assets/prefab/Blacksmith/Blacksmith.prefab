@@ -18046,6 +18046,8 @@ MonoBehaviour:
   bye: 0
   talk: {fileID: 0}
   talkin: 0
+  uIdiot: {fileID: 0}
+  idiot: 0
   jadeBtn: {fileID: 0}
   jade_dialog: {fileID: 0}
   jade1: 0

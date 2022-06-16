@@ -34,7 +34,6 @@ public class forge : MonoBehaviour {
     }
 
     private void Start() {
-        skill_points.text = "Кол-во очков: " + amulet.free_points;
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
