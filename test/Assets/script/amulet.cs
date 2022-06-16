@@ -13,6 +13,7 @@ public class amulet : MonoBehaviour {
     public static int k;
 
     public static bool boss_weakened;
+    public static bool hammer_found = true;
 
     private void Update() {
         if (currentCrystall == "Флейм кристалл") {
@@ -44,6 +45,7 @@ public class amulet : MonoBehaviour {
         currentCrystall = "Флейм кристалл";
         previousCrystall = "";
         boss_weakened = false;
+        hammer_found = true;
 
         task.quest_started = false;
         task.quest_completed = false;

@@ -32,6 +32,9 @@ public class interact : MonoBehaviour {
     public GameObject talk;
     [HideInInspector] public bool talkin;
 
+    public GameObject uIdiot;
+    [HideInInspector] public bool idiot;
+
     public GameObject jadeBtn;
     public GameObject jade_dialog;
     [HideInInspector] public bool jade1;
@@ -109,6 +112,12 @@ public class interact : MonoBehaviour {
                 LevelHealth.maxhealth += 10;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (idiot == true)) {
+            uIdiot.SetActive(false);
+            idiot = false;
+            Off();
+        }
     }
 
     void OnTriggerStay(Collider collider) {
@@ -118,21 +127,27 @@ public class interact : MonoBehaviour {
                 hint.SetActive(false);
                 smith_name.SetActive(true);
                 inDialogScript.in_dialog = true;
-                if (start == true) {
-                    first = true;
-                    first_dialog.SetActive(true);
+                if (amulet.hammer_found == true) {
+                    if (start == true) {
+                        first = true;
+                        first_dialog.SetActive(true);
+                    }
+                    if ((start == false) && (first == true)) {
+                        keep.SetActive(true);
+                        still = true;
+                    }
+                    if (quest_completed == true) {
+                        thx.SetActive(true);
+                        thx1 = true;
+                    }
+                    if ((start == false) && (first == false) && (quest_completed == false)) {
+                        welcome_dialog.SetActive(true);
+                        hammer_down.Play();
+                    }
                 }
-                if ((start == false) && (first == true)) {
-                    keep.SetActive(true);
-                    still = true;
-                }
-                if (quest_completed == true) {
-                    thx.SetActive(true);
-                    thx1 = true;
-                }
-                if ((start == false) && (first == false) && (quest_completed == false)) {
-                    welcome_dialog.SetActive(true);
-                    hammer_down.Play();
+                else {
+                    uIdiot.SetActive(true);
+                    idiot = true;
                 }
             }
         }

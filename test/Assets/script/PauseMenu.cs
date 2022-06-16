@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
             {
                 Resume();
             }
-            else
+            else if ((GameISPause == false) && (inDialogScript.in_dialog == false))
             {
                 Pause();
             }
@@ -37,17 +37,18 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         GameISPause = false;
     }
+
     public void Pause()
     {
         inDialogScript.in_dialog = true;
         pauseMenuUI.SetActive(true);
         GameISPause = true;
     }
+
     public void LoadMenu()
     {
         pauseMenuUI.SetActive(false);
         GameISPause = false;
         SceneManager.LoadScene(0);
-        
     } 
 }
