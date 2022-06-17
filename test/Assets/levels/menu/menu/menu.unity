@@ -702,6 +702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inDialogScript: {fileID: 0}
+  audiodeath: {fileID: 0}
+  audiohit: {fileID: 0}
   s: 0
   Player: {fileID: 0}
   roomsch: {fileID: 0}
@@ -894,6 +896,10 @@ PrefabInstance:
     - target: {fileID: 258251983799440632, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028448714260855614, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7694342510220575343, guid: 94afda71e7ab8f94ab961b622ba1885d, type: 3}
       propertyPath: m_Pivot.x

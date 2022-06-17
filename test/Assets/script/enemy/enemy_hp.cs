@@ -7,6 +7,7 @@ public class enemy_hp : MonoBehaviour
     [SerializeField] public List<Items> Rareitems;
     [SerializeField] public List<Items> items;
     public double Health;
+    public GameObject spawn;
     public enamyCount enamyCount;
     public AudioSource auddeath;
     private void Start()
@@ -21,7 +22,11 @@ public class enemy_hp : MonoBehaviour
         }
         if(gameObject.tag == "Boss")
         {
-            Health = 250;
+            Health = 500;
+            if (amulet.boss_weakened == true)
+            {
+                Health = 400;
+            }
         }
     }
 
@@ -46,5 +51,9 @@ public class enemy_hp : MonoBehaviour
                 enamyCount.count += 1;
             }
         }
+    }
+    private void Update()
+    {
+       
     }
 }

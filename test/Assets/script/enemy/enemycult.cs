@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class enemycult : MonoBehaviour
 {
+    
     public Transform target;
     public Transform Player2;
     public Transform Enemyc;
@@ -24,14 +25,11 @@ public class enemycult : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Lerp(transform.rotation,lookRotation, turnSpeed * Time.deltaTime);
-
+        
 
         if (distat > 1.5f)
         {
-            
-            
- 
-            gameObject.GetComponent<Animator>().Play("AtackCult");
+         gameObject.GetComponent<Animator>().Play("AtackCult");
         }
         
     }

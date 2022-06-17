@@ -28,6 +28,8 @@ TagManager:
   - SpeedUp
   - moneyChest
   - HLCHEST
+  - spawn
+  - BossBall
   layers:
   - Default
   - TransparentFX

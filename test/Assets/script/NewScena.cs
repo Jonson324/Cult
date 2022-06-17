@@ -7,6 +7,7 @@ public class NewScena : MonoBehaviour
 {
     public int sceneIndex;
     public GameObject hint;
+    private bool a;
 
     private void OnTriggerStay(Collider other)
     {
@@ -16,6 +17,7 @@ public class NewScena : MonoBehaviour
             {
                 hint.SetActive(false);
                 SceneManager.LoadScene(sceneIndex);
+               
             }
         }
     }
