@@ -78,7 +78,6 @@ public class LevelHealth : MonoBehaviour
         {
             if (enamyCount.count == 15)
             {
-
                 tp1.SetActive(true);
             }
         }

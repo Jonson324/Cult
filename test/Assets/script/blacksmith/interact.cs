@@ -60,7 +60,7 @@ public class interact : MonoBehaviour {
             } else { start = false; first_dialog.SetActive(false); quest_task.SetActive(true); Off(); hammer.SetActive(true); i = 0; }
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && (quest_completed == true) && (thx1 = true)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && (quest_completed == true) && (thx1 == true)) {
             quest_completed = false;
             thx1 = false;
             thx.SetActive(false);
