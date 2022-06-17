@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelHealth : MonoBehaviour
 {
-    public inDialog inDialogScript;    
-
+    public inDialog inDialogScript;
+    public AudioSource audiodeath;
+    public AudioSource audiohit;
     public static bool isclear;
     public bool s;
     public GameObject Player;
@@ -52,6 +53,7 @@ public class LevelHealth : MonoBehaviour
             inDialogScript.in_dialog = true;
             DeadCamera.SetActive(true);
             DeadCamera.transform.parent = Parent.transform;
+            audiodeath.Play();
             Destroy(gameObject);
         }
 
@@ -88,6 +90,7 @@ public class LevelHealth : MonoBehaviour
         {
             isOnDeadZone = true;
             levelHealth = levelHealth - 5 * Time.deltaTime;
+            audiohit.Play();
         }
 
         if (other.tag == "Health")
@@ -98,10 +101,12 @@ public class LevelHealth : MonoBehaviour
         if (other.tag == "sword")
         {
             levelHealth -= 25;
+            audiohit.Play();
         }
         if(other.tag == "CultistAttack")
         {
             levelHealth -= 10;
+            audiohit.Play();
         }
         if (other.tag == "heal")
         {
@@ -111,6 +116,19 @@ public class LevelHealth : MonoBehaviour
         {
             levelHealth += 25;
             Destroy(GameObject.FindGameObjectWithTag("HealPotion"));
+        }
+        if (other.tag == "BossBall")
+        {
+            if (amulet.boss_weakened == true)
+            {
+                levelHealth -= 7;
+            }
+            else if (amulet.boss_weakened == false)
+            {
+                levelHealth -= 14;
+            }
+
+            audiohit.Play();
         }
     }
 

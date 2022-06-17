@@ -7,6 +7,7 @@ public class NewScena : MonoBehaviour
 {
     public int sceneIndex;
     public GameObject hint;
+    private bool a;
 
     private void OnTriggerStay(Collider other)
     {
@@ -19,6 +20,7 @@ public class NewScena : MonoBehaviour
                     amulet.hammer_found = false;
                 }
                 SceneManager.LoadScene(sceneIndex);
+               
             }
         }
     }

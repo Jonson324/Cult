@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cultistprojectile : MonoBehaviour
 {
-    [SerializeField] float damagee = 10;
+   
     Rigidbody rb;
     [SerializeField] float speed = 20000f;
     private void Update()
@@ -19,10 +19,5 @@ public class cultistprojectile : MonoBehaviour
         rb.AddForce(diractionn * speed * Time.deltaTime );
     }
 
-    private void OnCollisionEnther(Collision collision)
-    {
-
-        
-
-    }
+   
 }
