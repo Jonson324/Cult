@@ -16,7 +16,10 @@ public class forge : MonoBehaviour {
     public static int hp_level;
     public static int dmg_level;
     public Text skill_points;
+
+    public GameObject price_obj;
     public Text money;
+    public Text price_tag;
     public static int price = 500;
 
     public GameObject[] allCrystalls;
@@ -31,7 +34,6 @@ public class forge : MonoBehaviour {
     }
 
     private void Start() {
-        skill_points.text = "Кол-во очков: " + amulet.free_points;
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
@@ -43,6 +45,7 @@ public class forge : MonoBehaviour {
     private void Update() {
         skill_points.text = "Кол-во очков: " + amulet.free_points;
         money.text = "Деньги: " + dataPlayer.money.ToString();
+        price_tag.text = "Цена услуги: " + price.ToString();
     }
 
     private void saveGame() {
@@ -75,6 +78,7 @@ public class forge : MonoBehaviour {
         amulet_menu.SetActive(true);
         back_button.SetActive(true);
         topic.text = "Амулет";
+        price_obj.SetActive(true);
     }
 
     public void Crystall() {
@@ -82,6 +86,7 @@ public class forge : MonoBehaviour {
         crystall_menu.SetActive(true);
         back_button.SetActive(true);
         topic.text = "Кристалл";
+        price_obj.SetActive(true);
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
@@ -91,6 +96,7 @@ public class forge : MonoBehaviour {
     }
 
     public void Back() {
+        price_obj.SetActive(false);
         back_button.SetActive(false);
         amulet_menu.SetActive(false);
         crystall_menu.SetActive(false);

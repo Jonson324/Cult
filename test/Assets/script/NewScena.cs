@@ -11,11 +11,14 @@ public class NewScena : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if ((other.tag == "Player") && (interact.quest_completed == false) && (interact.first == false))
         {
-            if ((Input.GetKey(KeyCode.E) && (task.quest_started == false) && (interact.first == false))) 
+            if (Input.GetKey(KeyCode.E))
             {
                 hint.SetActive(false);
+                if ((SceneManager.GetActiveScene().buildIndex == 1) && (interact.start == true)) {
+                    amulet.hammer_found = false;
+                }
                 SceneManager.LoadScene(sceneIndex);
                
             }
@@ -24,7 +27,7 @@ public class NewScena : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if ((other.tag == "Player") && (task.quest_started == false) && (interact.first == false))
+        if ((other.tag == "Player") && (interact.quest_completed == false) && (interact.first == false))
         {
             hint.SetActive(true);
         }
