@@ -14,6 +14,7 @@ public class NewScene : MonoBehaviour
         {
             SceneManager.LoadScene(sceneId);
         }
+     
     }
 
 }

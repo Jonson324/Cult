@@ -2,21 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 public class BossAI : MonoBehaviour
 {
     public Transform target;
     public Transform Player2;
-    
+    public enemy_hp hp;
+    public GameObject spawner;
     NavMeshAgent Boss;
     public float distat;
     private float dmg;
+    public static bool deth;
     [SerializeField] float turnSpeed = 5;
+    float speed = 2;
     // Start is called before the first frame update
     void Start()
     {
         Boss = GetComponent<NavMeshAgent>();
-       // transform.Translate(-179, 18, -8);
+        // transform.Translate(-179, 18, -8);
+        
+
     }
 
     // Update is called once per frame
@@ -26,22 +31,36 @@ public class BossAI : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, turnSpeed * Time.deltaTime);
+        transform.Translate(0, speed * Time.deltaTime, 0);
+        if (transform.position.y > 17)
+        {
+            speed = 0;
+        }
 
 
+        if (hp.Health == 250)
+        {
+
+            spawner.SetActive(true);
+            Boss.enabled = false;
+        }
+        
         if (distat > 15f)
         {
 
             Boss.enabled = true;
             Boss.SetDestination(Player2.transform.position);
-
+            transform.Translate(0, speed * Time.deltaTime, 0);
+            
         }
         if (distat < 15f)
         {
 
             Boss.enabled = false;
-            
 
+          
         }
 
+       
     }
 }

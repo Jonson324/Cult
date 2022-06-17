@@ -6,14 +6,15 @@ public class cultistshoot : MonoBehaviour
 {
     [SerializeField] GameObject projectile;
     [SerializeField] Transform target;
-    
     [SerializeField] Transform shootPoint;
     [SerializeField] float turnSpeed = 5;
     [SerializeField] Transform Player;
-    float firerate = 0.9f;
+    bool shootAvl;
+    float firerate = 0.4f;
     void Start()
     {
         target = Player.transform;
+        shootAvl = true;
     }
 
     
@@ -21,11 +22,18 @@ public class cultistshoot : MonoBehaviour
     {
         firerate -= Time.deltaTime;
         Vector3 direction =  transform.position - target.position;
-       
+
+        //if (shootAvl)
+        //{
+        //    Shoot();
+        //}
+        //shootAvl = false; 
+
         if (firerate <= 0)
         {
-            firerate = 1.8f;
+            firerate = 0.4f;
             Shoot();
+
         }
     }
     void Shoot()
