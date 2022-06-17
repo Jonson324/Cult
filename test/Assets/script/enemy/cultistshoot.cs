@@ -21,7 +21,6 @@ public class cultistshoot : MonoBehaviour
     {
         firerate -= Time.deltaTime;
         Vector3 direction =  transform.position - target.position;
-        
        
         if (firerate <= 0)
         {

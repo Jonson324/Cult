@@ -10,6 +10,7 @@ public class staff_dmg : MonoBehaviour
     public float bulletSpeed = 10000;
     public List<AudioClip> sounds = new List<AudioClip>();
     public static float time_left;
+    static bool shoot = true;
 
     void Update()
     {
@@ -21,11 +22,21 @@ public class staff_dmg : MonoBehaviour
             if (amulet.currentCrystall != "Аква кристалл") {
                 if (Input.GetKeyDown(KeyCode.Mouse0)) {
                     Shot();
+                    GetComponent<AudioSource>().PlayOneShot(sounds[amulet.k]);
                 }
             }
+
             if (amulet.currentCrystall == "Аква кристалл") {
-                if (Input.GetKey(KeyCode.Mouse0)) {
+                shoot = true;
+                if (Input.GetMouseButtonDown(0)) {
+                    if (shoot) {
+                        GetComponent<AudioSource>().PlayOneShot(sounds[amulet.k]);
+                    }
                     Shot();
+                }
+                if (Input.GetMouseButtonUp(0)) {
+                    GetComponent<AudioSource>().Stop();
+                    shoot = true;
                 }
             }
         }
@@ -34,7 +45,7 @@ public class staff_dmg : MonoBehaviour
     void Shot() {
         Transform bulletInstance = (Transform)Instantiate(bullets[amulet.k], GameObject.Find("spawn").transform.position, Quaternion.identity);
         bulletInstance.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
-        GetComponent<AudioSource>().PlayOneShot(sounds[amulet.k]);
         time_left = amulet.cooldown;
+        shoot = false;
     }
 }
