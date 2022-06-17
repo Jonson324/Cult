@@ -9462,7 +9462,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4732258040709520828, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: mouseSens
-      value: 300
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4732258040709520828, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: playerBody
