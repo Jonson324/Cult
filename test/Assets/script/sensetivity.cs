@@ -8,7 +8,7 @@ public class sensetivity : MonoBehaviour
     private static readonly string Sensetivity = "sensetivity";
     [SerializeField] public Slider SliderSens;
     [SerializeField] public Text synstxt;
-    public static float slValue;
+    public static float slValue = 150f;
 
     
     void Start()
@@ -16,9 +16,9 @@ public class sensetivity : MonoBehaviour
 
         slValue = PlayerPrefs.GetFloat(Sensetivity);
 
-        if (slValue == 0)
+        if (slValue == 150f)
         {
-            slValue = 2f;
+            slValue = 150f;
             PlayerPrefs.SetFloat(Sensetivity, slValue);
         }
         else
