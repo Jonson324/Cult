@@ -40,7 +40,7 @@ public class BossAI : MonoBehaviour
 
         if (hp.Health == 250)
         {
-
+            gameObject.GetComponent<Animator>().Play("skell_call");
             spawner.SetActive(true);
             Boss.enabled = false;
         }

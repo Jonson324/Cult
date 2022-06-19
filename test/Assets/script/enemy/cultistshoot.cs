@@ -10,6 +10,7 @@ public class cultistshoot : MonoBehaviour
     [SerializeField] float turnSpeed = 5;
     [SerializeField] Transform Player;
     bool shootAvl;
+    
     float firerate = 0.4f;
     void Start()
     {
@@ -31,6 +32,8 @@ public class cultistshoot : MonoBehaviour
 
         if (firerate <= 0)
         {
+           
+            gameObject.GetComponent<Animator>().Play("Attack_B");
             firerate = 0.4f;
             Shoot();
 
