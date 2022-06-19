@@ -60,7 +60,7 @@ public class settings : MonoBehaviour
         PlayerPrefs.SetInt("QualitySettingPreference", qualityDropdown.value);
         PlayerPrefs.SetInt("ResolutionPreference", resolutionDropdown.value);
         PlayerPrefs.SetInt("FullscreenPreference", System.Convert.ToInt32(Screen.fullScreen));
-
+        ExitSettings();
     }
 
     public void LoadSettings(int currentResolutionIndex)
