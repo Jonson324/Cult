@@ -154,7 +154,7 @@ public class interact : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider collider) {
-        if ((collider.tag == "Player") && (task.quest_started == false)) {
+        if ((collider.tag == "Player") && (task.quest_started == false) && (first == false)) {
             hint.SetActive(true);
         }
     }

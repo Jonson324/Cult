@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class hammer : MonoBehaviour {
     public interact interactScript;
+    public GameObject light;
     // ÏÓÑÒÜ ÏÎßÂËßÅÒÑß ÍÀ ÍÀÊÀÂÀËÜÍÅ Â ÌÀÃÀÇÈÍÅ, ÅÑËÈ ÊÂÅÑÒ ÂÛÏÎËÍÅÍ
 
     void Start() {
         if (interact.start == true) {
             gameObject.SetActive(false);
         }
+        else { light.SetActive(false); }
     }
 
     void OnTriggerEnter(Collider col) {
