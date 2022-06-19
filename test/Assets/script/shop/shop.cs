@@ -44,7 +44,7 @@ public class shop : MonoBehaviour {
     }
 
     private void Update() {
-        monk.text = "Деньги: " + dataPlayer.money;
+        monk.text = " Деньги: " + dataPlayer.money;
         if ((about) && (Input.GetKeyDown(KeyCode.Mouse0))) {
             about_message.SetActive(false);
             about = false;

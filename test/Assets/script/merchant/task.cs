@@ -141,7 +141,7 @@ public class task : MonoBehaviour {
     }
 
     void OnTriggerStay (Collider col) {
-        if (col.tag == "Player") {
+        if ((col.tag == "Player") && (interact.first == false)) {
             if (Input.GetKey(KeyCode.E)) {
                 hint.SetActive(false);
                 merch_name.SetActive(true);
@@ -164,7 +164,7 @@ public class task : MonoBehaviour {
     }
 
     void OnTriggerEnter (Collider col) {
-        if ((col.tag == "Player") && (quest_started == false)) {
+        if ((col.tag == "Player") && (quest_started == false) && (interact.first == false)) {
             hint.SetActive(true);
         }
     }

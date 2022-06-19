@@ -50,9 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Copy/Tutorial 1.unity
     guid: a739b660d22757645935765c16c2d925
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/levels/Copy/Treasury2 1.unity
     guid: d28cfe5ff31bb5e4fa125ee1faa1d8cf
