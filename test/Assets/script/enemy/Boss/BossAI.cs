@@ -14,6 +14,7 @@ public class BossAI : MonoBehaviour
     public float distat;
     bool att;
     private float dmg;
+   public AudioSource uwd;
     public static bool deth;
    
     [SerializeField] float turnSpeed = 5;
@@ -42,10 +43,12 @@ public class BossAI : MonoBehaviour
 
        
          if (hp.Health <= 250){
+            uwd.Play();
             if (count.count == 0)
             {
-                Spawn();
                
+                Spawn();
+                
             }
             else if(count.count == 6) {
                 gameObject.GetComponent<BoxCollider>().enabled = true;
@@ -84,11 +87,13 @@ public class BossAI : MonoBehaviour
         }
         void Spawn()
         {
+            
             gameObject.GetComponent<BoxCollider>().enabled = false;
             gameObject.GetComponent<BossShot>().enabled = false;
             gameObject.GetComponent<Animator>().Play("skell_call");
             spawner.SetActive(true);
             Boss.enabled = false;
+
         }
        
     }
