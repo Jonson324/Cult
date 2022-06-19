@@ -59,10 +59,10 @@ public class LevelHealth : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            if (enamyCount.count == 2)
+            if (enamyCount.count == 8)
             {
                 tp.SetActive(true);
-                tp1.SetActive(true);
+                
             }
         }
         if (SceneManager.GetActiveScene().buildIndex == 4)

@@ -7,7 +7,7 @@ public class enemy_hp : MonoBehaviour
     [SerializeField] public List<Items> Rareitems;
     [SerializeField] public List<Items> items;
     public double Health;
-    public GameObject spawn;
+  
     public enamyCount enamyCount;
     public AudioSource auddeath;
     private void Start()
