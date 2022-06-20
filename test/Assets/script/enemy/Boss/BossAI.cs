@@ -16,7 +16,7 @@ public class BossAI : MonoBehaviour
     private float dmg;
    public AudioSource uwd;
     public static bool deth;
-   
+    
     [SerializeField] float turnSpeed = 5;
     float speed = 2;
     // Start is called before the first frame update
@@ -31,6 +31,8 @@ public class BossAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         distat = Vector3.Distance(Player2.transform.position, transform.position);
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));

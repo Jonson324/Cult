@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7063760905580816523}
   - component: {fileID: 5035994529161763905}
   - component: {fileID: 5918547904124177524}
-  - component: {fileID: 6837464960114687381}
   - component: {fileID: 1562581651959859433}
+  - component: {fileID: 540479735233682551}
   m_Layer: 0
   m_Name: HLCHEST
   m_TagString: HLCHEST
@@ -98,20 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 0.3
---- !u!64 &6837464960114687381
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6837464960114687380}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1917029493789446750, guid: f94c3c2144e6f7d4a9e26b5fa31f7708, type: 3}
 --- !u!114 &1562581651959859433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,3 +111,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
+  potion: {fileID: 4635214746940059285, guid: 14b3fc466acfbd144a27414cfa98bc0b, type: 3}
+--- !u!65 &540479735233682551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6837464960114687380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04669416, y: 0.07860966, z: 0.062156714}
+  m_Center: {x: 0.003783632, y: 0.0033924484, z: 0.0011689398}

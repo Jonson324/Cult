@@ -6,7 +6,7 @@ public class Items : MonoBehaviour
 {
     private DataPlayer dataPlayer = new DataPlayer();
     public int value;
-
+    public AudioSource potion;
     public class DataPlayer {
         public int money = 0;
         public List<string> buyItem = new List<string>();
@@ -34,6 +34,10 @@ public class Items : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            if (other.tag == "HealPotion" || other.tag == "HLPOTION" || other.tag == "heal")
+            {
+                potion.Play();
+            }
             if (PlayerPrefs.HasKey("saveGame"))
             {
                 dataPlayer = JsonUtility.FromJson<DataPlayer>(PlayerPrefs.GetString("saveGame"));

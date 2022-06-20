@@ -11,7 +11,7 @@ public class BossShot : MonoBehaviour
     [SerializeField] float turnSpeed = 5;
     [SerializeField] Transform Player;
     bool shootAvl;
-
+    public AudioSource shoot;
     float firerate = 0.4f;
     void Start()
     {
@@ -42,6 +42,7 @@ public class BossShot : MonoBehaviour
     }
     void Shoot()
     {
+        shoot.Play();
         Instantiate(projectile, shootPoint.position, shootPoint.rotation);
     }
 }
