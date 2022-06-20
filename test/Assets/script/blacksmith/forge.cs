@@ -33,7 +33,7 @@ public class forge : MonoBehaviour {
         public List<string> buyItem = new List<string>();
     }
 
-    private void Start() {
+    public void Start() {
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
@@ -42,7 +42,7 @@ public class forge : MonoBehaviour {
         }
     }
 
-    private void Update() {
+    public void Update() {
         skill_points.text = "Кол-во очков: " + amulet.free_points;
         money.text = "Деньги: " + dataPlayer.money.ToString();
         price_tag.text = "Цена услуги: " + price.ToString();
@@ -79,6 +79,8 @@ public class forge : MonoBehaviour {
         back_button.SetActive(true);
         topic.text = "Амулет";
         price_obj.SetActive(true);
+        Start();
+        Update();
     }
 
     public void Crystall() {
@@ -87,12 +89,8 @@ public class forge : MonoBehaviour {
         back_button.SetActive(true);
         topic.text = "Кристалл";
         price_obj.SetActive(true);
-        if (PlayerPrefs.HasKey("saveGame")) {
-            loadGame();
-        } else {
-            saveGame();
-            loadGame();
-        }
+        Start();
+        Update();
     }
 
     public void Back() {
@@ -105,16 +103,15 @@ public class forge : MonoBehaviour {
     }
 
     public void HealthUp() {
-        if ((hp_level < 3) && (amulet.free_points > 0)) {
+        if ((hp_level < 3) && (amulet.free_points > 0) && (dataPlayer.money > price)) {
             LevelHealth.maxhealth += 5;
             hp_level += 1;
             Upgrade(0, hp_level);
         }
-        
     }
 
     public void DamageUp() {
-        if ((dmg_level < 3) && (amulet.free_points > 0)) {
+        if ((dmg_level < 3) && (amulet.free_points > 0) && (dataPlayer.money > price)) {
             amulet.damage += 1;
             dmg_level += 1;
             Upgrade(1, dmg_level);
@@ -124,6 +121,7 @@ public class forge : MonoBehaviour {
     void Upgrade(int count, int stat) {
         level[count].text = stat + "/3";
         amulet.free_points -= 1;
+        dataPlayer.money -= price;
         amuletSound.Play();
     }
 
