@@ -12572,6 +12572,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4794638051691901116, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794638051691901116, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5359546059327617008, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -12591,6 +12599,10 @@ PrefabInstance:
     - target: {fileID: 5359546059327617010, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
       propertyPath: m_Name
       value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359546059327617010, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5359546059327617013, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
       propertyPath: inDialog
