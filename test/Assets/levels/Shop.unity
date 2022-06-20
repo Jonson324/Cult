@@ -12433,9 +12433,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4794638051691901107, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_Text
+      value: "\u041D\u0435\u0432\u0435\u0440\u043E\u044F\u0442\u043D\u044B\u0435
+        \u043A\u043E\u043C\u0444\u043E\u0440\u0442 \u0438 \u043F\u0440\u043E\u0447\u043D\u043E\u0441\u0442\u044C\n+15
+        \u043A \u041E\u0417"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794638051691901116, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794638051691901116, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5359546059327617010, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
       propertyPath: m_Name
       value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359546059327617010, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5359546059327617013, guid: e12373bbfe53cd140b100a3e7ab6cf2e, type: 3}
       propertyPath: inDialog
