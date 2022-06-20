@@ -33,7 +33,7 @@ public class forge : MonoBehaviour {
         public List<string> buyItem = new List<string>();
     }
 
-    public void Start() {
+    void Start() {
         if (PlayerPrefs.HasKey("saveGame")) {
             loadGame();
         } else {
@@ -42,7 +42,7 @@ public class forge : MonoBehaviour {
         }
     }
 
-    public void Update() {
+    void Update() {
         skill_points.text = "Кол-во очков: " + amulet.free_points;
         money.text = "Деньги: " + dataPlayer.money.ToString();
         price_tag.text = "Цена услуги: " + price.ToString();
@@ -105,6 +105,7 @@ public class forge : MonoBehaviour {
     public void HealthUp() {
         if ((hp_level < 3) && (amulet.free_points > 0) && (dataPlayer.money > price)) {
             LevelHealth.maxhealth += 5;
+            LevelHealth.levelHealth += 5;
             hp_level += 1;
             Upgrade(0, hp_level);
         }
@@ -122,6 +123,7 @@ public class forge : MonoBehaviour {
         level[count].text = stat + "/3";
         amulet.free_points -= 1;
         dataPlayer.money -= price;
+        Start();
         amuletSound.Play();
     }
 
@@ -136,8 +138,7 @@ public class forge : MonoBehaviour {
             amulet.previousCrystall = amulet.currentCrystall;
             amulet.currentCrystall = crystall_name;
             dataPlayer.money -= price;
-            saveGame();
-            loadGame();
+            Start();
         }
     }
 }
