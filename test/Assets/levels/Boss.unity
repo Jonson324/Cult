@@ -14381,7 +14381,7 @@ MonoBehaviour:
   Player2: {fileID: 1043778842}
   hp: {fileID: 601902697}
   spawner: {fileID: 393855582}
-  count: {fileID: 0}
+  count: {fileID: 163133527}
   distat: 0
   uwd: {fileID: 1738887933}
   turnSpeed: 5

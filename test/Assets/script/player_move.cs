@@ -7,7 +7,7 @@ public class player_move : MonoBehaviour
     public CharacterController controller;
 
     public static float SPEED;
-    public static float start_speed = 15.0f;
+    public static float start_speed = 8f;
     public float gravity = -9.8f;// сила гравитации
 
     Vector3 velocity;// переменная для расчета

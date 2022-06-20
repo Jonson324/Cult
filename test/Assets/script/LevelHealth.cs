@@ -45,7 +45,7 @@ public class LevelHealth : MonoBehaviour
 
         txt.text = "" + Mathf.Floor(levelHealth);
 
-        if (levelHealth <= 0) {
+        if (levelHealth < 1) {
             PanelDead.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
