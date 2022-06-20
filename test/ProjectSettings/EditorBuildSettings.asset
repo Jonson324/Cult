@@ -65,9 +65,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Copy/Stairs 4.unity
     guid: 3c2e50104d76e534092322b51fad8e69
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/levels/Shop 1.unity
     guid: c7c5721d0a6465842967f0b9b48ae056
