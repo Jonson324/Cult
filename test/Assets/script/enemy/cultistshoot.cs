@@ -33,7 +33,7 @@ public class cultistshoot : MonoBehaviour
         if (firerate <= 0)
         {
            
-            gameObject.GetComponent<Animator>().Play("Attack_B");
+            gameObject.GetComponent<Animator>().Play("AtackCult");
             firerate = 0.4f;
             Shoot();
 

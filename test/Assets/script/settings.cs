@@ -47,7 +47,7 @@ public class settings : MonoBehaviour
 
     public void SetQuality(int qualityIndex)
     {
-        QualitySettings.SetQualityLevel(qualityIndex);
+        QualitySettings.SetQualityLevel(qualityIndex + 1);
     }
 
     public void ExitSettings()

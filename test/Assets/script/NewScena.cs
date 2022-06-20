@@ -8,17 +8,19 @@ public class NewScena : MonoBehaviour
     public int sceneIndex;
     public GameObject hint;
     private bool a;
-
+    public AudioSource op;
     private void OnTriggerStay(Collider other)
     {
         if ((other.tag == "Player") && (interact.quest_completed == false) && (interact.first == false))
         {
             if (Input.GetKey(KeyCode.E))
             {
+                op.Play();
                 hint.SetActive(false);
                 if ((SceneManager.GetActiveScene().buildIndex == 1) && (interact.start == true)) {
                     amulet.hammer_found = false;
                 }
+                
                 SceneManager.LoadScene(sceneIndex);
                
             }
