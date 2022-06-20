@@ -130,11 +130,13 @@ public class shop : MonoBehaviour {
         if (category == "Роба") {
             if ((robe == true) && (value > robe_current_stat)) {
                 LevelHealth.maxhealth += value - robe_current_stat;
+                LevelHealth.levelHealth += value - robe_current_stat;
                 robe_current_stat = value;
             }
             if (robe == false) {
                 robe = true;
                 LevelHealth.maxhealth += value;
+                LevelHealth.levelHealth += value;
                 robe_current_stat = value;
             }
         }
@@ -152,6 +154,7 @@ public class shop : MonoBehaviour {
         if (category == "Кольцо") {
             if (stat == "ОЗ") {
                 LevelHealth.maxhealth += value;
+                LevelHealth.levelHealth += value;
             }
             if (stat == "Урон") {
                 amulet.damage += value;
