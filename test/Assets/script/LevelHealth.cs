@@ -116,6 +116,11 @@ public class LevelHealth : MonoBehaviour
             levelHealth += 25;
             Destroy(GameObject.FindGameObjectWithTag("HealPotion"));
         }
+        if (other.tag == "BossHand")
+        {
+            levelHealth -= 15;
+            audiohit.Play();
+        }
         if (other.tag == "BossBall")
         {
             if (amulet.boss_weakened == true)

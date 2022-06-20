@@ -77,7 +77,7 @@ public class BossAI : MonoBehaviour
 
             Boss.enabled = true;
             Boss.SetDestination(Player2.transform.position);
-            transform.Translate(0, speed * Time.deltaTime, 0);
+            
             
         }
         if (distat < 15f)
@@ -86,6 +86,18 @@ public class BossAI : MonoBehaviour
             Boss.enabled = false;
 
           
+        }
+        if (distat < 6f)
+        {
+            
+            gameObject.GetComponent<BossShot>().enabled = false;
+            gameObject.GetComponent<Animator>().Play("Attack2_B");
+
+        }
+        else if(distat > 6)
+        {
+            gameObject.GetComponent<BossShot>().enabled = true;
+            gameObject.GetComponent<Animation>().Stop("Attack2_B");
         }
         void Spawn()
         {
