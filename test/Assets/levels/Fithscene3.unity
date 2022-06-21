@@ -4118,7 +4118,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &226654747
 Animator:
@@ -7037,7 +7038,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &421939413
 Animator:
@@ -7498,6 +7500,7 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
+  task: {fileID: 0}
   enamyCount: {fileID: 88911415}
   auddeath: {fileID: 7898210530308097244, guid: b0dd494613a8f0748ac4327c81421c0f, type: 3}
 --- !u!114 &452707885
@@ -7512,7 +7515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98caa5909ed3454ba930753d21cf095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
+  projectile: {fileID: 6530732945606706857, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
   target: {fileID: 804249210}
   shootPoint: {fileID: 999370260}
   turnSpeed: 2
@@ -8403,7 +8406,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &506985498
 Animator:
@@ -11611,7 +11615,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &656170951
 Animator:
@@ -12610,6 +12615,7 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
+  task: {fileID: 0}
   enamyCount: {fileID: 88911415}
   auddeath: {fileID: 7898210530308097244, guid: b0dd494613a8f0748ac4327c81421c0f, type: 3}
 --- !u!114 &704009532
@@ -12624,7 +12630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98caa5909ed3454ba930753d21cf095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
+  projectile: {fileID: 6530732945606706857, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
   target: {fileID: 804249210}
   shootPoint: {fileID: 222802084}
   turnSpeed: 2
@@ -13668,7 +13674,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &774893895
 Animator:
@@ -14244,6 +14251,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: gravity
+      value: -9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 804249217}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: jumpHieght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: grountCheck
+      value: 
+      objectReference: {fileID: 804249216}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: tp
       value: 
@@ -14493,6 +14520,16 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!4 &804249216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4732258041590434472, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 804249209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &804249217 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059874, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 804249209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &810586917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15860,7 +15897,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &862133032
 Animator:
@@ -16148,7 +16186,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &869886679
 Animator:
@@ -17714,6 +17753,7 @@ MonoBehaviour:
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   Health: 100
+  task: {fileID: 0}
   enamyCount: {fileID: 88911415}
   auddeath: {fileID: 7898210530308097244, guid: b0dd494613a8f0748ac4327c81421c0f, type: 3}
 --- !u!114 &980773917
@@ -17728,7 +17768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98caa5909ed3454ba930753d21cf095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3860314677996411043, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
+  projectile: {fileID: 6530732945606706857, guid: 4dcae75333d805344b5ab650dfc316e4, type: 3}
   target: {fileID: 804249210}
   shootPoint: {fileID: 261399783}
   turnSpeed: 2
@@ -18976,7 +19016,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &1043684826
 Animator:
@@ -23881,7 +23922,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &1355857554
 Animator:
@@ -30583,7 +30625,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &1799558625
 Animator:
@@ -31033,7 +31076,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &1840382607
 Animator:
@@ -33083,7 +33127,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 88911415}
   auddeath: {fileID: 841014539}
 --- !u!95 &1936569530
 Animator:

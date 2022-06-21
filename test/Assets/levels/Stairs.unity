@@ -653,7 +653,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &44737529
 Animator:
@@ -12876,7 +12877,7 @@ PrefabInstance:
     - target: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1180291430}
     - target: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: levelHealthScript
       value: 
@@ -13147,7 +13148,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &482593167
 Animator:
@@ -13524,6 +13526,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: gravity
+      value: -9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 489918979}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: jumpHieght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: grountCheck
+      value: 
+      objectReference: {fileID: 489918978}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: tp
       value: 
@@ -13775,6 +13797,16 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!4 &489918978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4732258041590434472, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 489918971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &489918979 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059874, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 489918971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &490909225
 GameObject:
   m_ObjectHideFlags: 0
@@ -28138,7 +28170,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &1048652353
 Animator:
@@ -32441,12 +32474,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6069115018656588122, guid: 23ceceaa7b6ab9c48aff2d3128470630, type: 3}
   m_PrefabInstance: {fileID: 1180291427}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1180291430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1180291430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6069115018656588124, guid: 23ceceaa7b6ab9c48aff2d3128470630, type: 3}
+  m_PrefabInstance: {fileID: 1180291427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1181383598
 GameObject:
   m_ObjectHideFlags: 0
@@ -36127,7 +36165,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &1317200600
 Animator:
@@ -38947,7 +38986,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &1398452009
 Animator:
@@ -49345,7 +49385,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &1736336237
 Animator:
@@ -50515,7 +50556,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &1776310434
 Animator:
@@ -59198,7 +59240,8 @@ MonoBehaviour:
   - {fileID: 4059498428623684922, guid: c673a27dfdfa02d44b6b8a9b1eac8669, type: 3}
   - {fileID: 5496270308845804502, guid: f68a303ad1dab8f4aaf5cbd2cd8440fb, type: 3}
   Health: 100
-  enamyCount: {fileID: 0}
+  task: {fileID: 0}
+  enamyCount: {fileID: 1180291428}
   auddeath: {fileID: 91607379}
 --- !u!95 &2106580863
 Animator:

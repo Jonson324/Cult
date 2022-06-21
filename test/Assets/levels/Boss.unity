@@ -6885,13 +6885,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043778842}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
+      propertyPath: task
+      value: 
+      objectReference: {fileID: 562593681}
+    - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: auddeath
       value: 
-      objectReference: {fileID: 4653672195545569877, guid: 0211b5bd09f0e6e41b60d0cc38020071, type: 3}
+      objectReference: {fileID: 1853255172}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: enamyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 163133527}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: items.Array.data[1]
       value: 
@@ -10194,13 +10198,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043778842}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
+      propertyPath: task
+      value: 
+      objectReference: {fileID: 562593681}
+    - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: auddeath
       value: 
-      objectReference: {fileID: 4653672195545569877, guid: 0211b5bd09f0e6e41b60d0cc38020071, type: 3}
+      objectReference: {fileID: 1853255172}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: enamyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 163133527}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: items.Array.data[1]
       value: 
@@ -14822,7 +14830,7 @@ MonoBehaviour:
   - {fileID: -6265883573527635529, guid: b827a97f13080344c8a50292aecb84fb, type: 3}
   Health: 500
   task: {fileID: 562593681}
-  enamyCount: {fileID: 0}
+  enamyCount: {fileID: 163133527}
   auddeath: {fileID: 1853255172}
 --- !u!114 &601902698
 MonoBehaviour:
@@ -14840,7 +14848,7 @@ MonoBehaviour:
   Player2: {fileID: 1043778842}
   hp: {fileID: 601902697}
   spawner: {fileID: 393855582}
-  count: {fileID: 0}
+  count: {fileID: 163133527}
   distat: 0
   uwd: {fileID: 1738887933}
   turnSpeed: 5
@@ -14856,7 +14864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d487d64e1e4074a9c2b55dc0984c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 685373619999227810, guid: 7cf01ab16a0d0994e95b6b6fa470e094, type: 3}
+  projectile: {fileID: 8147980194456872382, guid: 7cf01ab16a0d0994e95b6b6fa470e094, type: 3}
   target: {fileID: 1043778842}
   shootPoint: {fileID: 1034356312}
   turnSpeed: 5
@@ -16237,13 +16245,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043778842}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
+      propertyPath: task
+      value: 
+      objectReference: {fileID: 562593681}
+    - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: auddeath
       value: 
-      objectReference: {fileID: 4653672195545569877, guid: 0211b5bd09f0e6e41b60d0cc38020071, type: 3}
+      objectReference: {fileID: 1853255172}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: enamyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 163133527}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: items.Array.data[1]
       value: 
@@ -25803,7 +25815,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: gravity
-      value: -10
+      value: -9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1043778845}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: jumpHieght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: grountCheck
+      value: 
+      objectReference: {fileID: 1043778844}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: txt
@@ -25926,6 +25954,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1043778844 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4732258041590434472, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1043778840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &1043778845 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059874, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1043778840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1043831837
 GameObject:
   m_ObjectHideFlags: 0
@@ -38772,13 +38810,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043778842}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
+      propertyPath: task
+      value: 
+      objectReference: {fileID: 562593681}
+    - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: auddeath
       value: 
-      objectReference: {fileID: 4653672195545569877, guid: 0211b5bd09f0e6e41b60d0cc38020071, type: 3}
+      objectReference: {fileID: 1853255172}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: enamyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 163133527}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: items.Array.data[1]
       value: 
@@ -39846,13 +39888,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043778842}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
+      propertyPath: task
+      value: 
+      objectReference: {fileID: 562593681}
+    - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: auddeath
       value: 
-      objectReference: {fileID: 4653672195545569877, guid: 0211b5bd09f0e6e41b60d0cc38020071, type: 3}
+      objectReference: {fileID: 1853255172}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: enamyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 163133527}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: items.Array.data[1]
       value: 
@@ -48661,13 +48707,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1043778842}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
+      propertyPath: task
+      value: 
+      objectReference: {fileID: 562593681}
+    - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: auddeath
       value: 
-      objectReference: {fileID: 4653672195545569877, guid: 0211b5bd09f0e6e41b60d0cc38020071, type: 3}
+      objectReference: {fileID: 1853255172}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: enamyCount
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 163133527}
     - target: {fileID: 2071521960022187845, guid: e7792b66708659a499ce3a9ab75aeac6, type: 3}
       propertyPath: items.Array.data[1]
       value: 

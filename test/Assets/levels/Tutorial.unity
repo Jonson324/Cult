@@ -10418,6 +10418,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: gravity
+      value: -9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1275777756}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: jumpHieght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: grountCheck
+      value: 
+      objectReference: {fileID: 1275777755}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: txt
       value: 
@@ -10522,6 +10542,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b210e0e09c5d14640adba9ff949484d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1275777755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4732258041590434472, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1275777752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &1275777756 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059874, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1275777752}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1276132883
 GameObject:
   m_ObjectHideFlags: 0
@@ -17707,7 +17737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5073954748235318228, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 127.560455
+      value: 127.597
       objectReference: {fileID: 0}
     - target: {fileID: 5073954748235318228, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17715,7 +17745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5073954748235318228, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.551862
+      value: 14.407
       objectReference: {fileID: 0}
     - target: {fileID: 5073954748235318228, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17748,6 +17778,14 @@ PrefabInstance:
     - target: {fileID: 5557897522326362478, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
       propertyPath: m_Name
       value: Hammer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624129414020399297, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
+      propertyPath: m_Range
+      value: 2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624129414020399297, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
+      propertyPath: m_Intensity
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 7297808329021160636, guid: 79e298797eb16b942951d397b6f8973b, type: 3}
       propertyPath: interactScript
