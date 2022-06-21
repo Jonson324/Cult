@@ -87,6 +87,18 @@ public class BossAI : MonoBehaviour
 
           
         }
+        if (distat < 3f)
+        {
+
+            gameObject.GetComponent<BossShot>().enabled = false;
+            gameObject.GetComponent<Animator>().Play("Attack2_B");
+
+        }
+        else if (distat > 3)
+        {
+            gameObject.GetComponent<BossShot>().enabled = true;
+            gameObject.GetComponent<Animation>().Stop("Attack2_B");
+        }
         void Spawn()
         {
             
