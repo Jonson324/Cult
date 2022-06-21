@@ -46,7 +46,7 @@ public class BossAI : MonoBehaviour
        
          if (hp.Health <= 250){
             uwd.Play();
-            if (count.count == 0)
+            if (count.count <6)
             {
                
                 Spawn();

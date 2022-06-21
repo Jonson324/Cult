@@ -136,6 +136,11 @@ public class LevelHealth : MonoBehaviour
 
             audiohit.Play();
         }
+        if (other.tag == "BossHand")
+        {
+            levelHealth -= 10;
+            audiohit.Play();
+        }
     }
 
     private void OnTriggerStay(Collider other)
