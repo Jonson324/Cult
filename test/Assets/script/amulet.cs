@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class amulet : MonoBehaviour {
-    public static int damage = 10;
+    public static int damage = 5;
     public static float dmg_multiplier;
     public static int free_points;
 
