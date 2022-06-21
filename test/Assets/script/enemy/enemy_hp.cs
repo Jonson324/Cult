@@ -7,6 +7,8 @@ public class enemy_hp : MonoBehaviour
     [SerializeField] public List<Items> Rareitems;
     [SerializeField] public List<Items> items;
     public double Health;
+    public static bool bossDefeated;
+    public GameObject task;
   
     public enamyCount enamyCount;
     public AudioSource auddeath;
@@ -20,12 +22,12 @@ public class enemy_hp : MonoBehaviour
         {
             Health = 25;
         }
-        if(gameObject.tag == "Boss")
+        if (gameObject.tag == "Boss")
         {
-            Health = 500;
+            Health = 800;
             if (amulet.boss_weakened == true)
             {
-                Health = 400;
+                Health = 600;
             }
         }
     }
@@ -45,6 +47,10 @@ public class enemy_hp : MonoBehaviour
                 else if (Random.Range(0, 100) <= 15)
                 {
                     Instantiate(Rareitems[Random.Range(0, items.Count)], transform.position, Quaternion.identity);
+                }
+                if (gameObject.tag == "Boss") {
+                    bossDefeated = true;
+                    task.SetActive(true);
                 }
                 auddeath.Play();
                 Destroy(gameObject);

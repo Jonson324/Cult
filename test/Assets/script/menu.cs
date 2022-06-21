@@ -9,6 +9,7 @@ public class menu : MonoBehaviour
 
     public void Play()
     {
+        Ending.End();
         amuletScript.Clean();
         LevelHealth.levelHealth = 100;
         SceneManager.LoadScene(1);
