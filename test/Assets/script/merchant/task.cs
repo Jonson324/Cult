@@ -213,7 +213,7 @@ public class task : MonoBehaviour {
     }
 
     public void ScrollBuy() {
-        dataPlayer.money -= 5000;
+        dataPlayer.money -= 4000;
         PlayerPrefs.SetString("saveGame", JsonUtility.ToJson(dataPlayer));
         scrollBtn.SetActive(false);
         amulet.boss_weakened = true;

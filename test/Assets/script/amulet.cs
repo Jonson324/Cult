@@ -27,8 +27,8 @@ public class amulet : MonoBehaviour {
             k = 1;
         }
         if (currentCrystall == "Терра кристалл") {
-            dmg_multiplier = 2.5f;
-            cooldown = 1f;
+            dmg_multiplier = 2f;
+            cooldown = 1.2f;
             k = 2;
         }
         if (currentCrystall == "Аеро кристалл") {
