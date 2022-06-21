@@ -15,7 +15,6 @@ public class menu : MonoBehaviour
     {
         Ending.End();
         amuletScript.Clean();
-        LevelHealth.levelHealth = 100;
         SceneManager.LoadScene(1);
     }
 
@@ -26,6 +25,7 @@ public class menu : MonoBehaviour
 
     public void Exit()
     {
+        amuletScript.Clean();
         Application.Quit();
     }
 }
