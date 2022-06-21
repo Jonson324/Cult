@@ -92,11 +92,18 @@ public class LevelHealth : MonoBehaviour
             audiohit.Play();
         }
 
-        if (other.tag == "Health")
+        if (other.tag == "Health" )
         {
             levelHealth += 20;
             Destroy(GameObject.FindGameObjectWithTag("Health"));
         }
+        if (other.tag == "HLCHEST")
+        {
+            levelHealth += 20;
+            Destroy(GameObject.FindGameObjectWithTag("HLCHEST"));
+
+        }
+
         if (other.tag == "sword")
         {
             levelHealth -= 25;
@@ -127,6 +134,11 @@ public class LevelHealth : MonoBehaviour
                 levelHealth -= 14;
             }
 
+            audiohit.Play();
+        }
+        if (other.tag == "BossHand")
+        {
+            levelHealth -= 10;
             audiohit.Play();
         }
     }
