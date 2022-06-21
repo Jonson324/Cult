@@ -18,7 +18,7 @@ public class staff_dmg : MonoBehaviour
             time_left -= Time.deltaTime;
         }
 
-        if ((pauseMenuScript.GameISPause == false) && (inDialogScript.in_dialog == false) && (time_left <= 0)) {
+        if ((pauseMenuScript.GameISPause == false) && (inDialogScript.in_dialog == false) && (time_left <= 0) && (Ending.end == false)) {
             if (amulet.currentCrystall != "Аква кристалл") {
                 if (Input.GetKeyDown(KeyCode.Mouse0)) {
                     Shot();

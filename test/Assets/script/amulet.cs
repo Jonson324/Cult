@@ -57,6 +57,8 @@ public class amulet : MonoBehaviour {
         talk.good = false;
         talk.jade_only = false;
 
+        enemy_hp.bossDefeated = false;
+
         PlayerPrefs.DeleteKey("saveGame");
         PlayerPrefs.DeleteKey("jade");
     }
