@@ -1136,6 +1136,7 @@ MonoBehaviour:
   - {fileID: 5913232332334910243}
   bye: {fileID: 4843095211468798194}
   end: 0
+  jadeQuestButton: {fileID: 5913232333531400401}
   score: 0
 --- !u!1 &1994452889114413992
 GameObject:
@@ -6768,7 +6769,7 @@ GameObject:
   - component: {fileID: 5913232333531400412}
   - component: {fileID: 5913232333531400415}
   m_Layer: 5
-  m_Name: No
+  m_Name: Jade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6791,7 +6792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 499.29053, y: 151.05925}
+  m_AnchoredPosition: {x: 499.29053, y: 238.31384}
   m_SizeDelta: {x: 302.7072, y: 68.3894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5913232333531400413
@@ -8053,7 +8054,7 @@ GameObject:
   - component: {fileID: 5913232333917950553}
   - component: {fileID: 5913232333917950552}
   m_Layer: 5
-  m_Name: Yes
+  m_Name: Smith
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8076,7 +8077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 499.29053, y: 238.31384}
+  m_AnchoredPosition: {x: 499.29053, y: 151.05925}
   m_SizeDelta: {x: 302.7072, y: 68.3894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5913232333917950534
@@ -10125,12 +10126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

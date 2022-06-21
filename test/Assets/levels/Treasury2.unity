@@ -2974,7 +2974,7 @@ PrefabInstance:
       objectReference: {fileID: 625380281}
     - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: jumpHieght
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: grountCheck

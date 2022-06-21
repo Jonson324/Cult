@@ -39,6 +39,7 @@ public class talk : MonoBehaviour {
     [HideInInspector] public bool end;
     public static bool good;
     public static bool jade_only;
+    public GameObject jadeQuestButton;
     int i = 0;
     public int score = 0;
 
@@ -188,6 +189,7 @@ public class talk : MonoBehaviour {
             jade_only = true;
             dataPlayer.jade_active = 1;
             PlayerPrefs.SetString("jade", JsonUtility.ToJson(dataPlayer));
+            jadeQuestButton.SetActive(false);
         }
     }
 

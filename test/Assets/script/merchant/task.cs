@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class task : MonoBehaviour {
     private DataPlayer dataPlayer = new DataPlayer();
     public inDialog inDialogScript;
-    public dialog DialogScript;
+    public dialog dialogScript;
     public PauseMenu pauseMenuScript;
 
     public static bool quest_started;
@@ -35,6 +35,7 @@ public class task : MonoBehaviour {
     [HideInInspector] public bool secretScroll;
     [HideInInspector] public bool secretScrollNo;
     [HideInInspector] public bool secretScrollYes;
+    static bool scrollBuy;
     public GameObject scroll_dialog;
     public GameObject scrollBtn;
     public Text money_txt;
@@ -112,7 +113,7 @@ public class task : MonoBehaviour {
 
             if (Input.GetKeyDown(KeyCode.Mouse0) && (secretScroll == true)) {
                 money_obj.SetActive(true);
-                if (dataPlayer.money > 5000) {
+                if (dataPlayer.money >= 5000) {
                     scrollButtons[0].SetActive(true);
                     scrollButtons[1].SetActive(true);
                 }
@@ -143,6 +144,7 @@ public class task : MonoBehaviour {
     void OnTriggerStay (Collider col) {
         if ((col.tag == "Player") && (interact.first == false)) {
             if (Input.GetKey(KeyCode.E)) {
+                ScrollCheck();
                 hint.SetActive(false);
                 merch_name.SetActive(true);
                 inDialogScript.in_dialog = true;
@@ -191,10 +193,10 @@ public class task : MonoBehaviour {
 
     public void Talk() {
         shop_dialog.SetActive(false);
-        DialogScript.first[0].SetActive(true);
+        dialogScript.first[0].SetActive(true);
         talk.SetActive(true);
         talkin = true;
-        DialogScript.one = true;
+        dialogScript.one = true;
     }
 
     public void objectFound() {
@@ -218,6 +220,7 @@ public class task : MonoBehaviour {
         ScrollEnd();
         scroll_phrases[1].SetActive(true);
         secretScrollYes = true;
+        scrollBuy = true;
     }
 
     public void ScrollDeny() {
@@ -242,5 +245,11 @@ public class task : MonoBehaviour {
         foreach (var phr in scroll_phrases) { phr.SetActive(false); }
         scroll_dialog.SetActive(false);
         scroll_phrases[0].SetActive(true);
+    }
+
+    void ScrollCheck() {
+        if ((dialog.scrolled == true) && (scrollBuy == false)) {
+            scrollBtn.SetActive(true);
+        }
     }
 }
