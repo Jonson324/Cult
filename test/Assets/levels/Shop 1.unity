@@ -8050,6 +8050,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: gravity
+      value: -9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1409255385}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: jumpHieght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: grountCheck
+      value: 
+      objectReference: {fileID: 1409255384}
+    - target: {fileID: 4732258041065059875, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4732258041065059884, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
       propertyPath: tp
       value: 
@@ -8301,6 +8321,16 @@ MonoBehaviour:
 --- !u!4 &1409255383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4732258041065059873, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1409255377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1409255384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4732258041590434472, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
+  m_PrefabInstance: {fileID: 1409255377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &1409255385 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4732258041065059874, guid: bfbc104f90a12994dafae2f40ef3718d, type: 3}
   m_PrefabInstance: {fileID: 1409255377}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1413046045
