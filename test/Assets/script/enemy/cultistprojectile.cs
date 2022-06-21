@@ -18,6 +18,9 @@ public class cultistprojectile : MonoBehaviour
         Vector3 diractionn = target.position - transform.position;
         rb.AddForce(diractionn * speed * Time.deltaTime );
     }
+    private void OnCollisionStay(Collision collision)
+    {
+        Destroy(GameObject.FindGameObjectWithTag("CultistAttack"));
+    }
 
-   
 }

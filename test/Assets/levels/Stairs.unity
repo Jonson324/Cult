@@ -12933,7 +12933,7 @@ PrefabInstance:
     - target: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1180291430}
     - target: {fileID: 7778404138177722344, guid: 84039677334c68248840b99f94a35255, type: 3}
       propertyPath: levelHealthScript
       value: 
@@ -32498,12 +32498,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6069115018656588122, guid: 23ceceaa7b6ab9c48aff2d3128470630, type: 3}
   m_PrefabInstance: {fileID: 1180291427}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1180291430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1180291430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6069115018656588124, guid: 23ceceaa7b6ab9c48aff2d3128470630, type: 3}
+  m_PrefabInstance: {fileID: 1180291427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1181383598
 GameObject:
   m_ObjectHideFlags: 0

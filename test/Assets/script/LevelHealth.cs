@@ -102,11 +102,11 @@ public class LevelHealth : MonoBehaviour
             levelHealth -= 25;
             audiohit.Play();
         }
-        if(other.tag == "CultistAttack")
-        {
-            levelHealth -= 10;
-            audiohit.Play();
-        }
+        //if(other.tag == "CultistAttack")
+        //{
+        //    levelHealth -= 10;
+        //    audiohit.Play();
+        //}
         if (other.tag == "heal")
         {
             levelHealth = maxhealth;
@@ -155,5 +155,13 @@ public class LevelHealth : MonoBehaviour
     public void HealthUpgrade(int x)
     {
         maxhealth += x;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "CultistAttack")
+        {
+            levelHealth -= 10;
+            audiohit.Play();
+        }
     }
 }
