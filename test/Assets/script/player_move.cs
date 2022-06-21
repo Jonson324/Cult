@@ -15,10 +15,8 @@ public class player_move : MonoBehaviour
     public Transform grountCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    public float jumpHieght = 6f;
+    public float jumpHieght = 2f;
     public bool isGrounded;
-
-
 
     private void Start()
     {

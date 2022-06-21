@@ -13277,6 +13277,14 @@ PrefabInstance:
       propertyPath: taskScript
       value: 
       objectReference: {fileID: 4256355538411865058}
+    - target: {fileID: 8206357048189476461, guid: 4f10894167ae7e84e99dea1d6fadaecb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8206357049841886654, guid: 4f10894167ae7e84e99dea1d6fadaecb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f10894167ae7e84e99dea1d6fadaecb, type: 3}
 --- !u!1 &2260918016660337887 stripped
@@ -13501,6 +13509,10 @@ PrefabInstance:
       propertyPath: current_task
       value: 
       objectReference: {fileID: 2260918016660337887}
+    - target: {fileID: 8180941441313158655, guid: 82dfda86be1f61c45ba71307613857a4, type: 3}
+      propertyPath: dialogScript
+      value: 
+      objectReference: {fileID: 7717833787083283805}
     - target: {fileID: 8180941441313158655, guid: 82dfda86be1f61c45ba71307613857a4, type: 3}
       propertyPath: quest_dialog
       value: 

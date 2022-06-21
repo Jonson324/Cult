@@ -464,6 +464,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11829198}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &17569629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5913232333531400401, guid: ef12ec342fad95f4a8741fa21cb3416f, type: 3}
+  m_PrefabInstance: {fileID: 8532487353739648085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &17798086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1464,10 @@ PrefabInstance:
       propertyPath: welcome_dialog
       value: 
       objectReference: {fileID: 2491339528440165062}
+    - target: {fileID: 4150479207250895312, guid: 19f123d0f394ef542ae581ca9179950b, type: 3}
+      propertyPath: jadeQuestButton
+      value: 
+      objectReference: {fileID: 17569629}
     - target: {fileID: 4150479207250895312, guid: 19f123d0f394ef542ae581ca9179950b, type: 3}
       propertyPath: first_phrases.Array.data[0]
       value: 
@@ -18284,22 +18293,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 148937069}
-    - target: {fileID: 6123338668040249361, guid: ef12ec342fad95f4a8741fa21cb3416f, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6123338668040249361, guid: ef12ec342fad95f4a8741fa21cb3416f, type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6123338668040249361, guid: ef12ec342fad95f4a8741fa21cb3416f, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 6123338668040249361, guid: ef12ec342fad95f4a8741fa21cb3416f, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
     - target: {fileID: 6123338668040249390, guid: ef12ec342fad95f4a8741fa21cb3416f, type: 3}
       propertyPath: m_Name
       value: Canvas

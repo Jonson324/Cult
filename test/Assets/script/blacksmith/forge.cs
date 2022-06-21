@@ -79,8 +79,6 @@ public class forge : MonoBehaviour {
         back_button.SetActive(true);
         topic.text = "Амулет";
         price_obj.SetActive(true);
-        Start();
-        Update();
     }
 
     public void Crystall() {
@@ -89,8 +87,6 @@ public class forge : MonoBehaviour {
         back_button.SetActive(true);
         topic.text = "Кристалл";
         price_obj.SetActive(true);
-        Start();
-        Update();
     }
 
     public void Back() {
@@ -123,8 +119,9 @@ public class forge : MonoBehaviour {
         level[count].text = stat + "/3";
         amulet.free_points -= 1;
         dataPlayer.money -= price;
-        Start();
         amuletSound.Play();
+        saveGame();
+        loadGame();
     }
 
     public void CloseForge() {
@@ -138,7 +135,8 @@ public class forge : MonoBehaviour {
             amulet.previousCrystall = amulet.currentCrystall;
             amulet.currentCrystall = crystall_name;
             dataPlayer.money -= price;
-            Start();
+            saveGame();
+            loadGame();
         }
     }
 }

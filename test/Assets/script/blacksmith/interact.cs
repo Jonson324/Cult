@@ -110,6 +110,7 @@ public class interact : MonoBehaviour {
                 dataPlayer.jade_earned = 0;
                 PlayerPrefs.SetString("jade", JsonUtility.ToJson(dataPlayer));
                 LevelHealth.maxhealth += 10;
+                LevelHealth.levelHealth += 10;
             }
         }
 
@@ -204,9 +205,12 @@ public class interact : MonoBehaviour {
     void JadeCheck() {
         if (PlayerPrefs.HasKey("jade")) {
             dataPlayer = JsonUtility.FromJson<DataPlayer>(PlayerPrefs.GetString("jade"));
-        } else { PlayerPrefs.SetString("jade", JsonUtility.ToJson(dataPlayer)); }
-        if (dataPlayer.jade_earned == 1) { jadeBtn.SetActive(true); }
+        } else {
+            PlayerPrefs.SetString("jade", JsonUtility.ToJson(dataPlayer));
+        }
+        if (dataPlayer.jade_earned == 1) { jadeBtn.SetActive(true); talkScript.jadeQuestButton.SetActive(false); }
         if (dataPlayer.jade_earned == 0) { jadeBtn.SetActive(false); }
+        if (dataPlayer.jade_active == 1) { talkScript.jadeQuestButton.SetActive(false); }
     }
 
     public void Jade() {
