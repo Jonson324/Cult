@@ -8,7 +8,7 @@ public class Ending : MonoBehaviour {
     public GameObject task;
     public GameObject ending;
     static float time_left;
-    static float read_time = 17f;
+    static float read_time = 27f;
     public static bool end;
     static bool true_end;
     int i;

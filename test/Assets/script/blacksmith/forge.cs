@@ -79,6 +79,7 @@ public class forge : MonoBehaviour {
         back_button.SetActive(true);
         topic.text = "Амулет";
         price_obj.SetActive(true);
+        loadGame();
     }
 
     public void Crystall() {
@@ -87,6 +88,7 @@ public class forge : MonoBehaviour {
         back_button.SetActive(true);
         topic.text = "Кристалл";
         price_obj.SetActive(true);
+        loadGame();
     }
 
     public void Back() {

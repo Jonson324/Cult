@@ -16,7 +16,7 @@ public class Items : MonoBehaviour
     private void Start()
     {
         if (Chest.chest == true) {
-            value = Random.Range(1000, 1500);
+            value = Random.Range(1250, 1750);
             Chest.chest = false;
         } else { value = Random.Range(150, 300); }
     }
