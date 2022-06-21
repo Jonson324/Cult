@@ -85,7 +85,7 @@ public class LevelHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.tag == "deadzone") && (Ending.end == false))
+        if (other.tag == "deadzone")
         {
             isOnDeadZone = true;
             levelHealth = levelHealth - 5 * Time.deltaTime;
@@ -102,11 +102,11 @@ public class LevelHealth : MonoBehaviour
             levelHealth -= 25;
             audiohit.Play();
         }
-        //if(other.tag == "CultistAttack")
-        //{
-        //    levelHealth -= 10;
-        //    audiohit.Play();
-        //}
+        if (other.tag == "CultistAttack")
+        {
+            levelHealth -= 10;
+            audiohit.Play();
+        }
         if (other.tag == "heal")
         {
             levelHealth = maxhealth;
@@ -156,12 +156,12 @@ public class LevelHealth : MonoBehaviour
     {
         maxhealth += x;
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "CultistAttack")
-        {
-            levelHealth -= 10;
-            audiohit.Play();
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "CultistAttack")
+    //    {
+    //        levelHealth -= 10;
+    //        audiohit.Play();
+    //    }
+    //}
 }
