@@ -24,10 +24,10 @@ public class enemy_hp : MonoBehaviour
         }
         if (gameObject.tag == "Boss")
         {
-            Health = 800;
+            Health = 500;
             if (amulet.boss_weakened == true)
             {
-                Health = 600;
+                Health = 400;
             }
         }
     }

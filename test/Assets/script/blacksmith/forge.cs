@@ -42,18 +42,18 @@ public class forge : MonoBehaviour {
         }
     }
 
-    void Update() {
-        skill_points.text = "Кол-во очков: " + amulet.free_points;
-        money.text = "Деньги: " + dataPlayer.money.ToString();
-        price_tag.text = "Цена услуги: " + price.ToString();
-    }
-
     private void saveGame() {
         PlayerPrefs.SetString("saveGame", JsonUtility.ToJson(dataPlayer));
     }
 
     private void loadGame() {
         dataPlayer = JsonUtility.FromJson<DataPlayer>(PlayerPrefs.GetString("saveGame"));
+
+        skill_points.text = "Кол-во очков: " + amulet.free_points;
+        money.text = "Деньги: " + dataPlayer.money.ToString();
+        price_tag.text = "Цена услуги: " + price.ToString();
+        level[0].text = hp_level + "/3";
+        level[1].text = dmg_level + "/3";
 
         for (int i = 0; i < dataPlayer.buyItem.Count; i++) {
             for (int j = 0; j < allCrystalls.Length; j++) {
