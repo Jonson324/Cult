@@ -27,8 +27,8 @@ public class Ending : MonoBehaviour {
             }
             else {
                 end = false;
-                SceneManager.LoadScene(0);
                 Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene(0);
             }
         }
 

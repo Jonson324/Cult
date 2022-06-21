@@ -7,6 +7,10 @@ public class menu : MonoBehaviour
 {
     public amulet amuletScript;
 
+    void Start() {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void Play()
     {
         Ending.End();
