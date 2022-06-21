@@ -85,7 +85,7 @@ public class LevelHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "deadzone")
+        if ((other.tag == "deadzone") && (Ending.end == false))
         {
             isOnDeadZone = true;
             levelHealth = levelHealth - 5 * Time.deltaTime;
